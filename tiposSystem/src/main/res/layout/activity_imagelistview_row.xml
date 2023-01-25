@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+        <CheckBox
+            android:id="@+id/cb_box"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"   
+            android:layout_gravity="center"         
+            android:focusable="false" />
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+            
+        	<ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"               
+            android:background="@drawable/ic_launcher"  />
+            
+        </LinearLayout>
+                
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            
+        	<TextView
+	            android:id="@+id/tv_title"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"       
+	            android:layout_marginLeft="5dip"     
+	            android:layout_centerVertical="true"
+	            android:textSize="15sp"
+	            android:textStyle="bold"
+	            android:layout_gravity="center"   
+	            android:text="ListView 입니다."  />
+        	        	
+        	<LinearLayout android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="horizontal">
+        	    
+        	    <TextView android:id="@+id/tv_filesize" 
+        	        android:layout_width="0dip"
+        	        android:layout_height="match_parent"
+        	        android:layout_weight="1"
+        	        android:textSize="12sp"
+        	        android:text="파일크기"
+        	        android:layout_marginLeft="5dip">
+        	    </TextView>
+        	    
+        	    <TextView android:id="@+id/tv_filedate" 
+        	        android:layout_width="0dip"
+        	        android:layout_height="match_parent"
+        	        android:layout_weight="1"
+        	        android:textSize="12sp"
+        	        android:text="파일생성일자"
+        	        android:gravity="right"
+        	        android:layout_marginRight="5dip">
+        	    </TextView>
+        	</LinearLayout>       	
+            
+        </LinearLayout>   
+    
+</LinearLayout>

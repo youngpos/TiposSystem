@@ -1,0 +1,1156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.MainMenuActivity">
+
+    <!-- Toolbar 추가 -->
+    <include layout="@layout/toolbar" />
+
+    <!-- 그리드뷰로 추가 -->
+    <!-- 최고관리자 -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 기본관리 -->
+            <Button
+                android:id="@+id/button_menu01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn01"
+                android:onClick="onClickDefaultManage" />
+            <!--                android:drawableTop="@drawable/ic_baseline_auto_awesome_motion_24"
+            -->
+            <!-- 매출속보 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn02"
+                android:onClick="onClickSalesNews" />
+            <!-- 매출분석 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn03"
+                android:onClick="onClickSalesManage" />
+
+
+        </LinearLayout>
+
+        <!-- 2 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 매입관리 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn04"
+                android:onClick="onClickPurchaseManage" />
+            <!--                android:background="@drawable/page_after_login_btn02"
+            -->
+            <!-- 발주관리 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn05"
+                android:onClick="onClickBalJuManage" />
+
+            <!-- 재고관리 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn06"
+                android:onClick="onClickManageStock"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <!-- 3 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 행사관리 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn07"
+                android:onClick="onClickEventManage" />
+
+            <!-- 도매관리 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn08"
+                android:onClick="onClickBaeDalManage" />
+            <!-- 단축키설정 -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn10"
+                android:onClick="onClickHotKeyMain" />
+
+        </LinearLayout>
+
+        <!-- 4 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:onClick="toManageHomeDeliveryActivity" />
+
+            <!-- 매출분석 별도 추가 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn11"
+                android:onClick="onClickRealSaleMain" />
+
+
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <!-- 5 Row 공지사항 or 여백 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--            &lt;!&ndash; 공지사항 &ndash;&gt;-->
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textSize="16dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:text="공지사항: 여기는 새로운 소식을 알리는 공지사항 입니다!"-->
+            <!--                android:background="@drawable/listview_item_border"-->
+            <!--                >-->
+
+            <!--            </TextView>-->
+
+        </LinearLayout>
+
+        <!-- 6 Row 하단 여백 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 부관리자 -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 기본관리 -->
+            <Button
+                style="@style/Button_Style_Point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn01"
+                android:onClick="onClickDefaultManage" />
+
+            <!-- 매입관리 -->
+            <Button
+                style="@style/Button_Style_Point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn04"
+                android:onClick="onClickPurchaseManage" />
+
+            <!-- 발주관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn05"
+                android:onClick="onClickBalJuManage" />
+
+
+        </LinearLayout>
+
+        <!-- 2 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 행사관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn07"
+                android:onClick="onClickEventManage" />
+            <!-- 재고관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn06"
+                android:onClick="onClickManageStock"
+                android:textSize="18dp" />
+
+            <!-- 도매관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn08"
+                android:onClick="onClickBaeDalManage" />
+
+        </LinearLayout>
+
+        <!-- 3 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:onClick="toManageHomeDeliveryActivity" />
+
+            <!-- 단축키설정 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn10"
+                android:onClick="onClickHotKeyMain" />
+
+            <!-- 단축키설정 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn10"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <!-- 4,5,6 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <!-- 수수료매장 -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 매출속보 -->
+            <Button
+                style="@style/Button_Style_Point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn02"
+                android:onClick="onClickSalesNews" />
+
+            <!-- 매출분석 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn03"
+                android:onClick="onClickSalesManage" />
+
+            <!-- 매출분석 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn03"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <!-- 2,3,4,5,6 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 발주관리자 -->
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 기본관리 -->
+            <Button
+                style="@style/Button_Style_Point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn01"
+                android:onClick="onClickDefaultManage" />
+
+            <!-- 발주관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn05"
+                android:onClick="onClickBalJuManage" />
+
+            <!-- 도매관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn08"
+                android:onClick="onClickBaeDalManage" />
+
+        </LinearLayout>
+
+        <!-- 2,3,4,5,6 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <!-- 배달관리자 -->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:onClick="toManageHomeDeliveryActivity" />
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:visibility="invisible" />
+            <!-- 배송관리 -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_menu_btn09"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <!-- 2,3,4,5,6 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <!--    &lt;!&ndash; 최고관리자 &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn01"-->
+    <!--                android:onClick="onClickDefaultManage" />-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn03"-->
+    <!--                android:onClick="onClickSalesNews" />-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn04"-->
+    <!--                android:onClick="onClickSalesManage" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn02"-->
+    <!--                android:onClick="onClickPurchaseManage" />-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn07"-->
+    <!--                android:onClick="onClickBalJuManage" />-->
+
+    <!--            &lt;!&ndash;<Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:background="@drawable/page_after_login_btn08"-->
+    <!--                android:onClick="onClickEventManage" />&ndash;&gt;-->
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn05"-->
+    <!--                android:onClick="onClickEventManage" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn06"-->
+    <!--                android:onClick="onClickManageStock" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+
+    <!--                android:background="@drawable/page_after_login_09"-->
+    <!--                android:onClick="onClickBaeDalManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn09"-->
+    <!--                android:onClick="toManageHomeDeliveryActivity" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn10"-->
+    <!--                android:onClick="onClickHotKeyMain" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+    <!--    &lt;!&ndash; 부관리자 &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn01"-->
+    <!--                android:onClick="onClickDefaultManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn02"-->
+    <!--                android:onClick="onClickPurchaseManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn07"-->
+    <!--                android:onClick="onClickBalJuManage" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--            &lt;!&ndash;<Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:background="@drawable/page_after_login_btn08"-->
+    <!--                android:onClick="onClickEventManage" />&ndash;&gt;-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn05"-->
+    <!--                android:onClick="onClickEventManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn06"-->
+    <!--                android:onClick="onClickManageStock" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_09"-->
+    <!--                android:onClick="onClickBaeDalManage" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn09"-->
+    <!--                android:onClick="toManageHomeDeliveryActivity" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn10"-->
+    <!--                android:onClick="onClickHotKeyMain" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    &lt;!&ndash; 수수료매장 &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn03"-->
+    <!--                android:onClick="onClickSalesNews" />-->
+
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn04"-->
+    <!--                android:onClick="onClickSalesManage" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="0dip"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    &lt;!&ndash; 발주관리자 &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout4"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn01"-->
+    <!--                android:onClick="onClickDefaultManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn07"-->
+    <!--                android:onClick="onClickBalJuManage" />-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_09"-->
+    <!--                android:onClick="onClickBaeDalManage" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    &lt;!&ndash; 배달관리자 &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout5"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:background="@drawable/page_after_login_btn09"-->
+    <!--                android:onClick="toManageHomeDeliveryActivity" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView28"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView29"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="8dp"-->
+    <!--                android:layout_marginRight="8dp"-->
+    <!--                android:layout_weight="1" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="0.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+
+    <!--
+    <LinearLayout
+           android:id="@+id/linearlayout_qnalist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:layout_weight="0.1"
+         android:gravity="center"
+         android:layout_marginTop="5dip"
+        android:background="#333333" >
+
+        <TextView
+            android:id="@+id/textViewShopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:text="@string/board"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonQuestion"
+            android:layout_width="45dp"
+            android:layout_height="27dp"
+            android:background="@drawable/page_after_login_icon01"
+            android:gravity="right"
+            android:layout_weight="0.1"
+            android:onClick="onClickQuestion" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#ffffff" >
+    </ListView>
+
+    -->
+
+</LinearLayout>

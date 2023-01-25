@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.ShopRebootActivity">
+
+    <!-- GRID-->
+    <!-- 서브 헤드라인 -->
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/p_sunriae_text"
+            android:text="매장별 포스별 연결 상태" />
+        <Button
+            android:id="@+id/buttonRefresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_baseline_refresh_12"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- grid header -->
+        <LinearLayout
+            style="@style/GridHeadLinear_Style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- 매장코드 -->
+                <TextView
+                    android:id="@+id/item2"
+                    style="@style/GridHeadText_Style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="center"
+                    android:text="매장코드"
+                    android:visibility="gone"/>
+
+                <!-- 매장명 -->
+                <View style="@style/divider_v" />
+
+                <TextView
+                    android:id="@+id/item3"
+                    style="@style/GridHeadText_Style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="매장명" />
+                <!--android:textColor="#D5D5D5"-->
+                <View style="@style/divider_v" />
+
+                <!-- 포스번호 -->
+                <TextView
+                    android:id="@+id/item4"
+                    style="@style/GridHeadText_Style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="포스번호" />
+                <!--                                        android:textColor="#D5D5D5"-->
+
+                <View style="@style/divider_v" />
+
+                <!-- 상태 -->
+                <TextView
+                    android:id="@+id/item5"
+                    style="@style/GridHeadText_Style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="상태"/>
+
+                <View style="@style/divider_v" />
+
+                <!-- 재부팅 -->
+                <TextView
+                    android:id="@+id/item6"
+                    style="@style/GridHeadText_Style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="재부팅"/>
+
+                <View style="@style/divider_v" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="1dip"
+            android:background="#403c3d" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <ListView
+                android:id="@+id/listviewshop"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="0.5pt"
+                android:divider="#403c3d"
+                >
+            </ListView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType = "textMultiLine"
+            android:textAppearance = "@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="" />
+
+    </LinearLayout>
+</LinearLayout>

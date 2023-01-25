@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="매장코드" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="매장명" />
+        <!--android:textColor="#D5D5D5"-->
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:textColor="@android:color/holo_red_light"
+            android:text="순매출" />
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="이전순매출"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item5"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="객수"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item6"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="객단가"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item7"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="현금"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item8"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="카드"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item9"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="외상"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item10"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="기타"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장IP"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장IP"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장IP"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장IP"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장IP"
+            android:visibility="gone"/>
+
+<!--        <View style="@style/divider_v" />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

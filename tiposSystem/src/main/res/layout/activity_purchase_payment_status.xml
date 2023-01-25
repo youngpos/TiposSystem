@@ -1,0 +1,500 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchasePaymentStatusActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="기간"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSetDate1"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate1"
+            android:text="2013-05-19"
+/>
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="~"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSetDate2"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate2"
+            android:text="2013-05-19"
+/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editTextCustomerCode"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="5"
+            android:hint="거래처코드"
+            android:inputType="number"
+            android:lines="1"
+            android:nextFocusDown="@id/editTextCustomerName"
+            android:singleLine="true"
+/>
+
+        <EditText
+            android:id="@+id/editTextCustomerName"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="거래처명"
+            android:inputType="text"
+            android:nextFocusDown="@id/editTextBarcode"
+            android:singleLine="true"
+/>
+
+        <Button
+            style="@style/Button_Style_Point"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:onClick="onCustomerSearch"
+            android:text="검색" />
+
+        <Spinner
+            android:id="@+id/spinnerOfficeGroupType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editTextBarcode"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:hint="바코드"
+            android:inputType="text"
+            android:nextFocusDown="@id/editTextProductName"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="상품명"
+            android:inputType="text"
+            android:singleLine="true"
+/>
+
+        <Button
+            android:id="@+id/buttonBarcode"
+            style="@style/Button_Style_Point"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBarcodeSearch"
+            android:text="검색" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonPriceSearch"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:onClick="OnClickSearch"
+            android:text="조회"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/buttonRenew"
+            style="@style/Button_Style_Point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:onClick="OnClickRenew"
+            android:scaleY="0.8"
+            android:text="새로입력"
+            />
+    </LinearLayout>
+
+    <!-- android:id="@+id/tabhostPurchasePaymentStatus" -->
+
+    <TabHost
+        android:id="@+id/tabhostPurchasePaymentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/p_cool_blue_4">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- Tab1 -->
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- grid header 세로 리니어레이아웃 -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <!-- 1 Col LinearLayout -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item1"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="전표번호"
+/>
+                            <View style="@style/divider_h" />
+                            <TextView
+                                android:id="@+id/item2"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="매입일"
+/>
+                        </LinearLayout>
+
+                        <View style="@style/divider_v" />
+
+                        <!-- 2 Col LinearLayout-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item3"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="거래처명"
+/>
+                            <View style="@style/divider_h" />
+                            <TextView
+                                android:id="@+id/item4"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="총매입가"
+/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <ListView
+                            android:id="@+id/listviewPurchaseListTab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Tab2 -->
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- grid header 세로 리니어레이아웃 -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="75dp"
+                        android:orientation="horizontal">
+
+                        <!-- 1 Col LinearLayout -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/item5"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="거래처코드" />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                android:id="@+id/item6"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="거래처명" />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <View style="@style/divider_v" />
+
+                        <!-- 2 Col LinearLayout -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/item7"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="이월"
+                                />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                android:id="@+id/item8"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="지급금액"
+                                />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                android:id="@+id/item9"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="미지급금액"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <ListView
+                            android:id="@+id/listviewPurchaseListTab2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"></ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Tab3 -->
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- grid header 세로 리니어레이아웃 -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal">
+
+                        <!-- 1 Col LinearLayout -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item10"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="거래처코드"
+                                />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                android:id="@+id/item11"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="거래처명"
+                                />
+                        </LinearLayout>
+
+                        <View style="@style/divider_v" />
+
+                        <!-- 2 Col LinearLayout -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item12"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="순매입"
+                                />
+                            <View style="@style/divider_h" />
+
+                            <TextView
+                                android:id="@+id/item13"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="순매출"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" >
+
+                        <ListView
+                            android:id="@+id/listviewPurchaseListTab3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

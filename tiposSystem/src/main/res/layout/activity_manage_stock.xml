@@ -1,0 +1,369 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26"
+            android:text="재고년월"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/buttonSetDate1"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate1"
+            android:text="2013-05-19"
+            android:textSize="14sp" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="바코드"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextBarcode"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:ems="10"
+            android:inputType="text"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="바코드"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            android:lines="1"
+            android:singleLine="true"
+            android:hint="상품명"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonBarcode"
+            style="@style/Button_Style_Point"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBarcodeSearch"
+            android:text="검색" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.64"
+            android:text="매입가"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextPurchasePrice"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.45"
+            android:text="판매가"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextSalePrice"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.64"
+            android:text="실사수량"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextNumberOfReal"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.45"
+            android:text="현재고"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextCurStock"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            android:lines="1"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_newproductreg"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:scaleY="0.75"
+            android:text="상품등록"
+/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/buttonRenew"
+            style="@style/Button_Style_Point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.75"
+            android:text="새로입력"
+            />
+
+        <Button
+            android:id="@+id/buttonRegist"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:scaleY="0.75"
+            android:text="등록"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SubHeadText_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전송대기 목록"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Header -->
+    <!-- Grid Header -->
+    <!-- 1단:30dp,2단:55dp,3단:75dp -->
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/GridHeadLinear_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="바코드"
+/>
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="상품명"
+/>
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="실사수량"
+/>
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="현재고"
+/>
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listviewReadyToSendEventList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSend"
+            style="@style/Button_Style_Point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dip"
+            android:text="전체삭제"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonSendAll"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dip"
+            android:text="전체전송"
+            />
+    </LinearLayout>
+
+</LinearLayout>

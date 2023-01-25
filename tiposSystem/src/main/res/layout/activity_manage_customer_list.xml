@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/u_activity_back"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ManageCustomerActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/SubHeadText_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거래처 목록" />
+
+    </LinearLayout>
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/head_border">
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/GridHeadText_Style"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:text="코드" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="거래처명" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="구분" />
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listviewCustomerList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="코드"
+                android:textColor="@color/p_text_text" />
+
+            <EditText
+                android:id="@+id/edittextofficecode"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/edit_border"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint=""
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="14"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="0.2"
+                android:onClick="doListSearch"
+                android:text="검색"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="거래처 명"
+                android:textColor="@color/p_text_text" />
+
+            <EditText
+                android:id="@+id/edittextofficename"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="0.6"
+                android:background="@drawable/edit_border"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:lines="1"
+                android:maxLength="14"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="0.2"
+                android:onClick="doReNew"
+                android:text="지우기"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

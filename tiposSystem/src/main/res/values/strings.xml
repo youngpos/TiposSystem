@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    <string name="app_name">TIPOS</string>-->
+    <string name="app_name">포스온관리</string>
+    <string name="action_settings">설정</string>
+    <string name="action_sususettings">공제옵션설정</string>
+    <string name="barcodeprint_historylist">바코드발행 목록</string>
+    <string name="title_activity_config_detail">매장설정</string>
+    <string name="title_activity_config_sppl3000">SPP-L3000 Setting</string>
+    <string name="ConfigDetailTitle">XXX 마트 환경설정</string>
+    <string name="save">저장</string>
+    <string name="sales_news">매출속보</string>
+    <string name="title_activity_input_question">문의게시판</string>
+
+    <!-- 로그인화면 -->
+
+    <string name="login_infomation1">[아이디]-[비밀번호]는 TIPS 관리프로그램 </string>
+    <string name="login_infomation2">[기본관리]-[사원관리]에서 확인 하실 수 있습니다. </string>
+    <string name="autologin">자동 로그인</string>
+
+    <!-- 로그인화면  끝 -->
+
+
+    <!-- 환경설정 시작 -->
+    <string name="setting_phonenumber">휴대폰 번호</string>
+    <string name="setting_phonenumber_1">현재기기의 전화번호는 : </string>
+    <string name="setting_name">매장정보</string>
+    <string name="setting_name_1">관리 매장 관련 및 버전 정보 표시</string>
+    <string name="setting_posnumber">휴대폰 고유 번호</string>
+    <string name="setting_posnumber_1">기기의 고유 번호를 지정합니다.</string>
+    <string name="setting_barcodeprint">바코드 프린터 설정</string>
+    <string name="setting_barcodeprint_1">프린터 종류를 선택합니다.</string>
+    <string name="setting_autologin">자동로그인</string>
+    <string name="setting_autologin_1">프로그램 시작 시 자동 로그인</string>
+    <string name="setting_autologin_id">아이디</string>
+    <string name="setting_autologin_pw">패스워드</string>
+    <string name="setting_kisvan">카드사 정보설정</string>
+    <string name="setting_kisvan_1">키스정보통신 카드정보를 입력합니다.</string>
+    <string name="setting_database">데이타베이스 삭제</string>
+    <string name="setting_database_1">데이타를 삭제하고 테이블을 새로 생성합니다.</string>
+    <string name="setting_database_button">삭제</string>
+
+    <!-- 김영목 220.09114. 바코드 입력 키패드 설정 옵션 추가 Start-->
+    <string name="setting_keypad_type">바코드 입력 키패드</string>
+    <string name="setting_keypad_type_desc">바코드 문자 입력 허용시 문자키패드로 설정합니다.</string>
+    <string-array name="keypad_type">
+        <item>숫자키패드</item>
+        <item>문자키패드</item>
+    </string-array>
+    <string name="keypad_type_prompt">숫자키패드</string>
+    <!-- 김영목 220.09114. 바코드 입력 키패드 설정 옵션 추가 End-->
+
+    <string-array name="barcode_print_item">
+        <item>사용안함</item>
+        <item>매장프린터</item>
+        <item>SPP-L3000</item>
+        <item>LK-P30II</item>
+    </string-array>
+
+    <string name="barcode_print_prompt">사용안함</string>
+    <string name="barcode_print_setting">설정</string>
+
+    <!-- 환경서정 끝 -->
+
+    <string-array name="question_type">
+        <item>카드결재 관련</item>
+        <item>프로그램 관련</item>
+        <item>POS장비 관련</item>
+        <item>A/S 신청</item>
+        <item>기타</item>
+    </string-array>
+
+    <string name="choose_question">질문을 선택하세요.</string>
+
+    <string-array name="customer_code_type">
+        <item>전체</item>
+        <item>매입거래처</item>
+        <item>수수료거래처</item>
+        <item>매출거래처</item>
+    </string-array>
+
+    <!-- 문자메세기 전송  액티비티 스피너 목록 -->
+    <string-array name="sms_spinner1">
+        <item>기간구분</item>
+        <item>최종방문일</item>
+    </string-array>
+    <string-array name="sms_spinner2">
+        <item>조회구분</item>
+        <item>구매금액</item>
+        <item>미수금액</item>
+        <item>포인트</item>
+    </string-array>
+    <string-array name="sms_spinner3">
+        <item>전체</item>
+        <item>일반</item>
+        <item>실버</item>
+        <item>골드</item>
+        <item>VIP</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="sms_spinner4">
+        <item>전체</item>
+        <item>적용</item>
+        <item>미적용</item>
+    </string-array>
+    <string-array name="sms_gubun">
+        <item>전  체</item>
+        <item>전  표</item>
+        <item>발송폰</item>
+        <item>전송폰</item>
+    </string-array>
+    <string-array name="sms_results">
+        <item>전체</item>
+        <item>전송중</item>
+        <item>전송완료</item>
+    </string-array>
+
+    <string name="choose_customer_code_type">거래처구분</string>
+
+    <string-array name="taxation_type_reg">
+        <item>면세</item>
+        <item>과세</item>
+    </string-array>
+
+    <string name="choose_taxation_type">과세구분</string>
+
+    <string-array name="group_type">
+        <item>All</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <string name="group_type_prompt">P</string>
+    <string-array name="group_type_config">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    <!-- AUTO TIMER CONFIG -->
+    <!-- POS NO CONFIG -->
+    <string name="pos_no_prompt">01</string>
+    <string-array name="pos_no_config">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="event_type">
+        <item>기간행사</item>
+        <item>연속행사</item>
+    </string-array>
+    <string-array name="good_use">
+        <item>전체</item>
+        <item>사용</item>
+        <item>미사용</item>
+    </string-array>
+    <string-array name="good_use_reg">
+        <item>사용</item>
+        <item>미사용</item>
+    </string-array>
+    <string-array name="gubun_type">
+        <item>전체</item>
+        <item>공산품</item>
+        <item>저울상품</item>
+        <item>부분상품</item>
+    </string-array>
+    <string-array name="gubun_type_reg">
+        <item>공산품</item>
+        <item>저울상품</item>
+    </string-array>
+    <string-array name="location_types1">
+        <item>서울</item>
+        <item>경기</item>
+        <item>부산</item>
+        <item>대구</item>
+        <item>인천</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>강원</item>
+        <item>충북</item>
+        <item>충남</item>
+        <item>전북</item>
+        <item>전남</item>
+        <item>경북</item>
+        <item>경남</item>
+        <item>제주</item>
+    </string-array>
+    <string-array name="member_point">
+        <item>미적용</item>
+        <item>적용</item>
+    </string-array>
+
+    <!--2020-06-15-->
+    <string-array name="GoodsDanwi">
+        <item>kg</item>
+        <item>g</item>
+        <item>L</item>
+        <item>ml</item>
+        <item>개</item>
+        <item>M</item>
+        <item>매</item>
+        <item>장</item>
+    </string-array>
+    <string name="choose_GoodsDanwi">kg</string>
+
+
+    <string name="choose_member_point">마일리지</string>
+    <string name="choose_gubun_type">구분</string>
+    <string name="choose_goods_use">선택</string>
+    <string name="choose_location_type">지역 선택</string>
+    <string name="choose_event_type">행사구분 선택</string>
+    <string name="choose_group_type">그룹</string>
+
+    <string name="choose_classification_type">분류 선택</string>
+
+    <!-- 환경설정 메뉴 -->
+    <string name="searchMedthods_title">환경설정</string>
+
+    <string-array name="searchMethods">
+        <item>미지정</item>
+        <item>카메라</item>
+        <item>목록</item>
+    </string-array>
+    <string-array name="searchMethodValues">
+        <item>noselection</item>
+        <item>camera</item>
+        <item>list</item>
+    </string-array>
+
+    <string name="summary_search_method">검색방식을 지정합니다</string>
+    <string name="title_search_method">검색방식 지정</string>
+    <string name="search_default_value">미지정</string>
+    <string name="summary_product_method">매입 중 신상품 즉시 등록옵션을 선택합니다.</string>
+    <string name="title_product_method">신상품 등록여부</string>
+    <string name="product_default_value">미지정</string>
+
+    <string-array name="productMethods">
+        <item>미지정</item>
+        <item>즉시 등록</item>
+        <item>후 등록</item>
+    </string-array>
+    <string-array name="productMethodValues">
+        <item>noselection</item>
+        <item>newproductyes</item>
+        <item>newproductno</item>
+    </string-array>
+
+    <string name="choosecardyn_title">수수료 매장 매출조회 검색 옵션</string>
+
+    <string-array name="CardYnType">
+        <item>전체 매출</item>
+        <item>수카드제외 매출</item>
+        <item>수카드 매출</item>
+    </string-array>
+    <string-array name="ChooseCardYnValues">
+        <item>All</item>
+        <item>cardN</item>
+        <item>cardY</item>
+    </string-array>
+
+    <string name="saleView_default_Value">전체매출 보기</string>
+    <string name="saleViewMethod">총매출 보기 설정</string>
+    <string name="title_saleView_method">다중매장 매출 포함 옵션</string>
+
+    <!-- 환경설정 메뉴 종료 -->
+    <!-- 공제 옵션 설정 -->
+    <string name="checkCard">카드 수수료공제</string>
+    <string name="checkCashBack">캐쉬백 공제</string>
+    <string name="checkPoint">포인트 공제</string>
+    <string name="checkCash">현금영수증공제</string>
+    <string name="checkCashPercent">현금영수증 공제율</string>
+    <string name="checkCashSummary">현금영수증 공제율을 입력합니다! (단위 %)</string>
+
+    <!-- 공제 옵션 설정 종료 -->
+
+    <string name="title_activity_manage_image_list_view">이미지목록</string>
+
+    <!-- 배달관리 -->
+
+    <string-array name="homedelivery_searchGubun">
+        <item>전화번호</item>
+        <item>회원명</item>
+        <item>주소</item>
+    </string-array>
+
+    <!-- 배달관리 -->
+    <string name="title_activity_homemanager">도매관리</string>
+    <string name="title_activity_delivery_call_home_manager">배송관리</string>
+
+
+    <!-- 배달입금관리 -->
+    <string name="sale_num">전표번호</string>
+    <string name="delivery_gubun">배송구분</string>
+
+    <string-array name="delivery_gubun_summry">
+        <item>전체</item>
+        <item>배송전</item>
+        <item>배송중</item>
+        <item>배송완료</item>
+    </string-array>
+
+    <string name="delivery_pos_deposit">포스입금</string>
+    <string name="delivery_pda_deposit">현장입금</string>
+    <string name="delivery_deposit">입금구분</string>
+    <string-array name="deposit_gubun_summry">
+        <item>미입금</item>
+        <item>카드결제 (단말기)</item>
+        <item>현영결제 (단말기)</item>
+        <item>현금결제</item>
+        <item>외상결제</item>
+        <item>카드결제 (앱)</item>
+        <item>현영결제 (앱)</item>
+    </string-array>
+
+    <string-array name="deposit_gubun_summry2">
+        <item>현금영수증</item>
+        <item>카드 결제</item>
+    </string-array>
+
+    <string-array name="deposit_gubun_summry1">
+        <item>전체</item>
+        <item>미입금</item>
+        <item>입금</item>
+    </string-array>
+
+    <string name="delivery_search">전표조회</string>
+    <string name="delivery_sender_reg">배송자지정</string>
+    <string name="delivery_reg">배송 등록</string>
+    <string name="delivery_reg_cancle">배송 취소</string>
+    <string name="delivery_searchGubun">내배송보기</string>
+    <string name="delivery_title">배송 목록</string>
+
+    <string name="delivery_date">일자</string>
+    <string name="delivery_saleprice">판매금액</string>
+    <string name="delivery_membernum">회원번호</string>
+    <string name="delivery_membername">회원명</string>
+    <string name="delivery_address">주소</string>
+    <string name="delivery_address1">상세주소</string>
+
+    <string name="delivery_btn_state1">배송완료</string>
+    <string name="delivery_btn_state2">배송취소</string>
+
+    <string name="renew">새로입력</string>
+
+    <string name="delivery_detail_title">배송전표 상세보기</string>
+    <string name="delivery_detail_phone">전화번호</string>
+    <string name="delivery_detail_hp">HP</string>
+
+    <string name="delivery_detail_product">배송상품 목록</string>
+    <string name="list_num">순번</string>
+
+    <string name="barcode">바코드</string>
+    <string name="gname">상품명</string>
+    <string name="price">단가</string>
+    <string name="count">수량</string>
+    <string name="total_price">금액</string>
+
+    <string name="close">닫기</string>
+    <string name="payment_price">결제 금액</string>
+    <string name="delivery_won">원</string>
+
+    <string name="total_count">총 수량</string>
+
+    <string name="all_select">전체선택</string>
+
+    <!-- 배달입금관리 -->
+
+
+    <!-- 키스정보통신 결제관리 -->
+
+    <string name="office_number">사업자번호</string>
+    <string name="download_password">다운로드 비밀번호</string>
+    <string name="danmalki_password">단말기번호</string>
+    <string name="local_num">지역번호</string>
+    <string name="pay_price1">결제금액</string>
+    <string name="pay_price">결제금액(또는 결제포인트:포인트결제시)</string>
+    <string name="approval_number">승인번호</string>
+
+    <string name="card_pay">카드 결제</string>
+    <string name="cash_pay">현금영수증 결제</string>
+    <string name="point_pay">포인트 결제</string>
+
+
+    <!-- 키스정보통신 결제관리 -->
+
+</resources>

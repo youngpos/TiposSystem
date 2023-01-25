@@ -1,0 +1,189 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+
+    </style>
+
+    <!-- Layout style  -->
+
+    <!-- 기본 텍스트 스타일 리니어 레이아웃용 -->
+    <style name="basic_text_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--    <style name="AppSpinnerTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+    -->
+    <style name="AppSpinnerTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+        <item name="android:textViewStyle">@style/TextView_Style</item>
+        <!-- 2022.04.13. 스피너 스타일 추가 -->
+        <item name="android:spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+        <!-- 2022.04.13. 체크박스 스타일 추가 -->
+        <!--
+        <item name="android:checkboxStyle">@style/CheckBoxText</item>
+        -->
+        <item name="android:checkboxStyle">@style/CheckBoxText</item>
+
+        <!-- 2022.04.13. Calender 스타일 추가 -->
+        <item name="android:calendarViewStyle">@style/CalendarView.Custom</item>
+
+
+        <!--        <item name="android:editTextStyle">@style/EditText_MyStyle</item>-->
+    </style>
+
+    <!--    <style name="TextBasicTest" parent="AppTheme">-->
+    <!--        <item name="android:textColor">#9FC93C</item>-->
+    <!--        <item name="android:textStyle">bold</item>-->
+    <!--        <item name="android:textSize">20dp</item>-->
+    <!--        <item name="android:gravity">center</item>-->
+    <!--    </style>-->
+
+
+    <!-- 스피너 변경 -->
+    <!--    <style name="SpinnerItem" parent="AppTheme">-->
+    <!--        <item name="android:textColor">#F6F6F6</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="SpinnerItem.DropDownItem" parent="AppTheme">-->
+    <!--        <item name="android:textColor">#F6F6F6</item>-->
+    <!--        <item name="android:gravity">center_vertical</item>-->
+    <!--        <item name="android:layout_gravity">center</item>-->
+    <!--    </style>-->
+    <style name="SpinnerItem" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="AppTheme">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- 2022.04.13. 체크박스 스타일 추가 -->
+    <!--
+    <style name="CheckBoxText" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">#E6202022</item>
+        <item name="buttonTint">@android:color/holo_purple</item>
+    </style>
+    -->
+    <!-- 2022.10.11. 체크박스 스타일 새로 추가 -->
+    <style name="CheckBoxText" parent="@android:style/Widget.Holo.Light.CompoundButton.CheckBox">
+        <item name="android:textColor">#E6202022</item>
+        <item name="buttonTint">@android:color/holo_purple</item>
+    </style>
+
+    <style name="CalendarView.Custom" parent="android:Widget.Holo.Light.CalendarView">
+<!--        <item name="android:weekDayTextAppearance">@color/red</item>-->
+<!--        <item name="android:weekNumberColor">@color/red</item>-->
+<!--        <item name="android:focusedMonthDateColor">@color/red</item>-->
+<!--        <item name="android:background">#403c3d</item>-->
+<!--        <item name="android:textColor">@color/red</item>-->
+<!--        <item name="android:dateTextAppearance">@style/CalenderViewDateCustomText</item>-->
+    </style>
+
+    <!-- editText style -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 12sp 입력타입 number 싱글라인 -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 12sp 입력타입 None 싱글라인 -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 14sp 입력타입 None 포커스없음 수정불가 -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 14sp 입력타입 numberDecimal 싱글라인 -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 14sp 입력타입 number 싱글라인 -->
+    <!-- 에디트텍스트 왼쪽5여백  글자크기 14sp 입력타입 none 싱글라인  선택수정안됨-->
+
+    <!-- 텍스트 스타일 설정 -->
+
+    <!-- 기본 텍스트 스타일 -->
+
+
+    <!-- 매입가  -->
+    <style name="textpur_pri">
+        <item name="android:textColor">#9FC93C</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">25dip</item>
+    </style>
+
+    <!-- 판매가  -->
+    <style name="textsell_pri">
+        <item name="android:textColor">#CC3D3D</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">25dip</item>
+    </style>
+
+    <!-- 이익률  -->
+    <style name="text_ratio">
+        <item name="android:textColor">#F361DC</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 행사가  -->
+    <style name="textevent_sell">
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">25dip</item>
+    </style>
+
+
+    <!-- 매출관리 텍스트 컬러 스타일     -->
+    <!-- 순매출 -->
+    <style name="textTsell_pri">
+        <item name="android:textColor">#9FC93C</item>
+    </style>
+
+    <!-- 매출원가 -->
+    <style name="textTsell_pri_basic">
+        <item name="android:textColor">#CC723D</item>
+    </style>
+
+    <!-- 전순매출 -->
+
+    <!-- 이익금 -->
+    <style name="textTsell_pri_profit">
+        <item name="android:textColor">#FF7171</item>
+    </style>
+
+    <!-- 이익률 -->
+    <style name="textTsell_pri_Ratio">
+        <item name="android:textColor">#EB53D7</item>
+    </style>
+
+    <!-- 대비차액 -->
+
+    <!-- 매입 등록 관리 스타일   -->
+    <!-- 대비차액 -->
+
+    <style name="AppCompatAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#EB53D7</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+<!--    출처: https://shary1012.tistory.com/270 [노마의 낡은 수첩:티스토리]-->
+
+</resources>

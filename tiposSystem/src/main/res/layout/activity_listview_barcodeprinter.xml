@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:orientation="horizontal" >    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="바코드"
+            android:id="@+id/item1"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="상품명"
+            android:id="@+id/item2" />        
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingRight="5dp"
+            android:text="판매가"
+            android:id="@+id/item3"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingRight="5dp"
+            android:text="원판매가"
+            android:visibility="gone"
+            android:id="@+id/item5"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingRight="5dp"
+            android:text="할인율(%)"
+            android:visibility="gone"
+            android:id="@+id/item6"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingRight="5dp"
+            android:text="수량"
+            android:textColor="#FF5E00"
+            android:id="@+id/item4" />
+    </LinearLayout>
+    
+    <!-- <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="과세매출"
+            android:id="@+id/item5"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="면세매출"
+            android:id="@+id/item6" />        
+    </LinearLayout> -->
+    <!-- <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="현금매출"
+            android:id="@+id/item7"/>
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="5dp"
+            android:text="카드매출"
+            android:id="@+id/item8" />        
+    </LinearLayout> -->
+  
+</LinearLayout>

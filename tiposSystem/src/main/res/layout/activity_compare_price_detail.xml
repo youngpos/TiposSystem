@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/u_activity_back"
+    tools:context=".ComparePriceDetailActivity"
+    android:orientation="vertical" >
+
+	<LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="상품명 : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XXXXX"
+           	android:layout_marginLeft="5dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+         <TextView
+			  
+			android:id="@+id/textView3"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.7"
+			android:text="바코드 : "
+			android:layout_marginLeft="25dip"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#ffffff"
+			android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12345678"
+            android:layout_marginLeft="5dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+	        
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dip" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="매입가 : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XXXXX"
+           	android:layout_marginLeft="5dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+         <TextView
+
+             android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.7"
+			android:text="판매가 : "
+			android:layout_marginLeft="25dip"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#ffffff"
+			android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12345678"
+            android:layout_marginLeft="5dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+	        
+    </LinearLayout>
+
+    <!-- Header -->
+    <LinearLayout android:id="@+id/header"
+        
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dip"
+        >
+        <TextView android:id="@+id/item1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="지역"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:width="75dip"
+            android:height="20dip"
+            android:background="@drawable/gray_bar_bg"
+        />
+        <TextView android:id="@+id/item2"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="평수"
+			android:textColor="#d7d7d7"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:width="75dip"
+            android:height="20dip"
+            android:background="@drawable/gray_bar_bg"
+        />
+        <TextView android:id="@+id/item3"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="매입가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:width="75dip"
+            android:height="20dip"
+            android:background="@drawable/gray_bar_bg"
+        />
+        <TextView android:id="@+id/item4"
+            android:layout_height="fill_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="판매가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:width="75dip"
+            android:height="20dip"
+            android:background="@drawable/gray_bar_bg"
+        />
+        
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+ 
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <ListView
+            android:id="@+id/listviewPriceDetailList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </LinearLayout>       
+</LinearLayout>

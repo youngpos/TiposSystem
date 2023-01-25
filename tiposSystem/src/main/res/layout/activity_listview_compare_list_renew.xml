@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical">
+
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:background="#4C4C4C"></LinearLayout>
+
+    <!-- 바코드/상품명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:id="@+id/item_barcode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#747474"
+            android:gravity="center"
+            android:text="바코드"
+            android:textColor="#d7d7d7" />
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:id="@+id/item_gname"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#747474"
+            android:gravity="center"
+            android:text="상품명"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold" />
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+    </LinearLayout>
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#005000"></LinearLayout>
+
+
+    <!-- 매입가 / 차액 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="#403C3D"
+            android:gravity="right"
+            android:text="매입가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold" />
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#005000" />
+
+        <TextView
+            android:id="@+id/item_purpri"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="#403C3D"
+            android:gravity="left"
+            android:paddingLeft="5dip"
+            android:text="매입가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold" />
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#403C3D"
+            android:gravity="center"
+            android:text="평균"
+            android:textColor="#d7d7d7" />
+
+
+        <TextView
+            android:id="@+id/item_avgpurpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:paddingRight="15dip"
+            android:text="평균" />
+<!--            android:textColor="#d7d7d7" />-->
+
+
+    </LinearLayout>
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#4C4C4C"></LinearLayout>
+
+    <!-- 최소 / 최대  / 차액 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="↓"
+            android:textColor="#0100FF" />
+
+        <TextView
+            android:id="@+id/item_minpurpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="최소" />
+        <!-- 		            android:textColor="#d7d7d7" />
+        -->
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="↑"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/item_maxpurpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:paddingRight="20dip"
+            android:text="최대" />
+        <!--
+                    android:textColor="#d7d7d7" />
+        -->
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#403C3D"
+            android:textColor="#d7d7d7"
+            android:gravity="center"
+            android:text="차액" />
+
+        <!-- 차액 이미지뷰로 인해서 묶기 -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_marginpurpri"
+                style="@style/TextView_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dip"
+                android:text="  차액"/>
+<!--                android:textColor="#d7d7d7" />-->
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="10dip"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_uparrow" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#540021"></LinearLayout>
+
+    <!-- 매입가 / 차액 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="#9D9895"
+            android:gravity="right"
+            android:text="판매가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold" />
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#540021" />
+
+        <TextView
+            android:id="@+id/item_sellpri"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="#9D9895"
+            android:gravity="left"
+            android:paddingLeft="5dip"
+            android:text="판매가"
+            android:textColor="#d7d7d7"
+            android:textStyle="bold" />
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#9D9895"
+            android:textColor="#d7d7d7"
+            android:gravity="center"
+            android:text="평균" />
+
+        <TextView
+            android:id="@+id/item_avgsellpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:paddingRight="15dip"
+            android:text="평균"/>
+<!--            android:textColor="#d7d7d7" />-->
+
+
+    </LinearLayout>
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#4C4C4C"></LinearLayout>
+
+    <!-- 최소 / 최대  / 차액 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="↓"
+            android:textColor="#0100FF" />
+
+        <TextView
+            android:id="@+id/item_minsellpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="최소" />
+        <!--
+                    android:textColor="#d7d7d7" />
+        -->
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="↑"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/item_maxsellpri"
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:paddingRight="20dip"
+            android:text="최대" />
+<!--            android:textColor="#d7d7d7" />-->
+
+        <!-- 구분선 | -->
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.008"
+            android:background="#4C4C4C" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#9D9895"
+            android:textColor="#d7d7d7"
+            android:gravity="center"
+            android:text="차액" />
+
+        <!-- 차액 이미지뷰로 인해서 묶기 -->
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_marginsellpri"
+                style="@style/TextView_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dip"
+                android:text="  차액"/>
+<!--                android:textColor="#d7d7d7" />-->
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="10dip"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_uparrow" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- 공백구분선 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#540021"></LinearLayout>
+
+
+</LinearLayout>
+

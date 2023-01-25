@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="매입일자"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <requestFocus />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:background="@drawable/arrowbox_01"
+            android:onClick="onClickSetDatePrevious"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+        <!--            style="?android:attr/buttonStyleSmall"
+        -->
+        <Button
+            android:id="@+id/buttonSetDate"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:onClick="onClickSetDate"
+            android:scaleY="0.8"
+            android:text="2013-05-19"
+            android:textSize="18sp" />
+        <!--            style="?android:attr/buttonStyleSmall"
+        -->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:background="@drawable/arrowbox_02"
+            android:onClick="onClickSetDateNext"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+        <!--            style="?android:attr/buttonStyleSmall"
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="거래처 "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextCustomerCode"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="5"
+            android:inputType="number"
+            android:hint="거래처코드"
+            android:maxLength="5" />
+
+
+        <EditText
+            android:id="@+id/editTextCustomerName"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:hint="거래처명"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/Button_Style_Point"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onCustomerSearch"
+            android:text="검색" />
+
+    </LinearLayout>
+
+    <!-- Header -->
+    <!-- grid header 리니어레이아웃 -->
+    <LinearLayout
+        style="@style/GridHeadLinear_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <!-- 1 row -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/linearLayout2"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item1"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="매입일" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item2"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:text="코드" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item3"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:text="총매입가" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item5"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:text="이익금" />
+
+        </LinearLayout>
+
+        <View style="@style/divider_h" />
+        <!-- 2 row -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item6"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="전표번호" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item7"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:text="거래처명" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item8"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:text="총반품가" />
+
+            <View style="@style/divider_v" />
+
+            <TextView
+                android:id="@+id/item9"
+                style="@style/GridHeadText_Style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:text="이익률" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/header"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_below="@+id/header"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listviewPurchaseList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+        <!--
+        <Button
+            android:id="@+id/buttonSendRegister"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+			android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@drawable/basic_register_btn" />-->
+
+        <Button
+            android:id="@+id/buttonSendClose"
+            style="@style/Button_Style_Point2"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+/>
+    </LinearLayout>
+
+</LinearLayout>

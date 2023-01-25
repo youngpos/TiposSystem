@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29 //2022.03.07. 26에서 변경
+    //2022.03.07. 28.03 에서 변경
+    defaultConfig {
+        minSdkVersion 8 //8
+        targetSdkVersion 29  //2022.03.07. 26에서 변경
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation files('libs/zbar.jar')
+}

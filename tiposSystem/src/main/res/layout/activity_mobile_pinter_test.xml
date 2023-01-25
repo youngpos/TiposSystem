@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.MobilePinterTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_printersetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            >
+        </Button>
+
+        <TextView
+            android:id="@+id/textview_printstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연결프린터정보">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_printsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="발행">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

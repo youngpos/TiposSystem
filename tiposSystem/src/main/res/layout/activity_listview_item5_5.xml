@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" >
+    
+    <!--매출 관리 / 거래처별 매출분석 /거래처 일자별 매출분석-->
+    
+  				<LinearLayout
+                    android:layout_height="wrap_content"
+				        android:layout_width="fill_parent"
+				        android:orientation="vertical"
+				        >
+                    
+                       <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"   
+					         android:background="@drawable/gray_bar_bg_bottom01"
+					        >				            
+					        <TextView android:id="@+id/item1"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.7"
+
+					            android:textSize="12sp"
+					            android:gravity="center"					            
+					            android:text="판매일"
+					        />
+					        <TextView android:id="@+id/item2"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.5"
+
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            
+					            android:text="시간"
+					        />
+					        <TextView android:id="@+id/item3"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.2"
+
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            
+					            android:text="POS"					            
+					        />
+					        <TextView android:id="@+id/item4"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.5"
+
+					            android:textSize="12sp"
+					            android:gravity="center"
+					            
+					            android:text="전표번호"
+					        />					        
+					        </LinearLayout>
+					        				         
+				        <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"
+					        >
+						    <TextView android:id="@+id/item5"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="1"
+					            android:gravity="center"		
+					            android:textSize="12sp"			            
+					            android:paddingRight="5dp"
+					            android:text="판매"
+					            style="@style/textTsell_pri"
+					        />
+						    <TextView android:id="@+id/item6"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"					            
+					            android:layout_weight="1"
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"					            
+					            android:text="반품"
+					        />
+						    <TextView android:id="@+id/item7"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="1"					            
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"					            
+					            android:text="할인"					            
+					        />
+						    <TextView android:id="@+id/item8"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.6" 
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="P사용"
+					        />
+						    <TextView android:id="@+id/item9"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.4" 
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="외상"
+					        />
+						    
+						    </LinearLayout>
+                    
+				        <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"
+					        android:background="@drawable/gray_bar_bg_bottom"
+					        >
+						    <TextView android:id="@+id/item10"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="1"
+					            style="@style/textTsell_pri_basic"
+					            android:textSize="13sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="순매출"
+					        />
+						    <TextView android:id="@+id/item11"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="1"					            
+					            android:textSize="12sp"
+					            android:gravity="center"					            
+					            android:paddingRight="5dp"
+					            android:text="현금"
+					        />
+						    <TextView android:id="@+id/item12"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"					            
+					            android:layout_weight="1"
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"					            
+					            android:text="카드"
+					        />
+						    
+						    <TextView android:id="@+id/item13"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.55"
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="회원"
+					            			            
+					        />
+						     <TextView android:id="@+id/item14"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.45"
+					            android:textSize="12sp"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="배달"
+					            			            
+					        />
+						    </LinearLayout>
+						    
+				        
+					</LinearLayout>
+  
+</LinearLayout>

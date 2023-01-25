@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item1"
+                style="@style/GridDataText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="바코드" />
+
+            <TextView
+                android:id="@+id/item2"
+                style="@style/GridDataText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="상품명"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item3"
+                style="@style/GridDataText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="거래처" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item4"
+                style="@style/textpur_pri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="매입가" />
+
+            <TextView
+                android:id="@+id/item5"
+                style="@style/textsell_pri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="판매가" />
+
+            <TextView
+                android:id="@+id/item6"
+                style="@style/textevent_sell"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="행사가" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item7"
+                style="@style/text_ratio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="익익률" />
+
+            <TextView
+                android:id="@+id/item8"
+                style="@style/GridDataText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="면과세" />
+
+            <TextView
+                android:id="@+id/item9"
+                style="@style/GridDataText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="재고" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

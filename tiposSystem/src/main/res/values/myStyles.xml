@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 기본 Activity Style -->
+    <style name="MainLinear_Style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <!-- 헤드 영역 -->
+
+    <!-- 서브헤드 영역 -->
+    <style name="SubHeadLinear_Style">
+        <item name="android:background">#403c3d</item>
+        <item name="android:layout_marginTop">1dp</item> <!--위 여백 -->
+        <item name="android:layout_marginBottom">0dp</item> <!-- 아래 여백 -->
+        <item name="android:padding">1dp</item> <!--안 여백 -->
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 탭헤드 영역 -->
+
+    <!-- 서브데이타 영역 -->
+    <style name="SubItemLinear_Style">
+        <item name="android:background">@color/p_sunrise_back</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <!-- 그리드헤드 영역 -->
+    <style name="GridHeadLinear_Style">
+        <item name="android:background">@drawable/head_border</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">1dp</item> <!--위 여백 -->
+        <item name="android:layout_marginBottom">0dp</item> <!-- 아래 여백 -->
+        <!--        <item name="android:orientation">vertical</item>-->
+    </style>
+    <!-- my design -->
+    <style name="GridHeadLinear_Style2">
+        <item name="android:background">@drawable/head_border2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">1dp</item> <!--위 여백 -->
+        <item name="android:layout_marginBottom">0dp</item> <!-- 아래 여백 -->
+        <!--        <item name="android:orientation">vertical</item>-->
+    </style>
+
+    <!-- TextView -->
+    <style name="TextView_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/p_text_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TextView_Style2">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/p_text_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 서브타이틀 글자 -->
+    <style name="SubHeadText_Style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- my design -->
+
+
+    <!-- 그리드 타이틀 글자 -->
+    <style name="GridHeadText_Style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/p_text_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 그리드 데이타 글자 -->
+    <style name="GridDataText_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/p_text_text</item>
+        <item name="android:background">@color/p_sunrise_default</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="EditText_Style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/p_edit_text</item>
+        <item name="android:background">@drawable/edit_border</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <!-- EditText2(강조) -->
+    <style name="EditText_Style2">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/p_edit_text</item>
+        <item name="android:background">@drawable/edit_border_focus</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Button_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/p_button_text</item>
+        <!--        <item name="android:background">@drawable/button_border</item>-->
+        <item name="android:background">@drawable/button_command</item>
+    </style>
+
+    <style name="Button_Style2">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/p_button_text</item>
+        <item name="android:background">@drawable/button_command2</item>
+    </style>
+
+    <style name="Button_Style_Gray">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/p_button_text</item>
+        <item name="android:background">@drawable/button_border2</item>
+    </style>
+
+<!--    <style name="Button_Style3">-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textColor">@color/p_button_text</item>-->
+<!--        <item name="android:background">@drawable/button_border3</item>-->
+<!--    </style>-->
+
+<!--    <style name="Button_Style4">-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textColor">@color/p_cool_blue_1</item>-->
+<!--        <item name="android:background">@drawable/button_border4</item>-->
+<!--    </style>-->
+
+<!--    <style name="Button_Style5">-->
+<!--        <item name="android:textSize">15dp</item>-->
+<!--        <item name="android:textColor">@color/p_button_text</item>-->
+<!--        <item name="android:background">@drawable/border_high_impact_3</item>-->
+<!--    </style>-->
+
+    <!-- Button 강조 -->
+    <style name="Button_Style_Point" parent="Button_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@drawable/button_command</item>
+    </style>
+
+    <!-- Button 강조 -->
+    <style name="Button_Style_Point1" parent="Button_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/edit_border_focus</item>
+    </style>
+    <!-- Button 강조 -->
+    <style name="Button_Style_Point2" parent="Button_Style">
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@drawable/border_maritime_bright_4</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="Spinner_Style">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- 수평 구분선 -->
+    <style name="divider_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#403c3d</item>
+    </style>
+
+    <!-- 수직 구분선 -->
+    <style name="divider_v">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#403c3d</item>
+    </style>
+
+    <!-- Calender -->
+<!--    <style name="CalenderViewCustom" parent="Theme.AppCompat">-->
+<!--        <item name="colorAccent">@color/red</item>-->
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:weekNumberColor">@color/red</item>-->
+<!--    </style>-->
+
+<!--    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--    </style>-->
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/red</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+</resources>

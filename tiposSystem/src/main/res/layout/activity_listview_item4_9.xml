@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical" >
+    
+				            <!-- 첫번째 칸 -->
+				            
+				            <LinearLayout android:layout_width="fill_parent"
+				                android:layout_height="fill_parent"				                
+				                android:orientation="vertical" >
+				                <LinearLayout 
+							        android:layout_width="fill_parent"
+							        android:layout_height="wrap_content"					        
+							        android:orientation="horizontal"   
+							         android:background="@drawable/gray_bar_bg_bottom01"
+							         android:paddingTop="2dip"
+							         android:paddingBottom="2dip"
+							        >				            
+							        <TextView android:id="@+id/item1"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.2"	
+							            android:gravity="center"
+							            android:text="대"
+							            
+							        />
+							        <TextView android:id="@+id/item2"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.8"	            				
+							            android:gravity="center"	
+							            android:textSize="12sp"				            
+							            android:text="대명"
+							            
+							        />
+							        <TextView android:id="@+id/item3"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.2"	            				
+							            android:gravity="center"
+							        />
+							        <TextView android:id="@+id/item4"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.8"	            			
+							            android:gravity="center"		
+							            android:textSize="12sp"
+							        />
+							        <TextView android:id="@+id/item5"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.25"
+							            android:gravity="center"
+							        />
+							        <TextView android:id="@+id/item6"
+			            				android:layout_width="0dip"
+							            android:layout_height="fill_parent"
+							            android:layout_weight="0.8"
+							            android:gravity="center"
+							            android:textSize="12sp"
+							        />
+							        </LinearLayout>
+							        
+				                <LinearLayout android:layout_width="fill_parent"
+				                    android:layout_height="fill_parent"
+				                    android:orientation="horizontal">
+				                    
+				                    <TextView android:id="@+id/item7"  
+							            android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="1.2"
+			            				android:textSize="12sp"
+							            android:gravity="bottom|center"   
+							            android:paddingBottom="2dip"
+							            android:text="바코드" />
+				                    <TextView android:id="@+id/item8"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="0.8"
+			            				android:textColor="#6BEC62"		
+			            				android:textSize="14sp"	
+			            				android:textStyle="bold"					           
+							            android:gravity="right|bottom|center_vertical"	
+							            android:paddingRight="10dip"
+							            android:paddingBottom="3dip"						           
+							            android:text="순매출" />
+				                    <TextView android:id="@+id/item9"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="0.8"			            				
+			            				android:textSize="12sp"						           
+			            				style="@style/textTsell_pri_profit"
+							           android:gravity="right|bottom|center_vertical"	
+							            android:paddingRight="7dip"	
+							            android:paddingBottom="3dip"				            
+							            android:text="이익금" />
+				                </LinearLayout>
+				                
+				                 <LinearLayout android:layout_width="fill_parent"
+				                    android:layout_height="25dip"
+				                    android:background="@drawable/gray_bar_bg_bottom"
+				                    android:orientation="horizontal">
+				                    <TextView android:id="@+id/item10"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="1.2"
+			            				android:textSize="13sp"
+			            									           
+							            android:gravity="top|center"			           
+							            android:text="상품명" />
+				                    <TextView android:id="@+id/item11"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="0.8"			            				
+			            				android:textSize="12sp"		
+			            				style="@style/textTsell_pri_basic"				           
+							            android:gravity="right|top|center_vertical"	
+							            android:paddingRight="10dip"
+							            android:paddingTop="3dip"						            
+							            android:text="매출원가" />
+				                    <TextView android:id="@+id/item12"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="0.4"
+			            				android:textSize="12sp"
+							            android:gravity="top|center"	
+							            android:paddingRight="3dip"
+							            android:paddingTop="3dip"						           
+							            android:text="수량" />
+				                    
+							            <TextView android:id="@+id/item13"  
+						                android:layout_height="fill_parent"
+			            				android:layout_width="0dip"
+			            				android:layout_weight="0.4"
+			            				android:textSize="12sp"	
+			            				style="@style/textTsell_pri_Ratio"
+			            				android:gravity="right|top|center_vertical"
+			            				android:textColor="#F15F5F"
+							            android:paddingRight="3dip"
+							            android:paddingTop="3dip"					            
+							            android:text="이익률" />                   	                    
+				                    
+				                </LinearLayout>		
+				                		                
+				            </LinearLayout>
+				            
+				            
+</LinearLayout>

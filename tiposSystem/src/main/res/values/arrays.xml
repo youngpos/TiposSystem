@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="barcodeprint_papersize">
+        <item>30*58</item>
+        <item>23*40</item>
+        <item>사용자정의1</item>
+        <item>사용자정의2</item>
+        <item>사용자정의3</item>
+    </string-array>
+    <string-array name="barcode_print_direction">
+        <item>정방향</item>
+        <item>역방향</item>
+    </string-array>
+    <string-array name="barcode_print_papergubun">
+        <item>GAP용지</item>
+        <item>연속용지</item>
+        <item>BLINE</item>
+    </string-array>
+    <string-array name="barcode_print_fontsize" >
+        <item>16 * 16 FONT</item>
+        <item>24 * 24 FONT</item>
+    </string-array>
+    <string-array name="barcode_print_size" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="barcode_print_bold" >
+        <item>보통</item>
+        <item>진하게</item>
+    </string-array>
+    <string-array name="barcode_print_rota" >
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+    <string-array name="barcode_print_numprint" >
+        <item>미인쇄</item>
+        <item>인쇄</item>
+    </string-array>
+    <string-array name="barcode_print_codetype" >
+        <item>Code39</item>
+        <item>Code128</item>
+        <item>I2OF5</item>
+        <item>Codabar</item>
+        <item>Code93</item>
+        <item>UPC-A</item>
+        <item>UPC E</item>
+        <item>EAN13</item>
+        <item>EAN8</item>
+    </string-array>
+    <string-array name="barcode_print_branch_name">
+        <item>대분류</item>
+        <item>중분류</item>
+        <item>소분류</item>
+    </string-array>
+    <string-array name="barcode_print_add_item">
+        <item>출력일</item>
+        <item>사용자정의</item>
+    </string-array>
+
+</resources>

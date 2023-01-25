@@ -1,0 +1,415 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.ManageSaleMainActivity">
+
+    <!-- Toolbar 추가 -->
+    <include layout="@layout/toolbar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/p_sunrise_back"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal">
+
+            <requestFocus />
+
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:background="@drawable/ic_outline_arrow_left_24"
+                android:onClick="onClickSetDatePrevious"
+                android:scaleX="1"
+                android:scaleY="0.8" />
+
+            <Button
+                android:id="@+id/buttonSetDate"
+                style="@style/Button_Style2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickSetDate"
+                android:text="2013-05-19"
+                android:textSize="20dp" />
+            <!--            android:scaleY="0.8"
+            -->
+            <Button
+                style="@style/Button_Style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:background="@drawable/ic_outline_arrow_right_48"
+                android:onClick="onClickSetDateNext"
+                android:scaleX="1"
+                android:scaleY="0.8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/GridHeadLinear_Style2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <!-- 순매출 / 객수 -->
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="순매출 : "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewRealSales"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:text="객수 :"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewKNumber"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <!-- 전순매출 / 객단가 -->
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="전순매출 : "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewRealSalesYesterday"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#CC723D" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:text="객단가 :"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewKPrice"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <!-- 현금 / 카드 -->
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="현금 : "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewCash"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:text="카드 :"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewCard"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <!-- 외상 / 기타 -->
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="외상 : "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewCredit"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="right"
+                    android:text="기타 :"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textViewOther"
+                    style="@style/TextView_Style2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 1 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <!-- 시간대별 분석 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_twotone_access_time_48"
+                android:onClick="onClickRealSaleTime"
+                android:text="시간별"
+                android:textColor="@color/black"
+                tools:ignore="OnClick" />
+
+            <!-- 거래처별 분석 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_outline_corporate_fare_48"
+                android:onClick="onClickManageCustomers"
+                android:text="거래처별"
+                android:textColor="@color/black" />
+            <!-- 분류별 분석 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_outline_category_48"
+                android:onClick="onClickManageClassification"
+                android:text="분류별"
+                android:textColor="@color/black">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+        <!-- 2 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!-- 상품별분석 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_outline_view_list_48"
+                android:onClick="onClickManageGoods"
+                android:text="상품별"
+                android:textColor="@color/black"
+
+                />
+
+
+            <!-- 매장별 매출 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_twotone_warehouse_48"
+                android:onClick="onClickSalesShop"
+                android:text="매장별"
+                android:textColor="@color/black"
+                tools:ignore="OnClick" />
+
+            <!-- 매출전표 검색 -->
+            <Button
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_baseline_find_in_page_48"
+                android:onClick="onClickRealSaleReceipt"
+                android:text="전표별"
+                android:textColor="@color/black"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+
+
+        <!-- 3 Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 매장별 매출 -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_outline_calendar_month_48"
+                android:onClick="onClickRealSaleCalendar"
+                android:text="기간별"
+                android:textColor="@color/black"
+                tools:ignore="OnClick" />
+
+            <!--  -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_baseline_restart_alt_48"
+                android:onClick="onClickReboot"
+                android:text="재부팅"
+                android:textColor="@color/red" />
+            <!--  -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:text=""
+                android:textColor="@color/black"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

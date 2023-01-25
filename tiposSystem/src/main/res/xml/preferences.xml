@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+  	<PreferenceCategory android:title="@string/searchMedthods_title">
+		<ListPreference android:key="prefSearchMethod"
+			android:entries="@array/searchMethods"
+			android:summary="@string/summary_search_method"
+			android:entryValues="@array/searchMethodValues"
+			android:title="@string/title_search_method"
+			android:defaultValue="@string/search_default_value"
+			android:selectable="true" />
+		<ListPreference android:key="prefProductMethod"
+			android:entries="@array/productMethods"
+			android:summary="@string/summary_product_method"
+			android:entryValues="@array/productMethodValues"
+			android:title="@string/title_product_method"
+			android:defaultValue="@string/product_default_value"
+			android:selectable="true" />
+  		<SwitchPreference android:summary="M3 안드로이드용 PDA를 사용합니다"
+			android:summaryOn="ON" android:key="m3mobile"
+			android:title="M3 Mobile SM10LTE 사용"
+			android:switchTextOn="사용"
+			android:summaryOff="OFF"
+			android:switchTextOff="미사용"
+			android:defaultValue="false"/>
+		<!--2019년2월02일 구매입장을 삭제합니다.-->
+		<!--<SwitchPreference android:summary="신규 매입장기능을 사용합니다."
+			android:summaryOn="ON"
+			android:key="purchase_new"
+			android:title="신규매입장 사용"
+			android:switchTextOn="사용"
+			android:summaryOff="OFF"
+			android:switchTextOff="미사용"
+			android:defaultValue="false"/>-->
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/choosecardyn_title">
+  		<ListPreference android:key="prefSaleViewMethod"
+			android:title="@string/saleViewMethod"
+			android:summary="@string/title_saleView_method"
+			android:entryValues="@array/ChooseCardYnValues"
+			android:entries="@array/CardYnType"
+			android:defaultValue="@string/saleView_default_Value" />
+	</PreferenceCategory>
+</PreferenceScreen>

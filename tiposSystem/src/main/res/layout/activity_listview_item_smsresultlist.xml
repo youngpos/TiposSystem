@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"	
+    android:orientation="horizontal" >
+	
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"   >
+        
+        <RadioButton
+            android:id="@+id/radioButtonSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:focusable="false" android:clickable="false" />
+
+</LinearLayout>
+    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.4"
+        android:orientation="vertical"  >
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   >        
+    
+	    <TextView
+	        android:id="@+id/item1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"     
+	        android:gravity="center"   
+	        android:textColor="#ffffff"
+	        android:text="전표번호" />
+		
+	    <TextView
+	        android:id="@+id/item2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"	        
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:text="발송자" />	
+		
+	    <TextView
+	        android:id="@+id/item3"
+	       android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:gravity="center"	        
+	        android:textColor="#ffffff"
+	        android:text="전송폰" />
+  
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  >
+    
+	    <TextView
+	        android:id="@+id/item4"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"     
+	        android:gravity="center"  
+	        android:textSize="12sp"
+	        android:textColor="#ffffff" 
+	        android:text="전송시간" />
+		
+	    <TextView
+	        android:id="@+id/item5"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:gravity="center"
+	        android:textSize="12sp"
+	        android:textColor="#ffffff"
+	        android:text="발송 | 성공/실패 " />	
+	        		
+	    <TextView
+	        android:id="@+id/item6"
+	       android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:gravity="center"
+	        android:textSize="12sp"
+	        android:textColor="#ffffff"
+	        android:text="전송결과" />
+  
+    </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+        
+</LinearLayout>

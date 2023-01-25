@@ -1,0 +1,16 @@
+kr.co.tipos.tips.tiposSystem-design-26.1.0-0 C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\res
+kr.co.tipos.tips.tiposSystem-support-media-compat-26.1.0-1 C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\res
+kr.co.tipos.tips.tiposSystem-transition-26.1.0-2 C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\res
+kr.co.tipos.tips.tiposSystem-appcompat-v7-26.1.0-3 C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\res
+kr.co.tipos.tips.tiposSystem-support-compat-26.1.0-4 C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\res
+kr.co.tipos.tips.tiposSystem-recyclerview-v7-26.1.0-5 C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\res
+kr.co.tipos.tips.tiposSystem-constraint-layout-1.1.3-6 C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\res
+kr.co.tipos.tips.tiposSystem-pngs-7 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\generated\res\pngs\debug
+kr.co.tipos.tips.tiposSystem-resValues-8 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\generated\res\resValues\debug
+kr.co.tipos.tips.tiposSystem-rs-9 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\generated\res\rs\debug
+kr.co.tipos.tips.tiposSystem-mergeDebugResources-10 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+kr.co.tipos.tips.tiposSystem-mergeDebugResources-11 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+kr.co.tipos.tips.tiposSystem-merged_res-12 D:\TIPS\poson_app\TiposSystem\tiposSystem\build\intermediates\merged_res\debug
+kr.co.tipos.tips.tiposSystem-debug-13 D:\TIPS\poson_app\TiposSystem\tiposSystem\src\debug\res
+kr.co.tipos.tips.tiposSystem-main-14 D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\res
+kr.co.tipos.tips.tiposSystem-packaged_res-15 D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\packaged_res\debug

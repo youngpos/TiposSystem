@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/p_sunrise_head">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/toolbar_home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/home_button" />
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/toolbar_left_linearlayout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/toolbar_home_icon"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="@drawable/home_button"&ndash;&gt;-->
+        <!--&lt;!&ndash;                />&ndash;&gt;-->
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/toolbar_left_icon"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="@drawable/button_border"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:visibility="gone"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:src="@drawable/ic_baseline_arrow_back_48"&ndash;&gt;-->
+        <!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+        <!--        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/toolbar_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:text="My Application"
+            android:textColor="@color/p_sunriae_text"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+<!--        <Button-->
+<!--            android:id="@+id/toolbar_setting_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:drawableLeft="@drawable/config_button">-->
+
+<!--        </Button>-->
+
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/toolbar_image_test"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_toEndOf="@+id/toolbar_title_text"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:src="@drawable/ic_baseline_home_48"-->
+        <!--            >-->
+        <!--        </ImageButton>-->
+
+        <ImageView
+            android:id="@+id/toolbar_config_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/config_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26"
+            android:text="행사명"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextEventName"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.26"
+            android:text="행사구분"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spinnerEventType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/event_type"
+            android:gravity="left"
+            android:prompt="@string/choose_event_type"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:text="행사기간"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSetDate1"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate1"
+            android:text="2013-05-19"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextView_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="~"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/buttonSetDate2"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate2"
+            android:text="2013-05-19"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editTextBarcode"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:ems="13"
+            android:hint="바코드"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="40"
+            android:nextFocusDown="@id/editTextProductName"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            style="@style/EditText_Style2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="25"
+            android:hint="상품명"
+            android:lines="1"
+            android:maxLength="25"
+            android:nextFocusDown="@id/editTextAmount"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/buttonBarcode"
+            style="@style/Button_Style_Point"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="onBarcodeSearch"
+            android:text="검색" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.77"
+            android:gravity="center"
+            android:nextFocusDown="@+id/editTextPurchasePrice"
+            android:text="매입가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextPurchasePrice"
+            style="@style/EditText_Style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right"
+            android:hint="매입가"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0100FF"
+            android:textCursorDrawable="@null" />
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="판매가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/editTextSalePrice"
+            style="@style/EditText_Style2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right"
+            android:hint="판매가"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FF0000"
+            android:textCursorDrawable="@null" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/SubHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:paddingLeft="3dp"
+            android:text="행사매입가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="11sp" />
+
+        <TextView
+            style="@style/SubHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:paddingLeft="3dp"
+            android:text="행사판매가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            style="@style/EditText_Style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.2"
+            android:gravity="right"
+            android:hint="행사매입가"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="10"
+            android:nextFocusDown="@+id/editTextProfitRatio"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0100FF"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/editTextProfitRatio"
+            style="@style/EditText_Style2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1.2"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="행사판매가"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FF0000"
+            android:textCursorDrawable="@null" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonRegist"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.75"
+            android:text="등록" />
+        <!--            android:background="@drawable/register_btn"
+        -->
+        <Button
+            android:id="@+id/buttonModify"
+            style="@style/Button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:onClick="OnClickModify"
+            android:scaleY="0.75"
+            android:text="수정"
+            android:visibility="gone" />
+        <!--            android:background="@drawable/change_btn"
+        -->
+        <Button
+            android:id="@+id/buttonRenew"
+            style="@style/Button_Style_Point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:scaleY="0.75"
+            android:text="새로입력" />
+        <!--            android:background="@drawable/replace_btn"
+        -->
+        <Button
+            android:id="@+id/buttonDelete"
+            style="@style/Button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:scaleY="0.75"
+            android:text="삭제"
+            android:visibility="gone" />
+        <!--            android:background="@drawable/purchase_delete_btn"
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--        android:background="@drawable/tap_bar_bg"
+        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="행사 상세 상품 목록"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Header -->
+    <!-- Grid Header -->
+    <!-- 1단:30dp,2단:55dp,3단:75dp -->
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/GridHeadLinear_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/GridHeadText_Style"
+            android:layout_width="110dp"
+            android:layout_height="fill_parent"
+            android:text="바코드" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="상품명" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/GridHeadText_Style"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="행사매입가" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/GridHeadText_Style"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="행사판매가" />
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listviewReadyToSendEventList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

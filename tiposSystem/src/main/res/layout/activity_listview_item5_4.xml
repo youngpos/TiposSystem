@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|center_vertical" >
+
+        <!-- 바코드 -->
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="item1" />
+
+        <!-- 상품명 -->
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="item2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:gravity="center|center_vertical" >
+
+        <!-- 매입가 -->
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="item3" />
+        <!-- 판매가 -->
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="item4" />
+    </LinearLayout>
+
+    <!-- 수량 -->
+
+    <TextView
+        android:id="@+id/item5"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center|center_vertical"
+        android:text="item5" />
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/u_activity_back"
+    tools:context=".ManageSMSserverActivity"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"                 
+        android:background="@drawable/tap_bar_bg">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:text="문자 전송 결과"
+            android:paddingLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="vertical"  >
+        <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+         <Button
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.25"
+             android:scaleX="0.8"
+             android:scaleY="0.8"
+             android:background="@drawable/arrowbox_01"
+             android:onClick="onClickSetDatePrevious" />
+         
+         <Button
+             android:id="@+id/buttonSetDate"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="18sp"
+             android:scaleY="0.8"
+             android:text="2013-05-19"
+             android:onClick="onClickSetDate" />
+         
+         <Button
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.25"
+             android:scaleX="0.8"
+             android:scaleY="0.8"
+             android:background="@drawable/arrowbox_02"
+             android:onClick="onClickSetDateNext" />
+     
+    </LinearLayout>
+        
+		
+        <LinearLayout android:layout_width="match_parent"
+		    android:layout_height="40dip"
+            android:orientation="horizontal" >
+
+            <Spinner
+	            android:id="@+id/spinner_sms_gubun"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"	     
+				android:entries="@array/sms_gubun"      
+	            android:layout_weight="0.5" />
+
+            <EditText
+                android:id="@+id/editText_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" />
+            
+            <Spinner
+	            android:id="@+id/spinner_sms_results"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"	     
+				android:entries="@array/sms_results"      
+	            android:layout_weight="0.5" />
+		        
+		</LinearLayout>
+        
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새로입력" 
+            android:onClick="onClickReNew"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"            
+            android:textAppearance="?android:attr/textAppearanceSmall"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tap_bar_bg">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="전송 결과 목록"
+            android:paddingLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_topbar_bg">
+
+        <TextView
+	        android:id="@+id/item1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.25"
+	        android:textColor="#ffffff"
+	        android:text="선택"  />
+    
+	    <TextView
+	        android:id="@+id/item2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"     
+	        android:gravity="center"   
+	        android:textColor="#ffffff"
+	        android:text="전표번호" />
+		
+	    <TextView
+	        android:id="@+id/item3"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:text="발송자" />	
+		
+	    <TextView
+	        android:id="@+id/item4"
+	       android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:text="전송폰" />
+  
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_topbar_bg">
+
+        <TextView
+	        android:id="@+id/item1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.25"
+	        android:text=""  />
+    
+	    <TextView
+	        android:id="@+id/item2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"     
+	        android:gravity="center"  
+	        android:textColor="#ffffff" 
+	        android:textSize="12sp"
+	        android:text="전송시간" />
+		
+	    <TextView
+	        android:id="@+id/item3"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.7"
+	        android:gravity="center"
+	        android:textSize="12sp"
+	        android:textColor="#ffffff"
+	        android:text="발송| 성공/실패" />	
+		
+	    <TextView
+	        android:id="@+id/item4"
+	       android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:gravity="center"
+	        android:textSize="12sp"
+	        android:textColor="#ffffff"
+	        android:text="전송결과" />
+  
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView_smsresultList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:gravity="right" 
+        android:background="@android:color/darker_gray">    
+        
+        <Button
+            android:id="@+id/button_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_gravity="right"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_basic"
+            android:text="재전송" />
+        
+    </LinearLayout>
+
+</LinearLayout>

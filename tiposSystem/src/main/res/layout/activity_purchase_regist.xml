@@ -1,0 +1,742 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/u_activity_back"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PurchaseRegistActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+		<CheckBox
+            android:id="@+id/checkboxPurDataFix"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"  />
+		
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:gravity="center"
+            android:text="매입일"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonSetDate1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate1"
+            android:text="2013-05-19"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="28dip"
+        android:orientation="horizontal" >
+
+        <!-- <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="거래처"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" /> -->
+        
+        <CheckBox
+            android:id="@+id/checkboxOfiiceFix"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"  />
+
+        <EditText
+            android:id="@+id/editTextCustomerCode"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="5"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextCustomerName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:lines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/search_btn"
+            android:onClick="onCustomerSearch" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="18dip"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkboxCustomer"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="거래처"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        
+        <CheckBox
+            android:id="@+id/checkboxPurPri"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="매입가"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkboxSellPri"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="판매가"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <!-- <CheckBox
+            android:id="@+id/checkboxProductName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상품명"
+            android:textColor="#ffffff"
+            android:textSize="14sp" /> -->
+
+        <TextView
+            android:id="@+id/textViewGoodsGubun"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/white_text_box_small_02"
+            android:gravity="center"
+            android:text="일반"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editTextBarcode"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="바코드"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="14"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
+
+            <requestFocus />
+
+            <EditText
+                android:id="@+id/editTextProductName"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.9"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="상품명"
+                android:inputType="text"
+                android:lines="1"
+                android:nextFocusDown="@id/editTextPurchasePrice"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonBarcode"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_btn"
+                android:onClick="onBarcodeSearch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="매입가"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextPurchasePrice"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:nextFocusDown="@id/editTextSalePrice"
+                android:padding="3dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#0100FF" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="판매가"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextSalePrice"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="8"
+                android:gravity="right"
+                android:inputType="number"
+                android:lines="1"
+                android:nextFocusDown="@id/editTextProfitRatio"
+                android:padding="3dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="원  가"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextPurchaseCost"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:nextFocusDown="@id/editTextSalePrice"
+                android:padding="3dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="이익률"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextProfitRatio"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="4"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:lines="1"
+                android:nextFocusForward="@id/editTextAmount"
+                android:padding="3dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBoxTaxProduct"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="부가세\n포  함"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editTextAddTax"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:enabled="false"
+                android:gravity="right"
+                android:padding="3dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="수   량"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:ems="3"
+                android:gravity="center"
+                android:inputType="number"
+                android:lines="1"
+                android:nextFocusDown="@id/checkBoxRejectedProduct"
+                android:selectAllOnFocus="true"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxRejectedProduct"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="반품"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/basic_inquiry_btn"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/buttonRenew"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/replace_btn"
+            android:scaleY="0.8" />
+
+        <!--
+            <CheckBox android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/checkAllDelete"           
+           android:text="전체삭제"/>  -->
+
+        <Button
+            android:id="@+id/buttonSave"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/purchase_save_btn"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/buttonScan"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text="스캔"
+            android:background="@drawable/btn_basic"
+            android:scaleY="0.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/SubHeadLinear_Style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/tap_bar_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="전송대기 목록"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Header -->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"   >
+            
+            
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="매입일"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            
+            <LinearLayout android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+                
+                <TextView
+                android:id="@+id/item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="코드"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+                
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="거래처명"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+                
+                
+                
+            </LinearLayout>
+
+            
+
+            <!--
+                 <TextView
+                android:id="@+id/item2"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="매입가"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            -->
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="수량"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item4"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="총매입가"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:id="@+id/header2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="거래처명"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            
+                 <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="판매가"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+           
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="이익률"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bar_bg"
+                android:gravity="center"
+                android:text="총판매가"
+                android:textColor="#d7d7d7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout> -->
+        <!-- List Divider -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <!-- ListView (grid_items) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/listviewReadyToSendList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <!-- <CheckBox
+            android:id="@+id/checkBoxImmediatePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:text="즉시\n결제"
+            android:textColor="#0f0f0f"
+            android:textSize="12sp" /> -->
+
+		<Button            
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text="전체전송"
+            android:background="@drawable/btn_basic"
+            android:onClick="sendAlltempData"
+            android:scaleY="0.8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" 총매입가 : "
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textviewTPurPri"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10dip"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" 원"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

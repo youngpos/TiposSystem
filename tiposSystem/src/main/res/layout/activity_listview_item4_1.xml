@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal" >
+    
+    <!-- 바코드 -->
+    <TextView android:id="@+id/item1"
+        android:layout_height="fill_parent"
+        android:layout_width="110dp"
+        android:gravity="center"
+    />
+    <!-- 2 -->
+    <TextView android:id="@+id/item2"
+        android:layout_height="fill_parent"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+    />
+    <!-- 3 -->
+    <TextView android:id="@+id/item3"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+    />
+    <!-- 4 -->
+    <TextView android:id="@+id/item4"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+    />
+</LinearLayout>

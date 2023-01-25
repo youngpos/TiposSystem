@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/u_activity_back"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dip">
+
+        <EditText
+            android:id="@+id/editBarcode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="13"
+            android:hint="바코드"
+            android:inputType="text"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:nextFocusDown="@id/text_gname"
+            android:selectAllOnFocus="true"
+            android:singleLine="true">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="검색"
+            android:onClick="getImageUrl"   />
+        
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:layout_marginTop="8dip">
+        
+        <EditText android:id="@+id/text_gname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginLeft="5dip"
+            android:ems="25"
+            android:hint="상품명"
+            android:lines="1"
+            android:maxLength="25"
+            android:padding="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp" />
+
+            />
+        
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dip"   
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal">
+
+        <!-- <WebView
+            android:id="@+id/webviewImage"
+            android:layout_width="250dip"
+            android:layout_height="250dip"
+            android:background="#ffffff"
+            android:ems="10"          
+            android:textColor="#000000" />      -->
+            
+            <ImageView android:id="@+id/viewImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:ems="10"          
+            android:textColor="#000000"
+                />
+        
+    </LinearLayout>
+    
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"  >
+        
+        <Button android:id="@+id/btnCameraOn" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="사진촬영"
+            android:enabled="false"
+            />
+        
+        
+        <Button android:id="@+id/btnRePick" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"      
+            android:text="다시찍기"
+            android:enabled="false"
+            />
+        
+        <Button android:id="@+id/btnImageUpload" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="업로드"
+            android:enabled="false"
+            />
+     </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal"  >
+        
+        <Button android:id="@+id/btnRenew" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="새로입력"            
+            />
+        
+
+        <Button android:id="@+id/btnFolderSearch" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="저장폴더"            
+            />        
+        
+    </LinearLayout>
+    
+</LinearLayout>
+

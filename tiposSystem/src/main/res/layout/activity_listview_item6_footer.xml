@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    
+    <!-- 구분선 -->
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="1dip"
+        android:layout_marginTop="5dip"     
+        android:background="@drawable/dot_line"   
+        android:layout_marginRight="15dip"    
+        android:layout_marginBottom="10dip"         
+        />
+      <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="면세합 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_commissiontaxN"
+             android:textColor="#000000"   
+             android:text="0"                       
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+      <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="과세합 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_commissiontaxtY"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+      
+      <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="부가세 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissiontax"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"             
+             />
+     </LinearLayout>
+      
+      
+     <!-- 구분선 -->
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="1dip"
+        android:layout_marginTop="5dip"     
+        android:background="@drawable/dot_line"   
+        android:layout_marginRight="15dip"    
+        android:layout_marginBottom="10dip"         
+        />
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="합    계 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissionselltotal"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/linear_commissionDC"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="할    인 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_commissionDC"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+          android:id="@+id/linear_commissionRec"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="외    상 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissionDec"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="현    금 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissioncash"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="카    드 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissioncard"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         android:id="@+id/list_commissionjacard"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="마트카드 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissionjacard"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         android:id="@+id/list_commissionsucard"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="수 카 드 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissionsucard"
+             android:textColor="#000000"
+             android:text="0"
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     
+     <!-- 구분선 -->
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="1dip"
+        android:layout_marginTop="5dip"     
+        android:background="@drawable/dot_line"   
+        android:layout_marginRight="15dip"    
+        android:layout_marginBottom="10dip"         
+        />
+     
+
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView_member_list"
+          android:orientation="vertical">
+          
+       
+      <!-- 회원정보 -->
+      <!-- 구분선 -->
+       <TextView android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"           	        
+	        android:paddingTop="5dip"
+	        android:gravity="center"
+	         android:textColor="#000000"
+            android:text="[ 회 원 정 보 ]"            	                       
+	       />	     
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="1dip"        
+        android:background="@drawable/dot_line"   
+        android:layout_marginRight="15dip"    
+        android:layout_marginBottom="10dip"
+        />
+          
+    
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="회원번호 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_commissionmembercode"
+             android:textColor="#000000"
+             
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.6"
+               android:textColor="#000000"
+             android:text="회원성명 : " />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.5"             
+             android:id="@+id/text_commissionmembername"
+             android:textColor="#000000" />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2" />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip" >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="회원등급 : " />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_commissionmembergrade"
+             android:textColor="#000000" />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2" />
+     </LinearLayout>
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip" >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="이전포인트 : " />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_memberbeforpoint"
+             android:textColor="#000000"  />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2" />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip" >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="발생포인트 : " />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_memberpointplus"
+             android:textColor="#000000" />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"  />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"  >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="사용포인트 : "  />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"             
+             android:id="@+id/text_memberpointuse"
+             android:textColor="#000000"             
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"             
+             />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dip"
+         >
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_weight="0.8"
+               android:textColor="#000000"
+             android:text="가용포인트 : "
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:gravity="right"
+             android:layout_weight="0.3"
+             
+             android:id="@+id/text_memberafterpoint"
+             android:textColor="#000000"
+             
+             />
+         <TextView android:layout_width="0dip"
+             android:layout_height="fill_parent"             
+             android:layout_gravity="right"
+             android:layout_weight="0.2"
+             
+             />
+     </LinearLayout>
+     
+     <!-- 구분선 -->
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="2dip"
+        android:layout_marginTop="5dip"     
+        android:background="@drawable/dot_line"   
+        android:layout_marginRight="15dip"    
+        android:layout_marginBottom="10dip"
+        />
+          
+      </LinearLayout>
+      
+      
+      <!-- 카드정보 불러오기  -->
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical" />
+		</LinearLayout>
+
+</LinearLayout>

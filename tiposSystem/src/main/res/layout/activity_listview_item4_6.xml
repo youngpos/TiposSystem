@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal" >    
+    <!-- 매출관리\상품별매출분석 리스트 화면 -->
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"   
+        android:orientation="vertical"     
+        >
+	    <TextView android:id="@+id/item1"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"	                 
+           android:textSize="12sp"	             
+	    />
+	    <!-- 상품명 -->
+	    <TextView android:id="@+id/item2"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:textStyle="bold"	        
+	    />
+    </LinearLayout>    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"       
+        android:orientation="vertical"   
+        >
+    	<!-- 평균판매가 -->
+	    <TextView android:id="@+id/item3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"	
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="5dp"        
+	    />
+	    <!-- 평균 매입가 -->
+	    <TextView android:id="@+id/item4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="5dp"
+	    />    
+    </LinearLayout>    
+	<LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"          
+        >
+    	<!-- 판매수량 -->
+	    <TextView android:id="@+id/item5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"	
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="5dp"        
+	    />
+	    <!-- 순매출 -->
+	    <TextView android:id="@+id/item6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:textStyle="bold"
+	        android:paddingRight="5dp"
+	    />    
+    </LinearLayout>    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"  
+        android:orientation="vertical"      
+        >
+    	<!-- 매출원가 -->
+	    <TextView android:id="@+id/item7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"	
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="5dp"        
+	    />
+	    <!-- 이익률 -->
+	    <TextView android:id="@+id/item8"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="5dp"
+	    />    
+    </LinearLayout>    	
+</LinearLayout>

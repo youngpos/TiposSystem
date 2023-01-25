@@ -1,0 +1,780 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	style="@style/MainLinear_Style"
+    tools:context=".ChargeCustomerDetailActivity"
+ >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="@color/p_sunrise_back"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+         
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:textSize="14sp"
+            android:text="날짜"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewPeriod1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"            
+            android:background="@drawable/white_text_box_small"
+            android:textSize="14sp"
+            />
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"
+            android:text="~"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:id="@+id/textViewPeriod2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="2015-04-20"
+            android:background="@drawable/white_text_box_small"
+            android:textSize="14sp"
+             />
+	        
+	</LinearLayout>
+        
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="14sp"
+            android:text="거래처명 : "
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        
+         <TextView
+             android:id="@+id/textViewCustomerCode"
+             android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="14sp"
+             android:text="xxxxxx "
+             android:layout_marginLeft="5dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+         <TextView
+             android:id="@+id/textViewCustomerName"
+             android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+             android:text="xxxxxx "
+             android:layout_marginLeft="5dip"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+         
+         
+    </LinearLayout>    
+    
+    
+    
+    
+    </LinearLayout>
+	    
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"	    
+	    android:orientation="vertical"  >
+	    
+	    <LinearLayout
+            android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp" >
+                 
+            <TextView android:id="@+id/item1"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="판매"
+	        />
+	        <TextView android:id="@+id/item2"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="반품"
+	        />
+	        <TextView android:id="@+id/item3"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="할인"
+	        />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content1"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000"
+	        />
+	        <TextView android:id="@+id/content2"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000"
+	        />
+	        <TextView android:id="@+id/content3"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView android:id="@+id/item4"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="순매출"
+	        />
+	        <TextView android:id="@+id/item5"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="과세매출"
+	        />
+	        <TextView android:id="@+id/item6"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="면세매출"
+	        />
+	</LinearLayout>
+	
+        <LinearLayout
+            android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content4"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content5"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content6"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+ 
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView android:id="@+id/item7"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현금매출"
+	        />
+	        <TextView android:id="@+id/item8"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현금과세"
+	        />
+	        <TextView android:id="@+id/item9"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현금면세"
+	        />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content7"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content8"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content9"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+	
+        
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView android:id="@+id/item10"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="카드매출"
+	        />
+	        <TextView android:id="@+id/item11"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="카드과세"
+	        />
+	        <TextView android:id="@+id/item12"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="카드면세"
+	        />
+	</LinearLayout>
+	
+        <LinearLayout
+            android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content10"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#F15F5F"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content11"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content12"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+
+        
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView android:id="@+id/item13"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현영매출"
+	        />
+	        <TextView android:id="@+id/item14"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현영과세"
+	        />
+	        <TextView android:id="@+id/item15"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현영면세"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content13"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content14"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content15"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="13sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="마트카드금액"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="마트_현영"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="수_현영"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content25"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content26"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content27"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="수카드금액"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="매장수수료"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="카드수수료"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content16"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content17"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content18"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="포인트"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="캐쉬백"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="현금영수공제액"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content19"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content20"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content21"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#FF85FF"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dip">
+                 
+            <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#B1DB4E"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="공제금액"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#B1DB4E"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="공제후지급금"
+	        />
+	        <TextView
+                android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#d7d7d7"
+	            android:textStyle="bold"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:background="@drawable/gray_bar_bg"
+	            android:text="점유율"
+	        />
+	</LinearLayout>
+	    
+	    
+	    
+	    
+	    <LinearLayout
+            android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       	android:layout_marginTop="2dip" >
+                 
+            <TextView android:id="@+id/content22"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#B1DB4E"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content23"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+   				android:textColor="#B1DB4E"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	        <TextView android:id="@+id/content24"
+	            android:layout_height="fill_parent"
+   				android:layout_width="0dip"
+   				android:layout_weight="1"
+	            android:textSize="14sp"
+	            android:gravity="center"
+	            android:text="000,000,000"
+	        />
+	</LinearLayout>
+	    
+	</LinearLayout>
+	
+	
+	
+</LinearLayout>

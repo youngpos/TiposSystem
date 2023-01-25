@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/u_activity_back"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"	    
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+	    
+        <EditText
+	        android:id="@+id/editTextMessageCode"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	        
+	        android:layout_weight="0.5"
+	        android:ems="5"
+	        android:hint="번호"
+	        android:maxLength="5"
+	        android:singleLine="true"
+	        android:inputType="number"
+	        android:textSize="14sp" />
+        
+        <EditText
+	        android:id="@+id/editTextMessageComment"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:ems="25"
+	        android:hint="메세지 내용"
+	        android:maxLength="25"
+	        android:inputType="text"
+	        android:singleLine="true"
+	        android:textSize="14sp" />        
+    </LinearLayout>
+        
+    <!-- 버튼들 -->
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	    android:orientation="horizontal" >
+        
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"    
+            android:id="@+id/button_smssend"                
+            android:text="선택안됨"  
+            android:onClick="sendReciver"                   
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:scaleY="0.8"
+	        android:layout_marginLeft="40dp"
+	        android:onClick="onClickMessageRenew"
+	        android:background="@drawable/replace_btn" />
+	        
+	    <Button
+	        android:id="@+id/buttonMessageSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleY="0.8"	        
+	        android:layout_marginLeft="15dp"
+	        android:background="@drawable/basic_inquiry_btn" />
+	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tap_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="메세지 함"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+             />
+	
+	</LinearLayout>
+	
+    <!-- Header -->
+    <LinearLayout android:id="@+id/header"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        >
+        <TextView android:id="@+id/item1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+			android:gravity="center"
+			android:textColor="#d7d7d7"
+			android:textStyle="bold"
+			android:textSize="14sp"
+			android:background="@drawable/gray_bar_bg"
+            android:text="번호"
+        />        
+        
+        <TextView android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+			android:textColor="#d7d7d7"
+			android:textStyle="bold"
+			android:textSize="14sp"
+			android:background="@drawable/gray_bar_bg"
+            android:text="내용"
+        />        
+    </LinearLayout>
+	
+ 	<View android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />	 	
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"  >
+       
+        <ListView android:id="@+id/listviewMessageList"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent" >
+        </ListView>
+        
+    </LinearLayout>
+        
+</LinearLayout>

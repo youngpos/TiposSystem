@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tipsystem.tips.CustomerProductDetailViewActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="기간"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewPeriod1"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="~"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewPeriod2"
+            style="@style/EditText_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="거래처명 : "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewCustomerCode"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.6"
+            android:text="xxxxxx " />
+
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:text="xxxxxx " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="순매출 : " />
+
+            <TextView
+                android:id="@+id/textViewNetSale"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:text="000,000,000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_marginText"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="이익금 : " />
+
+            <TextView
+                android:id="@+id/textViewMargin"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:text="000,000,000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_profitsText"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="이익률 : " />
+
+            <TextView
+                android:id="@+id/textViewProfits"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:text="000,000,000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_shareText"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="점유율 : " />
+
+            <TextView
+                android:id="@+id/textViewShare"
+                style="@style/TextView_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:text="000,000,000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- GRID-->
+    <!-- 서브 헤드라인 -->
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SubHeadText_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상품별 매출현황" />
+
+    </LinearLayout>
+
+
+    <!-- grid header 세로 리니어레이아웃 -->
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/GridHeadLinear_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <View style="@style/divider_v" />
+
+        <!-- 1 Col -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item1"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="바코드" />
+
+            <View style="@style/divider_h" />
+
+            <TextView
+                android:id="@+id/item2"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="상품명"
+                />
+        </LinearLayout>
+
+        <View style="@style/divider_v" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item3"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="수량"/>
+
+            <View style="@style/divider_h" />
+
+            <TextView
+                android:id="@+id/item4"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="순매출"/>
+        </LinearLayout>
+
+        <View style="@style/divider_v" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item5"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="이익금" />
+
+            <View style="@style/divider_h" />
+
+            <TextView
+                android:id="@+id/item6"
+                style="@style/GridHeadText_Style"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="이익률" />
+        </LinearLayout>
+
+        <View style="@style/divider_v" />
+
+
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/listviewCustomerProductDetailViewList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:focusable="false"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.SaleMessageRegistActivity">
+    <!-- 타이틀 -->
+    <LinearLayout
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_cool_blue_4"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            style="@style/SubHeadText_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="세부 정보"/>
+
+    </LinearLayout>
+
+    <!-- 바코드 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="바코드"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/barcode_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=""
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:gravity="left"
+            android:background="@drawable/listview_item_border"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!-- 상품명 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상품명"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/g_name_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:background="@drawable/listview_item_border"
+            />
+    </LinearLayout>
+
+    <!-- 표시명 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="표시명"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/m_name_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:background="@drawable/listview_item_border"
+            />
+    </LinearLayout>
+
+    <!-- 매입가/판매가 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="판매단가"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EditText_Style"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textColor="#E78B92"
+                android:textStyle="bold"
+                android:id="@+id/sell_pri_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border"
+                android:cursorVisible="true"
+                android:ems="3"
+                android:gravity="right"
+                android:lines="1"
+                android:selectAllOnFocus="true"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!-- 등록일/등록자 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="등록일"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/write_date_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@drawable/listview_item_border"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="등록자"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/writer_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@drawable/listview_item_border"
+            />
+    </LinearLayout>
+
+    <!-- 수정일/수정자 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수정일"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/edit_date_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@drawable/listview_item_border"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수정자"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/editor_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@drawable/listview_item_border"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/Button_Style_Point"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="저장"
+            android:textSize="14dp"
+            />
+        <Button
+            style="@style/Button_Style_Point2"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="닫기"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"   
+					         android:background="@drawable/gray_bar_bg_bottom01"
+					         android:paddingTop="2dip"
+					         android:paddingBottom="2dip"
+					        >				            
+					        <TextView android:id="@+id/item1"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.2"	
+					            android:gravity="center"
+					            android:text="대"
+					            
+					        />
+					        <TextView android:id="@+id/item2"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.8"	            				
+					            android:gravity="center"	
+					            android:textSize="12sp"				            
+					            android:text="대명"
+					            
+					        />
+					        <TextView android:id="@+id/item3"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.2"	            				
+					            android:gravity="center"
+					        />
+					        <TextView android:id="@+id/item4"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.8"	            			
+					            android:gravity="center"		
+					            android:textSize="12sp"
+					        />
+					        <TextView android:id="@+id/item5"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.25"
+					            android:gravity="center"
+					        />
+					        <TextView android:id="@+id/item6"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.8"
+					            android:gravity="center"
+					            android:textSize="12sp"
+					        />
+					        </LinearLayout>
+					        				         
+				        <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"
+					        android:paddingTop="3dip"					         
+					        >
+						    <TextView android:id="@+id/item7"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.8"
+					            android:gravity="right|center_vertical"
+					            android:paddingRight="5dip"					            
+					            style="@style/textTsell_pri"
+					            android:text="순매출  "
+					        />
+						    <TextView android:id="@+id/item8"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"					            
+					            android:layout_weight="0.6"
+					           android:gravity="right|center_vertical"
+					            android:paddingRight="5dip"					            
+					            android:text="현금"
+					        />
+						    <TextView android:id="@+id/item9"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.6"
+					            android:gravity="right|center_vertical"
+					            android:paddingRight="5dip"					            
+					             style="@style/textTsell_pri_profit"
+					            android:text="이익금"
+					        />
+						    <TextView android:id="@+id/item10"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.5"
+					            android:paddingRight="5dp"
+					            android:gravity="center"
+					            android:text="점유율"
+					        />
+						    </LinearLayout>
+                    
+				        <LinearLayout 
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"					        
+					        android:orientation="horizontal"
+					        android:background="@drawable/gray_bar_bg_bottom"					        
+					         android:paddingBottom="3dip"
+					        >
+						    <TextView android:id="@+id/item11"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.8"
+					            android:gravity="right|center_vertical"
+					            android:paddingRight="2dip"					            
+					             style="@style/textTsell_pri_basic"
+					            android:text="매출원가"
+					            					            
+					        />
+						    <TextView android:id="@+id/item12"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"					            
+					            android:layout_weight="0.6"
+					            android:gravity="right|center_vertical"
+					            android:paddingRight="5dip"
+					            
+					            android:text="카드"
+					            
+					        />
+						    <TextView android:id="@+id/item13"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.6"
+					            android:gravity="right|center_vertical"
+					            android:paddingRight="5dip"
+					            
+					            android:text="이익률"
+					            
+					        />
+						    <TextView android:id="@+id/item14"
+	            				android:layout_width="0dip"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="0.5"
+					           android:gravity="right|center_vertical"
+					            android:paddingRight="15dip"
+					            
+					            		            
+					        />
+						    </LinearLayout>
+                      
+    </LinearLayout>
+    
+</LinearLayout>

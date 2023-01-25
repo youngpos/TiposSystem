@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_custom"
+            android:checked="true"
+            android:textColor="#000000"
+            android:text="진행중인 행사만 보기"
+            android:textSize="14sp" />
+
+        <Button
+            style="@style/Button_Style_Point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:onClick="onNewEvent"
+            android:scaleY="0.75"
+            android:text="행사등록" />
+        <!--	        android:background="@drawable/replace_btn"
+        -->
+    </LinearLayout>
+
+    <!-- grid header 리니어레이아웃 -->
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/GridHeadLinear_Style"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="행사명" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="구분" />
+
+        <View style="@style/divider_v" />
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/GridHeadText_Style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="기간" />
+
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/header"
+        android:background="?android:attr/listDivider" />
+
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header">
+
+        <ListView
+            android:id="@+id/listviewManageProductList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

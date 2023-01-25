@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <TextView android:id="@+id/item1"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"        
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item2"
+        android:layout_height="fill_parent"
+        android:layout_width="110dp"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item3"
+        android:layout_height="fill_parent"
+        android:layout_width="110dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item4"
+        android:layout_height="fill_parent"
+        android:layout_width="75dp"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item5"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item6"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item7"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item8"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item9"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item10"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item11"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+    <TextView android:id="@+id/item12"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"
+    />
+    <TextView android:id="@+id/item13"
+        android:layout_height="fill_parent"
+        android:layout_width="75dip"    
+		android:gravity="center"
+    />
+   
+</LinearLayout>

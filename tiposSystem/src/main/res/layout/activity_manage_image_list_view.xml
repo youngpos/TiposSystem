@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kr.co.tipos.tips.ManageImageListView" 
+    android:orientation="vertical">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" 
+        android:layout_marginBottom="5dip">
+
+       <ImageView android:id="@+id/image_popupgeView"
+	  		android:layout_width="match_parent"
+	  		android:layout_height="match_parent"
+	  		android:background="#FFFFFF"
+	  		android:padding="3px"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2" 
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_allSelect"
+           android:layout_width="0dip"           
+           android:layout_height="match_parent"
+           android:layout_weight="1"           
+           android:text="전체 선택"  />
+        
+        <Button android:id="@+id/btn_selectFalse"
+           android:layout_width="0dip"           
+           android:layout_height="match_parent"
+           android:layout_weight="0.8"           
+           android:text="선택해제"  />
+        
+       <Button android:id="@+id/btn_selectDelete"
+            android:layout_width="0dip"           
+           android:layout_height="match_parent"
+           android:layout_weight="0.5"           
+           android:text="삭제"  />
+    </LinearLayout>
+    
+    
+    <!-- <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        
+        <GridView android:id="@+id/imgGridView"
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent" 
+  		android:numColumns="auto_fit"
+  		android:verticalSpacing="5dp"
+  		android:horizontalSpacing="5dp"
+  		android:columnWidth="96dp"
+  		android:stretchMode="columnWidth"
+  		android:gravity="center"/>
+        
+    </LinearLayout> -->
+    
+     <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        
+         <ListView android:id="@+id/imgListView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="3dp" >
+             
+         </ListView>             
+    </LinearLayout>
+    
+    
+    
+    
+</LinearLayout>

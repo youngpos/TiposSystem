@@ -1,0 +1,646 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tipsystem.tips.SalesNewsActivity">
+
+    <!-- 매장별 매출시 매장정보 추가 -->
+    <LinearLayout
+        android:id="@+id/linearLayoutShop"
+        style="@style/SubHeadLinear_Style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textviewStoCd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="매장코드"
+            android:textColor="@android:color/white"></TextView>
+
+        <TextView
+            android:id="@+id/textviewStoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="매장명"
+            android:textColor="@android:color/white"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/p_sunrise_back"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <requestFocus />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:background="@drawable/arrowbox_01"
+            android:onClick="onClickSetDatePrevious"
+            android:scaleX="1"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/buttonSetDate"
+            style="@style/Button_Style_Gray"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSetDate"
+            android:text="2013-05-19"
+            android:textSize="20dp" />
+        <!--            android:scaleY="0.8"
+        -->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:background="@drawable/arrowbox_02"
+            android:onClick="onClickSetDateNext"
+            android:scaleX="1"
+            android:scaleY="0.8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="순매출 : "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewRealSales"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right"
+            android:text="객수 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewKNumber"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="전순매출 : "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewRealSalesYesterday"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#CC723D" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right"
+            android:text="객단가 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewKPrice"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="현금 : "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewCash"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.58"
+            android:gravity="right"
+            android:text="카드 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewCard"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="외상 : "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewCredit"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right"
+            android:text="기타 :"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewOther"
+            style="@style/TextView_Style"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/tabhostSalesNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/p_cool_blue_4">
+
+            </TabWidget>
+            <!--android:background="@drawable/tap_bar_bg"-->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Tab1-->
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- grid header -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- 첫번째 칸 -->
+                            <TextView
+                                android:id="@+id/item1"
+                                style="@style/GridHeadText_Style"
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="0.1"
+                                android:gravity="center"
+                                android:text="시간" />
+                            <!--                                android:textColor="#d7d7d7"
+                            -->
+                            <View style="@style/divider_v" />
+
+                            <LinearLayout
+                                android:layout_width="0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/item2"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center"
+                                        android:text="순매출" />
+                                    <!-- android:textColor="#6BEC62"-->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item3"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center"
+                                        android:text="객수" />
+                                    <!--android:textColor="#D5D5D5"-->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item4"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.5"
+                                        android:text="객단가" />
+                                    <!--                                        android:textColor="#D5D5D5"-->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item5"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.4"
+                                        android:text="이익금" />
+                                    <!--                                        android:textColor="#FF7171"-->
+
+                                </LinearLayout>
+
+                                <View style="@style/divider_h" />
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/item6"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.45"
+                                        android:text="전순매출" />
+                                    <!--                                        android:textColor="#CC723D"
+                                    -->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item7"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.3"
+                                        android:text="전일객수" />
+                                    <!--                                        android:textColor="#D5D5D5"
+                                    -->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item8"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.5"
+                                        android:text="전일객단가" />
+                                    <!--                                        android:textColor="#D5D5D5"
+                                    -->
+                                    <View style="@style/divider_v" />
+
+                                    <TextView
+                                        android:id="@+id/item10"
+                                        style="@style/GridHeadText_Style"
+                                        android:layout_width="0dip"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0.4"
+                                        android:text="대비차액" />
+                                    <!--                                        android:textColor="#6799FF"
+                                    -->
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <ListView
+                            android:id="@+id/listviewSalesNewsListTab1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"></ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Tab2-->
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- grid header -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item15"
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:text="거래처코드" />
+                        <!--                android:textColor="#d7d7d7"
+                        -->
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="거래처명" />
+                        <!--                android:textColor="#d7d7d7"
+                        -->
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:text="순매출" />
+                        <!--                android:textColor="#d7d7d7"
+                        -->
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="80dp"
+                            android:layout_height="fill_parent"
+                            android:text="이익금" />
+                        <!--                android:textColor="#d7d7d7"
+                        -->
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <ListView
+                            android:id="@+id/listviewSalesNewsListTab2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"></ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Tab3-->
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinnerClassificationType1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:prompt="@string/choose_classification_type"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerClassificationType2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:prompt="@string/choose_classification_type"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerClassificationType3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:prompt="@string/choose_classification_type"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <!-- grid header -->
+                    <LinearLayout
+                        style="@style/GridHeadLinear_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item9"
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="순번" />
+                        <!--                android:textColor="#d7d7d7"
+                        -->
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="분류명" />
+
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            android:id="@+id/item11"
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="순매출" />
+
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            android:id="@+id/item12"
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="수량" />
+
+                        <View style="@style/divider_v" />
+
+                        <TextView
+                            android:id="@+id/item13"
+                            style="@style/GridHeadText_Style"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="이익금" />
+
+                    </LinearLayout>
+
+                    <!-- List Divider -->
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="?android:attr/listDivider" />
+
+                    <!-- ListView (grid_items) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <ListView
+                            android:id="@+id/listviewSalesNewsListTab3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"></ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

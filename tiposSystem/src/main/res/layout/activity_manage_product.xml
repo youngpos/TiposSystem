@@ -1,0 +1,460 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/u_activity_back"
+    tools:context=".ManageProductActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+       
+         <EditText
+             android:id="@+id/editTextBarcode"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="number"
+             android:lines="1"
+             android:nextFocusDown="@id/editTextProductName"
+             android:singleLine="true"
+             android:hint="바코드"
+             android:textSize="14sp" />
+         
+         <requestFocus />
+         <EditText
+             android:id="@+id/editTextProductName"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:lines="1"
+             android:nextFocusDown="@id/editTextCustomerCode"
+             android:singleLine="true"
+             android:hint="상품명"
+             android:textSize="12sp" />
+         
+          <Button
+	        android:id="@+id/buttonBarcode"
+	        android:layout_width="28dp"
+	        android:layout_height="28dp"
+	        android:layout_marginLeft="5dp"
+	        android:background="@drawable/search_btn"
+	        android:onClick="onBarcodeSearch" />       
+             
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+          
+         <EditText
+             android:id="@+id/editTextCustomerCode"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="number"
+             android:lines="1"
+             android:nextFocusDown="@id/editTextCustomerName"
+             android:singleLine="true"
+             android:hint="거래처코드"
+             android:textSize="14sp" />
+        
+         <EditText
+             android:id="@+id/editTextCustomerName"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_weight="1"
+             android:ems="10"
+             android:lines="1"
+             android:nextFocusDown="@+id/editTextStandard"
+             android:singleLine="true"
+             android:hint="거래처명"
+             android:textSize="12sp" />
+         
+          <Button
+              android:layout_width="28dp"
+	        android:layout_height="28dp"
+	        android:layout_marginLeft="5dp"
+	        android:background="@drawable/search_btn"
+            android:onClick="onCustomerSearch" />
+    
+    </LinearLayout>
+    
+     <Button
+             android:id="@+id/buttonChooseShowyn"
+             android:layout_width="fill_parent"
+             android:layout_height="30dip"
+             android:textSize="12sp"
+             android:text="추가검색(분류/구분/그룹/판매가/매입가)  ▼"             
+              />
+     
+ <LinearLayout android:id="@+id/linearlayoutChooseYn"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"     
+     >
+     
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+	        
+            android:text="분류 "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />        
+        
+         <Button
+	        android:id="@+id/buttonClassificationType1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"
+	        android:layout_marginLeft="5dp"
+            android:onClick="onClassification1" />
+         
+         <Button
+	        android:id="@+id/buttonClassificationType2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"
+	        android:layout_marginLeft="5dp"
+            android:onClick="onClassification2" />
+         
+         <Button
+	        android:id="@+id/buttonClassificationType3"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"
+	        android:layout_marginLeft="5dp"
+            android:onClick="onClassification3" />
+    </LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="구분"
+            android:textAppearance="?android:attr/textAppearanceSmall"            
+            android:textSize="14sp" />
+        
+        <Spinner
+            android:id="@+id/spinnerGubunType"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/gubun_type"
+            android:prompt="@string/choose_gubun_type"
+            />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="사용"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+        <Spinner
+            android:id="@+id/spinnerGoodsType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/good_use"
+            android:prompt="@string/choose_goods_use" />
+        
+        <TextView            
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="그룹"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />        
+        <Spinner
+            android:id="@+id/spinnerGroupType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/group_type"
+            android:prompt="@string/choose_group_type" />    
+    </LinearLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.77"
+            android:text="매입가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        <EditText
+            android:id="@+id/editTextPurchasePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:ems="10"
+            android:inputType="number"
+            android:lines="1"
+            android:nextFocusDown="@+id/editTextPurchasePriceOriginal"
+            android:singleLine="true"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.77"
+            android:text="판매가"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextSalesPrice"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:lines="1"
+            android:nextFocusDown="@id/editTextProfitRatio"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    
+    </LinearLayout>
+   
+</LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal" >
+        	
+        <Button
+	        android:id="@+id/buttonProductRegist"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	
+	        android:scaleY="0.8"        
+	        android:scaleX="1"
+	        android:background="@drawable/register_btn" />  
+	        
+        <Button
+	        android:id="@+id/buttonProductRenew"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleY="0.8"        
+	        android:scaleX="1"
+	        
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/replace_btn" />
+        
+        <Button
+	        android:id="@+id/buttonProductSearch"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleY="0.8"        
+	        android:scaleX="1"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/search_btn" />        
+	
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/tap_bar_bg"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="상품목록"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+	
+	</LinearLayout>
+	
+    <!-- Header -->
+    <LinearLayout android:id="@+id/header"
+        
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            >
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                >
+               <TextView android:id="@+id/item1"
+                   	android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"		            		            
+		            android:text="바 코 드"
+		            android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            android:gravity="center"
+		            android:background="@drawable/gray_bar_bg"
+		        />
+		        <TextView android:id="@+id/item2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="상 품 명"
+					android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            android:gravity="center"
+		            android:background="@drawable/gray_bar_bg"
+		        /> 		        
+		        <TextView android:id="@+id/item3"
+		           android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"		            
+		            android:text="거 래 처"
+					android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            android:gravity="center"		           
+		            android:background="@drawable/gray_bar_bg"
+		        /> 
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+               <TextView android:id="@+id/item4"
+		           android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="매입가"
+		            style="@style/textpur_pri"		            		            
+		            android:background="@drawable/gray_bar_bg"
+		        />
+		        <TextView android:id="@+id/item5"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="판매가"		            
+		            style="@style/textsell_pri"		           	           
+		            android:background="@drawable/gray_bar_bg"
+		        /> 
+		        <TextView android:id="@+id/item6"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="행사가"
+		            android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            style="@style/textevent_sell"	           
+		            android:background="@drawable/gray_bar_bg"
+		        /> 
+            </LinearLayout>
+                
+		    <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                >
+		        <TextView android:id="@+id/item7"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="이익률"
+		            style="@style/text_ratio"			            
+		            android:background="@drawable/gray_bar_bg"
+		        />
+		        <TextView android:id="@+id/item8"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="면과세"
+		            android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            android:gravity="center"		            
+		            android:background="@drawable/gray_bar_bg"
+		        /> 
+		        <TextView
+		            android:id="@+id/item9"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="재고"		            
+		            android:textColor="#d7d7d7"
+		            android:textStyle="bold"
+		            android:textSize="14sp"
+		            android:gravity="center"
+		            android:background="@drawable/gray_bar_bg"
+		        /> 
+		    </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <!-- List Divider -->
+    <View android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+ 
+    <!-- ListView (grid_items) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView android:id="@+id/listviewProductList"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+        </ListView>
+    </LinearLayout>
+
+    
+</LinearLayout>
