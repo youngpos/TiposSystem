@@ -2435,8 +2435,14 @@ public class ManageProductActivityModfiy extends Activity {
 
 		// 상품명으로 포커스 이동하자
 		///???
-		m_textProductName.setInputType(145); //
-		//m_textProductName.setPrivateImeOptions("defaultInputmode=korean;");
+		//m_textProductName.setInputType(145); //
+		m_textProductName.setPrivateImeOptions("defaultInputmode=korean;");
+		/* 2023.02.01.
+		*  자체바코드 버튼 이후 상품명에서 한글키보드 안나오고 영문키보드 나오는 에러
+		* 왜 기존 정상처리에 주석 처리 했는지 알 수 없음
+		* 일단 주석해제해서 정성처리 함
+		* 추후 검토
+		* */
 		m_textProductName.requestFocus();
 
 		upu.hideSoftKeyboard(false);
