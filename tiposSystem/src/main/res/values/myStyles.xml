@@ -9,6 +9,20 @@
     </style>
 
     <!-- 헤드 영역 -->
+    <style name="HeadLinear_Style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">1dp</item> <!--위 여백 -->
+        <item name="android:layout_marginBottom">1dp</item> <!-- 아래 여백 -->
+        <item name="android:padding">1dp</item> <!--안 여백 -->
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="ItemLinear_Style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">1dp</item> <!--위 여백 -->
+        <item name="android:layout_marginBottom">1dp</item> <!-- 아래 여백 -->
+        <item name="android:padding">1dp</item> <!--안 여백 -->
+        <item name="android:gravity">center</item>
+    </style>
 
     <!-- 서브헤드 영역 -->
     <style name="SubHeadLinear_Style">
@@ -35,6 +49,7 @@
         <item name="android:layout_marginBottom">0dp</item> <!-- 아래 여백 -->
         <!--        <item name="android:orientation">vertical</item>-->
     </style>
+
     <!-- my design -->
     <style name="GridHeadLinear_Style2">
         <item name="android:background">@drawable/head_border2</item>
@@ -89,7 +104,7 @@
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/p_edit_text</item>
         <item name="android:background">@drawable/edit_border</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">left</item>
     </style>
     <!-- EditText2(강조) -->
@@ -98,7 +113,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/p_edit_text</item>
         <item name="android:background">@drawable/edit_border_focus</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">left</item>
     </style>
 

@@ -2117,14 +2117,14 @@
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/p_edit_text</item>
         <item name="android:background">@drawable/edit_border</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">left</item>
     </style><style name="EditText_Style2">
         <item name="android:textSize">15dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/p_edit_text</item>
         <item name="android:background">@drawable/edit_border_focus</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">left</item>
     </style><style name="Button_Style">
         <item name="android:textSize">14dp</item>
@@ -2166,6 +2166,18 @@
         <item name="android:textColorPrimary">@color/black</item>
     </style><style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/blue</item>
+    </style><style name="HeadLinear_Style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">1dp</item> 
+        <item name="android:layout_marginBottom">1dp</item> 
+        <item name="android:padding">1dp</item> 
+        <item name="android:gravity">center</item>
+    </style><style name="ItemLinear_Style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">1dp</item> 
+        <item name="android:layout_marginBottom">1dp</item> 
+        <item name="android:padding">1dp</item> 
+        <item name="android:gravity">center</item>
     </style></file><file path="D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">포스온관리</string><string name="action_settings">설정</string><string name="action_sususettings">공제옵션설정</string><string name="barcodeprint_historylist">바코드발행 목록</string><string name="title_activity_config_detail">매장설정</string><string name="title_activity_config_sppl3000">SPP-L3000 Setting</string><string name="ConfigDetailTitle">XXX 마트 환경설정</string><string name="save">저장</string><string name="sales_news">매출속보</string><string name="title_activity_input_question">문의게시판</string><string name="login_infomation1">[아이디]-[비밀번호]는 TIPS 관리프로그램 </string><string name="login_infomation2">[기본관리]-[사원관리]에서 확인 하실 수 있습니다. </string><string name="autologin">자동 로그인</string><string name="setting_phonenumber">휴대폰 번호</string><string name="setting_phonenumber_1">현재기기의 전화번호는 : </string><string name="setting_name">매장정보</string><string name="setting_name_1">관리 매장 관련 및 버전 정보 표시</string><string name="setting_posnumber">휴대폰 고유 번호</string><string name="setting_posnumber_1">기기의 고유 번호를 지정합니다.</string><string name="setting_barcodeprint">바코드 프린터 설정</string><string name="setting_barcodeprint_1">프린터 종류를 선택합니다.</string><string name="setting_autologin">자동로그인</string><string name="setting_autologin_1">프로그램 시작 시 자동 로그인</string><string name="setting_autologin_id">아이디</string><string name="setting_autologin_pw">패스워드</string><string name="setting_kisvan">카드사 정보설정</string><string name="setting_kisvan_1">키스정보통신 카드정보를 입력합니다.</string><string name="setting_database">데이타베이스 삭제</string><string name="setting_database_1">데이타를 삭제하고 테이블을 새로 생성합니다.</string><string name="setting_database_button">삭제</string><string name="setting_keypad_type">바코드 입력 키패드</string><string name="setting_keypad_type_desc">바코드 문자 입력 허용시 문자키패드로 설정합니다.</string><string-array name="keypad_type">
         <item>숫자키패드</item>
         <item>문자키패드</item>

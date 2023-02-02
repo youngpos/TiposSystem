@@ -3,11 +3,12 @@
     style="@style/MainLinear_Style"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tipsystem.tips.ManageProductActivity">
+    tools:context="tipsystem.tips.ManageProductActivityModfiy">
 
     <!--    &lt;!&ndash; ToolBar Set &ndash;&gt;-->
     <!--    <include layout="@layout/toolbar" />-->
 
+    <!--region 헤더 리니어-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,12 +81,14 @@
             android:layout_weight="0.8"
             android:text="새로입력" />
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 1줄 바코드,상품명 -->
     <LinearLayout
         android:id="@+id/linearLayoutTitle"
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="horizontal">
@@ -119,13 +122,13 @@
             android:background="@drawable/edit_border"
             android:ems="25"
             android:hint="상품명"
+            android:inputType="text"
             android:lines="1"
             android:maxLength="25"
             android:nextFocusDown="@id/editTextCustomerCode"
             android:selectAllOnFocus="true"
             android:singleLine="true"
-            android:textCursorDrawable="@null"
-            android:inputType="text"/>
+            android:textCursorDrawable="@null" />
 
         <Button
             android:id="@+id/buttonBarcode"
@@ -137,11 +140,13 @@
             android:onClick="onBarcodeSearch"
             android:text="검색" />
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 2줄 거래처코드,거래처명-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <EditText
@@ -187,11 +192,58 @@
             android:onClick="onCustomerSearch"
             android:text="검색" />
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 분류-->
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="분   류"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/buttonClassificationType1"
+            style="@style/Button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="onClassification1"
+            android:text="대분류" />
+
+        <Button
+            android:id="@+id/buttonClassificationType2"
+            style="@style/Button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="onClassification2"
+            android:text="중분류" />
+
+        <Button
+            android:id="@+id/buttonClassificationType3"
+            style="@style/Button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:onClick="onClassification3"
+            android:text="소분류" />
+    </LinearLayout>
+    <!--endregion-->
+
+    <!--region 3줄 규격,입수 -->
+    <LinearLayout
+        style="@style/ItemLinear_Style"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -214,7 +266,6 @@
             android:lines="1"
             android:maxLength="10"
             android:nextFocusDown="@id/editTextPurchasePrice"
-            android:padding="5dp"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
@@ -242,7 +293,6 @@
             android:inputType="number"
             android:lines="1"
             android:maxLength="3"
-            android:padding="5dp"
             android:selectAllOnFocus="true"
             android:singleLine="true" />
 
@@ -250,7 +300,7 @@
             android:id="@+id/buttonAcquire"
             style="@style/Button_Style"
             android:layout_width="0dp"
-            android:layout_height="28dp"
+            android:layout_height="24dp"
             android:layout_marginLeft="5dp"
             android:layout_weight="0.4"
             android:clickable="false"
@@ -259,11 +309,13 @@
             android:gravity="center"
             android:text="등록" />
     </LinearLayout>
+    <!--endregion-->
 
+    <!--<editor-fold desc="4줄 매입가,판매가">-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:orientation="horizontal">
 
         <TextView
@@ -290,7 +342,6 @@
             android:lines="1"
             android:maxLength="12"
             android:nextFocusDown="@+id/editTextSalesPrice"
-            android:padding="2dip"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
@@ -318,17 +369,18 @@
             android:inputType="number"
             android:lines="1"
             android:maxLength="10"
-            android:padding="2dip"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
 
     </LinearLayout>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="5줄 부가세, 재고">-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:orientation="horizontal">
 
         <TextView
@@ -373,17 +425,18 @@
             android:imeOptions="actionDone"
             android:inputType="numberDecimal"
             android:lines="1"
-            android:padding="5dp"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
 
     </LinearLayout>
+    <!--</editor-fold>-->
 
+    <!--<editor-fold desc="6줄 부가세 재고">-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:orientation="horizontal">
 
         <TextView
@@ -403,15 +456,15 @@
             android:layout_weight="1.2"
             android:background="@drawable/edit_border"
             android:ems="10"
-            android:gravity="right"
-            android:padding="2dp" />
+            android:gravity="right" />
 
         <CheckBox
             android:id="@+id/checkbox_purpritaxgubun"
             android:layout_width="0dip"
-            android:layout_height="match_parent"
+            android:layout_height="25dp"
             android:layout_weight="0.5"
             android:button="@drawable/checkbox_custom"
+
             android:checked="true" />
 
         <TextView
@@ -434,11 +487,13 @@
             android:gravity="right"
             android:imeOptions="actionDone" />
     </LinearLayout>
+    <!--</editor-fold>-->
 
+    <!--region 7줄 행매가, 행판가-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
         android:orientation="horizontal">
 
         <TextView
@@ -460,8 +515,7 @@
             android:background="@drawable/edit_border"
             android:focusable="false"
             android:gravity="right"
-            android:hint="행사매입가"
-            android:padding="5dip" />
+            android:hint="행사매입가" />
 
         <TextView
             style="@style/TextView_Style"
@@ -481,15 +535,16 @@
             android:background="@drawable/edit_border"
             android:focusable="false"
             android:gravity="right"
-            android:hint="행사판매가"
-            android:padding="5dip" />
+            android:hint="행사판매가" />
 
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 8줄 시작일, 종료일-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -511,8 +566,7 @@
             android:background="@drawable/edit_border"
             android:focusable="false"
             android:gravity="right"
-            android:hint="행사시작일"
-            android:padding="5dip" />
+            android:hint="행사시작일" />
 
         <TextView
             style="@style/TextView_Style"
@@ -532,15 +586,16 @@
             android:background="@drawable/edit_border"
             android:focusable="false"
             android:gravity="right"
-            android:hint="행사종료일"
-            android:padding="5dip" />
+            android:hint="행사종료일" />
 
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 9줄 A,B,C-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -614,20 +669,19 @@
             android:inputType="number"
             android:lines="1"
             android:maxLength="10"
-            android:padding="5dp"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
 
     </LinearLayout>
+    <!--endregion-->
 
-
+    <!--region 10줄 이익률-->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
-
 
         <TextView
             style="@style/TextView_Style"
@@ -705,19 +759,22 @@
 
 
     </LinearLayout>
+    <!--endregion-->
 
+    <!--region 11줄 권장소비자가-->
     <!-- 2022.05.26. 권장소비자가 추가 -->
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="35dp"
+        android:layout_margin="0dp"
         android:orientation="horizontal">
 
         <TextView
             style="@style/TextView_Style"
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="0.77"
+            android:layout_weight="0.7"
             android:gravity="center"
             android:text="권장소비자가"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -726,8 +783,8 @@
             android:id="@+id/editTextSell_Pri1"
             style="@style/EditText_Style2"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_height="24dp"
+            android:layout_weight="0.5"
             android:background="@drawable/edit_border"
             android:ems="10"
             android:gravity="right|center_vertical"
@@ -736,78 +793,25 @@
             android:inputType="number"
             android:lines="1"
             android:maxLength="10"
-            android:padding="2dip"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textCursorDrawable="@null" />
 
-        <TextView
-            style="@style/TextView_Style"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility="invisible"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="2dp"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/TextView_Style"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:gravity="center"
-            android:text="분   류"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
-
-        <Button
-            android:id="@+id/buttonClassificationType1"
-            style="@style/Button_Style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:onClick="onClassification1"
-            android:text="대분류" />
-
-        <Button
-            android:id="@+id/buttonClassificationType2"
-            style="@style/Button_Style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:onClick="onClassification2"
-            android:text="중분류" />
-
-        <Button
-            android:id="@+id/buttonClassificationType3"
-            style="@style/Button_Style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:onClick="onClassification3"
-            android:text="소분류" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginTop="2dp"
-        android:orientation="horizontal">
+<!--        <TextView-->
+<!--            style="@style/TextView_Style"-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+<!--            android:visibility="invisible" />-->
 
         <TextView
             style="@style/TextView_Style"
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
+            android:layout_weight="0.3"
             android:gravity="center"
             android:text="과세"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -815,8 +819,8 @@
         <Spinner
             android:id="@+id/spinnerTaxationType"
             android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             android:entries="@array/taxation_type_reg"
             android:prompt="@string/choose_taxation_type" />
 
@@ -824,7 +828,7 @@
             style="@style/TextView_Style"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
+            android:layout_weight="0.3"
             android:gravity="center"
             android:text="사용"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -832,33 +836,79 @@
         <Spinner
             android:id="@+id/spinnerGoodsUse"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             android:entries="@array/good_use_reg"
             android:prompt="@string/choose_goods_use" />
 
-        <!--<TextView
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:gravity="center"
-            android:text="그룹"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#ffffff"
-            android:textSize="14sp" />
-
-        <Spinner
-            android:id="@+id/spinnerGroupType"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:prompt="@string/choose_group_type" />-->
     </LinearLayout>
+    <!--endregion-->
+
+<!--    &lt;!&ndash;region 과세,사용&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            style="@style/TextView_Style"-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:gravity="center"-->
+<!--            android:text="과세"-->
+<!--            android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerTaxationType"-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:entries="@array/taxation_type_reg"-->
+<!--            android:prompt="@string/choose_taxation_type" />-->
+
+<!--        <TextView-->
+<!--            style="@style/TextView_Style"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:gravity="center"-->
+<!--            android:text="사용"-->
+<!--            android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerGoodsUse"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:entries="@array/good_use_reg"-->
+<!--            android:prompt="@string/choose_goods_use" />-->
+
+<!--        &lt;!&ndash;<TextView-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:gravity="center"-->
+<!--            android:text="그룹"-->
+<!--            android:textAppearance="?android:attr/textAppearanceSmall"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerGroupType"-->
+<!--            android:layout_width="0dip"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:prompt="@string/choose_group_type" />&ndash;&gt;-->
+<!--    </LinearLayout>-->
+<!--    &lt;!&ndash;endregion&ndash;&gt;-->
 
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginTop="2dp"
+        android:layout_margin="0dp"
         android:orientation="horizontal">
 
         <TextView
@@ -898,16 +948,17 @@
 
 
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginTop="2dp"
+        android:layout_margin="0dp"
         android:orientation="horizontal">
 
         <TextView
             style="@style/TextView_Style"
             android:layout_width="0dip"
             android:layout_height="match_parent"
-            android:layout_weight="0.8"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="단위"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -925,7 +976,7 @@
             style="@style/TextView_Style"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.8"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="내용량"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -934,8 +985,8 @@
             android:id="@+id/editTextCon_Rate"
             style="@style/EditText_Style"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_height="24dp"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
             android:imeOptions="actionNext"
@@ -950,7 +1001,7 @@
             style="@style/TextView_Style"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.8"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="표시단위"
             android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -959,8 +1010,8 @@
             android:id="@+id/editTextStd_Rate"
             style="@style/EditText_Style"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_height="24dp"
+            android:layout_weight="1"
             android:ems="10"
             android:gravity="right"
             android:imeOptions="actionNext"
@@ -974,9 +1025,10 @@
 
 
     <LinearLayout
+        style="@style/ItemLinear_Style"
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
         android:orientation="horizontal">
 
         <TextView

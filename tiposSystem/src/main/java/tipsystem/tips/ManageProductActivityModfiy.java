@@ -66,11 +66,13 @@ import tipsystem.utils.UserPublicUtils;
  * 기본관리 -> 상품관리
  * */
 public class ManageProductActivityModfiy extends Activity {
+
+	//region 멤버 정의
 	private static final int ZBAR_SCANNER_REQUEST = 0;
 	// private static final int ZBAR_QR_SCANNER_REQUEST = 1;
 	private static final int BARCODE_MANAGER_REQUEST = 2;
 	private static final int CUSTOMER_MANAGER_REQUEST = 3;
-    private static final int CUSTOMER_BOXPRODUCT_REQUEST = 4;
+	private static final int CUSTOMER_BOXPRODUCT_REQUEST = 4;
 
 	// 2017-04 m3mobile
 	private static final String SCANNER_ACTION_SETTING_CHANGE = "com.android.server.scannerservice.settingchange";
@@ -145,11 +147,11 @@ public class ManageProductActivityModfiy extends Activity {
 	Spinner m_spinGoodsType; // 18.상품구분
 	EditText m_textEditDate; // 19.수정일
 	EditText m_textEditModified; // 20.수정자
-	
+
 	//2018-02-20 도매단가 추가하기
 	EditText m_textASell_Pri; // 21.도매A단가
 	EditText m_textADifferentRatio; // 22. 도매A이익률
-	EditText m_textBSell_Pri; //23. 도매B단가	
+	EditText m_textBSell_Pri; //23. 도매B단가
 	EditText m_textBDifferentRatio; // 24. 도매B이익률
 	EditText m_textCSell_Pri; // 25.도매C단가
 	EditText m_textCDifferentRatio; // 26. 도매C이익률
@@ -202,20 +204,23 @@ public class ManageProductActivityModfiy extends Activity {
 	 * // loading more in listview int currentVisibleItemCount; private boolean
 	 * isEnd = false; private OnScrollListener customScrollListener = new
 	 * OnScrollListener() {
-	 * 
+	 *
 	 * @Override public void onScroll(AbsListView view, int firstVisibleItem,
 	 * int visibleItemCount, int totalItemCount) {
-	 * 
+	 *
 	 * currentVisibleItemCount = visibleItemCount;
-	 * 
+	 *
 	 * if((firstVisibleItem + visibleItemCount) == totalItemCount &&
 	 * firstVisibleItem != 0) isEnd = true; else isEnd = false; }
-	 * 
+	 *
 	 * @Override public void onScrollStateChanged(AbsListView view, int
 	 * scrollState) { if (isEnd && currentVisibleItemCount > 0 && scrollState ==
 	 * OnScrollListener.SCROLL_STATE_IDLE) { doSearch(); } } };
 	 */
+	//endregion
 
+	//region Activity onCreate
+	// 액티비티가 생성될 때 호출되며 사용자 인터페이스 초기화에 사용됨.
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -286,9 +291,9 @@ public class ManageProductActivityModfiy extends Activity {
 		m_registButton = (Button) findViewById(R.id.buttonProductRegist); // 등록버튼
 		m_registButton.setText("등록");
 		m_registButton.setTag("reg");
-		
-		
-		
+
+
+
 		Button renewButton = (Button) findViewById(R.id.buttonProductRenew); // 초기화버튼
 		m_modfiyButton = (Button) findViewById(R.id.buttonProductModify); // 가격비교버튼
 		m_recoveryButton = (Button) findViewById(R.id.buttonProductRecovery); // 복구버튼
@@ -339,7 +344,7 @@ public class ManageProductActivityModfiy extends Activity {
 		m_barcode = getIntent().getStringExtra("barcode"); // 넘어온바코드
 		productReg_YN = getIntent().getStringExtra("productRegYN");
 		mGubun = getIntent().getStringExtra("Gubun");		//출처구분  -상품//매입
-		String officeCode = getIntent().getStringExtra("officeCode"); // 오피스코드 
+		String officeCode = getIntent().getStringExtra("officeCode"); // 오피스코드
 		String officeName = getIntent().getStringExtra("officeName"); // 오피스명
 		Log.d("오피스 정보", officeCode+" "+officeName);
 
@@ -355,8 +360,8 @@ public class ManageProductActivityModfiy extends Activity {
 
 		m_textProductName = (EditText) findViewById(R.id.editTextProductName); // 상품명
 		m_textCustomerCode = (EditText) findViewById(R.id.editTextCustomerCode); // 거래처코드
-		m_textCustomerName = (EditText) findViewById(R.id.editTextCustomerName); // 거래처명		
-				
+		m_textCustomerName = (EditText) findViewById(R.id.editTextCustomerName); // 거래처명
+
 		m_buttonbarcode = (Button) findViewById(R.id.buttonBarcode); // 바코드검색버튼
 
 		m_textStandard = (EditText) findViewById(R.id.editTextStandard); // 규격
@@ -380,8 +385,8 @@ public class ManageProductActivityModfiy extends Activity {
 		 * 2014-12-18 부가세 별도 포함 옵션 추가
 		 */
 		m_checkboxPurPrivatGubun = (CheckBox) findViewById(R.id.checkbox_purpritaxgubun); // 부가세
-																							// 포함,별도
-																							// 선택
+		// 포함,별도
+		// 선택
 		m_checkboxPurPrivatGubun.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
 			@Override
@@ -391,7 +396,7 @@ public class ManageProductActivityModfiy extends Activity {
 					m_tempProduct.put("VAT_CHK", "1");
 				}else{
 					m_tempProduct.put("VAT_CHK", "0");
-				}				
+				}
 			}
 		});
 
@@ -404,7 +409,7 @@ public class ManageProductActivityModfiy extends Activity {
 		m_textSalesPrice.setNextFocusDownId(R.id.editTextDifferentRatio); //이익률로 포커스 이동한다
 		m_textDifferentRatio = (EditText) findViewById(R.id.editTextDifferentRatio); // 이익률
 		m_textDifferentRatio.setNextFocusDownId(R.id.editTextASell_Pri); //이익률로 포커스 이동한다
-		
+
 		//2018-02-20 도매단가 추가하기
 		m_textASell_Pri = (EditText)findViewById(R.id.editTextASell_Pri);
 		m_textADifferentRatio = (EditText)findViewById(R.id.editTextADifferentRatio);
@@ -419,7 +424,7 @@ public class ManageProductActivityModfiy extends Activity {
 		m_textASell_Pri.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			// @Override
 			public void onFocusChange(View v, boolean hasFocus) {
-				if (!hasFocus) {					
+				if (!hasFocus) {
 					setChangeBackGroundColor(0, m_textASell_Pri);
 					m_tempProduct.put("Sell_APri", m_textASell_Pri.getText().toString().replace(",", ""));
 					updateFormView(ccp.calculateDomeSellPriBySellPrice(m_tempProduct, 0));
@@ -440,7 +445,7 @@ public class ManageProductActivityModfiy extends Activity {
 		m_textStartEventDate = (EditText)findViewById(R.id.editTextEventStartDate);
 		m_textEndEventDate = (EditText)findViewById(R.id.editTextEventEndDate);
 
-		
+
 		// 이익률 변경시 -> 매입가 + 이익률로 판매가
 		m_textADifferentRatio.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			@Override
@@ -457,14 +462,14 @@ public class ManageProductActivityModfiy extends Activity {
 				}
 			}
 		});
-		
-		
-		
+
+
+
 		// 판매가 변경시 -> 매입가 + 판매가로 이익률
 		m_textBSell_Pri.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			// @Override
 			public void onFocusChange(View v, boolean hasFocus) {
-				if (!hasFocus) {					
+				if (!hasFocus) {
 					setChangeBackGroundColor(0, m_textBSell_Pri);
 					m_tempProduct.put("Sell_BPri", m_textBSell_Pri.getText().toString().replace(",", ""));
 					updateFormView(ccp.calculateDomeSellPriBySellPrice(m_tempProduct, 1));
@@ -475,8 +480,8 @@ public class ManageProductActivityModfiy extends Activity {
 				}
 			}
 		});
-		
-		
+
+
 		// 이익률 변경시 -> 매입가 + 이익률로 판매가
 		m_textBDifferentRatio.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			@Override
@@ -493,15 +498,15 @@ public class ManageProductActivityModfiy extends Activity {
 				}
 			}
 		});
-		
-		
-		
-		
+
+
+
+
 		// 판매가 변경시 -> 매입가 + 판매가로 이익률
 		m_textCSell_Pri.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			// @Override
 			public void onFocusChange(View v, boolean hasFocus) {
-				if (!hasFocus) {					
+				if (!hasFocus) {
 					setChangeBackGroundColor(0, m_textCSell_Pri);
 					m_tempProduct.put("Sell_CPri", m_textCSell_Pri.getText().toString().replace(",", ""));
 					updateFormView(ccp.calculateDomeSellPriBySellPrice(m_tempProduct, 2));
@@ -512,8 +517,8 @@ public class ManageProductActivityModfiy extends Activity {
 				}
 			}
 		});
-		
-		
+
+
 		// 이익률 변경시 -> 매입가 + 이익률로 판매가
 		m_textCDifferentRatio.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 			@Override
@@ -636,39 +641,39 @@ public class ManageProductActivityModfiy extends Activity {
 			}
 		});
 		m_TextCon_Rate = (EditText) findViewById(R.id.editTextCon_Rate); // 내용량
-        m_TextCon_Rate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            // @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    setChangeBackGroundColor(0, m_TextCon_Rate);
+		m_TextCon_Rate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+			// @Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				if (!hasFocus) {
+					setChangeBackGroundColor(0, m_TextCon_Rate);
 
-                    if (!"".equals(m_TextCon_Rate.getText().toString())) {
+					if (!"".equals(m_TextCon_Rate.getText().toString())) {
 						String s_val = String.format("%.2f", Float.parseFloat(m_TextCon_Rate.getText().toString()));
 						s_val = s_val.replace(".00", "");
 						m_TextCon_Rate.setText(s_val);
 					}
 
-                    m_tempProduct.put("Con_Rate", m_TextCon_Rate.getText().toString());
+					m_tempProduct.put("Con_Rate", m_TextCon_Rate.getText().toString());
 				} else {
-                    setChangeBackGroundColor(1, m_TextCon_Rate);
-                }
-            }
-        });
+					setChangeBackGroundColor(1, m_TextCon_Rate);
+				}
+			}
+		});
 
 		m_TextStd_Rate = (EditText) findViewById(R.id.editTextStd_Rate); // 기준용량
-        m_TextStd_Rate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            // @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    setChangeBackGroundColor(0, m_TextStd_Rate);
-                    m_tempProduct.put("Std_Rate", m_TextStd_Rate.getText().toString());
+		m_TextStd_Rate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+			// @Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				if (!hasFocus) {
+					setChangeBackGroundColor(0, m_TextStd_Rate);
+					m_tempProduct.put("Std_Rate", m_TextStd_Rate.getText().toString());
 
-                    upu.hideSoftKeyboard(false);
-                } else {
-                    setChangeBackGroundColor(1, m_TextStd_Rate);
-                }
-            }
-        });
+					upu.hideSoftKeyboard(false);
+				} else {
+					setChangeBackGroundColor(1, m_TextStd_Rate);
+				}
+			}
+		});
 
 
 		m_textEditDate = (EditText) findViewById(R.id.editTextEditDate);
@@ -774,13 +779,13 @@ public class ManageProductActivityModfiy extends Activity {
 		/*
 		 * m_textPurchasePriceOriginal.setOnFocusChangeListener(new
 		 * View.OnFocusChangeListener() {
-		 * 
+		 *
 		 * @Override public void onFocusChange(View v, boolean hasFocus) {
 		 * if(!hasFocus){ String purchasePriceOriginal =
 		 * m_textPurchasePriceOriginal.getText().toString(); String
 		 * purchaseAddTax = m_textPurchasePriceOriginalTax.getText().toString();
 		 * String Sell_Pri = m_tempProduct.get("Sell_Pri");
-		 * 
+		 *
 		 * if(!purchasePriceOriginal.equals("") &&
 		 * !purchasePriceOriginal.equals("0") &&
 		 * !purchasePriceOriginal.equals("0.00")) { float
@@ -790,9 +795,9 @@ public class ManageProductActivityModfiy extends Activity {
 		 * m_tempProduct.put("Pur_Cost", String.format("%.2f",
 		 * f_purchasePriceOriginal)); // 매입원가 m_tempProduct.put("Pur_Pri",
 		 * String.format("%.2f", f_purchasePrice)); // 매입가 }
-		 * 
+		 *
 		 * if(!purchasePriceOriginal.equals("") && !Sell_Pri.equals("")) {
-		 * 
+		 *
 		 * float f_salesPrice = Float.parseFloat(Sell_Pri); float
 		 * f_purchasePriceOriginal = Float.parseFloat(purchasePriceOriginal);
 		 * float f_purchasePrice =
@@ -875,8 +880,8 @@ public class ManageProductActivityModfiy extends Activity {
 			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 
 				if (actionId == EditorInfo.IME_ACTION_DONE) { // IME_ACTION_SEARCH
-																// ,
-																// IME_ACTION_GO
+					// ,
+					// IME_ACTION_GO
 					/* calculateSellPriByProfitRate(); */
 					String ratio = m_textDifferentRatio.getText().toString();
 					m_tempProduct.put("Profit_Rate", ratio);
@@ -942,66 +947,149 @@ public class ManageProductActivityModfiy extends Activity {
 		doClear();
 
 		if (!m_barcode.isEmpty()) { // 검색에서 넘어왔을경우
-			
+
 			m_textProductName.requestFocus();
-			
+
 			m_textBarcode.setText(m_barcode);
 			m_textBarcode.setEnabled(false);
 			m_buttonbarcode.setEnabled(false);
-			
+
 			m_textCustomerCode.setText(officeCode);
 			m_textCustomerName.setText(officeName);
-				
+
 			if (productReg_YN.equals("Y")) {
-				m_tempProduct.put("BarCode", m_barcode);								
+				m_tempProduct.put("BarCode", m_barcode);
 			} else {
 				doQueryWithBarcode();
 			}
 			m_barcode = "";
 		}
 
-		
+
 		// intent filter 2017-04 m3mobile
 		if (m3Mobile) {
 			/*IntentFilter filter = new IntentFilter();
 			filter.addAction(SCANNER_ACTION_BARCODE);
 			registerReceiver(BarcodeIntentBroadcast, filter);*/
-			
+
 			M3MoblieBarcodeScanBroadcast.setBarcodeEditText(mContext, m_textBarcode, m_textProductName);
 		}
 
 	}
+	//endregion
 
-	//입수 등록 버튼
+	//region Activity onResume
+	//액티비티가 사용자와 상호작용하기 바로 전에 호출됨.
+	//2017-04 m3mobile 추가
+	@Override
+	protected void onResume() {
+		super.onResume();
+		if(m3Mobile){
+			M3MoblieBarcodeScanBroadcast.setBarcodeEditText(mContext, m_textBarcode, m_textProductName);
+			M3MoblieBarcodeScanBroadcast.setOnResume();
+		}
+	}
+	//endregion
+
+	//region Activity onDestory
+	//액티비티가 소멸될 때 호출됨. finish() 메소드가 호출되거나 시스템이 메모리 확보를 위해 액티비티를 제거할 때 호출됨.
+	//2017-04 m3mobile 추가
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(m3Mobile){
+			M3MoblieBarcodeScanBroadcast.setOnDestory();
+		}
+	}
+	//endregion
+
+	//region Activity onActivityResult
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		switch (requestCode) {
+			// 카메라 스캔을 통한 바코드 검색
+			case ZBAR_SCANNER_REQUEST:
+				if (resultCode == RESULT_OK) {
+					// Scan result is available by making a call to
+					// data.getStringExtra(ZBarConstants.SCAN_RESULT)
+					// Type of the scan result is available by making a call to
+					// data.getStringExtra(ZBarConstants.SCAN_RESULT_TYPE)
+					Toast.makeText(this, "Scan Result = " + data.getStringExtra(ZBarConstants.SCAN_RESULT),
+							Toast.LENGTH_SHORT).show();
+					Toast.makeText(this, "Scan Result Type = " + data.getStringExtra(ZBarConstants.SCAN_RESULT_TYPE),
+							Toast.LENGTH_SHORT).show();
+					// The value of type indicates one of the symbols listed in
+					// Advanced Options below.
+
+					String barcode = data.getStringExtra(ZBarConstants.SCAN_RESULT);
+					m_textBarcode.setText(barcode);
+					doQueryWithBarcode();
+
+				} else if (resultCode == RESULT_CANCELED) {
+					Toast.makeText(this, "Camera unavailable", Toast.LENGTH_SHORT).show();
+				}
+				break;
+			// 목록 검색을 통한 바코드 검색
+			case BARCODE_MANAGER_REQUEST:
+				if (resultCode == RESULT_OK && data != null) {
+					HashMap<String, String> hashMap = (HashMap<String, String>) data.getSerializableExtra("fillmaps");
+					m_textBarcode.setText(hashMap.get("BarCode"));
+					m_tempProduct.put("BarCode", hashMap.get("BarCode")); //
+					doQueryWithBarcode();
+				}
+				break;
+			case CUSTOMER_MANAGER_REQUEST:
+				if (resultCode == RESULT_OK && data != null) {
+					HashMap<String, String> hashMap = (HashMap<String, String>) data.getSerializableExtra("fillmaps");
+					m_textCustomerCode.setText(hashMap.get("Office_Code"));
+					m_textCustomerName.setText(hashMap.get("Office_Name"));
+
+					m_tempProduct.put("Bus_Code", hashMap.get("Office_Code")); //
+					m_tempProduct.put("Bus_Name", hashMap.get("Office_Name")); //
+				}
+				break;
+			case CUSTOMER_BOXPRODUCT_REQUEST:
+				if (resultCode == RESULT_OK && data != null) {
+					String obtain = (String) data.getSerializableExtra("obtain");
+					m_textAcquire.setText(obtain);
+				}
+				break;
+		}
+	}
+	//endregion
+
+	//region 입수 등록 버튼
 	public void setAcquireData(){
 
-        String type = m_registButton.getTag().toString();
+		String type = m_registButton.getTag().toString();
 
-        if(!"modify".equals(type)){
-            //안내창을 띄웁니다.
-            Toast.makeText(this, "등록된 상품만 박스상품 등록이 가능합니다.", Toast.LENGTH_SHORT).show();
-            return;
-        }
+		if(!"modify".equals(type)){
+			//안내창을 띄웁니다.
+			Toast.makeText(this, "등록된 상품만 박스상품 등록이 가능합니다.", Toast.LENGTH_SHORT).show();
+			return;
+		}
 
 		//박스 상품을 신규로 등록 합니다.
-        //바코드를 넘겨 줍니다.
-        String barcode = m_textBarcode.getText().toString();
-        String obtain = m_textAcquire.getText().toString();
+		//바코드를 넘겨 줍니다.
+		String barcode = m_textBarcode.getText().toString();
+		String obtain = m_textAcquire.getText().toString();
 
 		if ("".equals(obtain) || obtain == null) {
 			Toast.makeText(mContext, "입수를 입력해 주세요!", Toast.LENGTH_SHORT).show();
 			return;
 		}
 
-        Intent intent = new Intent(this, ManagerProductBox.class);
-        intent.putExtra("barcode", barcode);
-        intent.putExtra("obtain", obtain);
-        startActivityForResult(intent, CUSTOMER_BOXPRODUCT_REQUEST);
+		Intent intent = new Intent(this, ManagerProductBox.class);
+		intent.putExtra("barcode", barcode);
+		intent.putExtra("obtain", obtain);
+		startActivityForResult(intent, CUSTOMER_BOXPRODUCT_REQUEST);
 
-    }
+	}
+	//endregion
 
-
-
+	//region 이익율 공식 주석노트
 	/*
 	 * // 이익률변경시 계산기 private void calculateSellPriByProfitRate () { String ratio
 	 * = m_textDifferentRatio.getText().toString(); String Pur_Pri =
@@ -1022,8 +1110,9 @@ public class ManageProductActivityModfiy extends Activity {
 	 * 
 	 * updateFormView(m_tempProduct); } }
 	 */
+	//endregion
 
-	// 입력 폼 채우기
+	//region 입력 폼 채우기
 	public void updateFormView(HashMap<String, String> object) {
 
 		m_textBarcode.setText(object.get("BarCode")); // 바코드
@@ -1050,7 +1139,7 @@ public class ManageProductActivityModfiy extends Activity {
 
 		/*
 		 * 2014-12-18 부가세 포함, 별도 옵션 체크
-		 * 
+		 *
 		 */
 
 		if (object.get("VAT_CHK").equals("1"))
@@ -1162,7 +1251,7 @@ public class ManageProductActivityModfiy extends Activity {
 			//m_editTextSellPri1.setEnabled(false);
 			m_textDifferentRatio.setEnabled(false);
 		}
-		
+
 		//2018-2-20 도매단가 입력
 		m_textASell_Pri.setText(object.get("Sell_APri"));
 		m_textADifferentRatio.setText(object.get("Profit_Rate_APri"));
@@ -1203,8 +1292,9 @@ public class ManageProductActivityModfiy extends Activity {
 
 
 	}
+	//endregion
 
-	// 입력폼 초기화
+	//region 입력폼 초기화
 	public void doClear() {
 
 		workIndex = 0;
@@ -1215,8 +1305,9 @@ public class ManageProductActivityModfiy extends Activity {
 		this.setTitle("상품관리");
 		m_textBarcode.requestFocus();
 	}
+	//endregion
 
-	// 상품 데이터 초기화
+	//region 상품 데이터 초기화
 	public void newTempProduct() {
 		m_tempProduct = new HashMap<String, String>();
 		m_tempProduct.put("BarCode", ""); // 1.바코드
@@ -1253,7 +1344,7 @@ public class ManageProductActivityModfiy extends Activity {
 		m_tempProduct.put("Editor", ""); // 27.수정자
 		m_tempProduct.put("Write_Date", ""); // 28.등록일
 		m_tempProduct.put("Writer", ""); // 29.등록자
-		
+
 		m_tempProduct.put("ASell_Pri", ""); //30. 도매 A단가
 		m_tempProduct.put("Profit_Rate_APir", ""); //31. 도매 A이익률
 		m_tempProduct.put("BSell_Pri", ""); //32. 도매 A단가
@@ -1270,27 +1361,24 @@ public class ManageProductActivityModfiy extends Activity {
 		m_tempProduct.put("Unit","kg");
 		m_tempProduct.put("Con_Rate","10");
 		m_tempProduct.put("Std_Rate","100");
-        m_tempProduct.put("Bot_Sell","0");
+		m_tempProduct.put("Bot_Sell","0");
 
 		m_tempProPurSell.clear();
-		
-		
-	}
 
+
+	}
+	//endregion
+
+	//region 매입가 판매가 수정 변경시 비교해서 변경테이블에 저장하기
 	public void historyProductData(HashMap<String, String> object) {
 		// 매입가 판매가 수정 변경시 비교해서 변경테이블에 저장하기
 		m_tempProPurSell.put("Pur_Pri_old", object.get("Pur_Pri"));
 		m_tempProPurSell.put("Sell_Pri_old", object.get("Sell_Pri"));
 		m_tempProPurSell.putAll(object);
 	}
+	//endregion
 
-	// 리스트 초기화
-	/*
-	 * public void deleteListViewAll() { if (mfillMaps.isEmpty()) return;
-	 * 
-	 * mfillMaps.removeAll(mfillMaps); m_adapter.notifyDataSetChanged(); }
-	 */
-
+	//region 상품저장
 	public void doRegister() {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -1343,15 +1431,15 @@ public class ManageProductActivityModfiy extends Activity {
 			vat_chk = "1";
 		else
 			vat_chk = "0";
-		
+
 		//2018-02-20 도매단가 기능 추가
 		String aSell_Pri = m_textASell_Pri.getText().toString();
 		String aProfit_Rate = m_textADifferentRatio.getText().toString();
 		String bSell_Pri = m_textBSell_Pri.getText().toString();
 		String bProfit_Rate = m_textBDifferentRatio.getText().toString();
 		String cSell_Pri = m_textCSell_Pri.getText().toString();
-		String cProfit_Rate = m_textCDifferentRatio.getText().toString();		
-		
+		String cProfit_Rate = m_textCDifferentRatio.getText().toString();
+
 
 		//String g_grade = String.valueOf(m_spinGroup.getSelectedItem().toString()); // 15.그룹구분
 		// String good_use = String.format("%d", m_spinGoods.getSelectedItem()
@@ -1409,18 +1497,18 @@ public class ManageProductActivityModfiy extends Activity {
 			g_grade = " G_Grade = '" + g_grade + "' ";
 		}*/
 
-		
+
 		if (aSell_Pri.equals("")) aSell_Pri = "0";
 		if (aProfit_Rate.equals("")) aProfit_Rate = "0";
-		
+
 		if (bSell_Pri.equals("")) bSell_Pri = "0";
 		if (bProfit_Rate.equals("")) bProfit_Rate = "0";
-		
+
 		if (cSell_Pri.equals("")) cSell_Pri = "0";
 		if (cProfit_Rate.equals("")) cProfit_Rate = "0";
 
-		
-		
+
+
 		if (barcode.equals("") || g_name.equals("") || bus_code.equals("") || bus_name.equals("") || lname.equals("")
 				|| mname.equals("") || sname.equals("") || salesPrice.equals("") || ratio.equals("")) {
 			Toast.makeText(getApplicationContext(), "비어있는 필드가 있습니다", Toast.LENGTH_SHORT).show();
@@ -1544,6 +1632,7 @@ public class ManageProductActivityModfiy extends Activity {
 			}
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 	}
+	//endregion
 
 	public String getCodeFromListByName(List<HashMap<String, String>> l, String name) {
 
@@ -1557,6 +1646,7 @@ public class ManageProductActivityModfiy extends Activity {
 		return "";
 	}
 
+	//region 상품수정
 	public void doModify() {
 
 		HashMap<String, String> obj = m_tempProduct;
@@ -1635,14 +1725,14 @@ public class ManageProductActivityModfiy extends Activity {
 		String salesPrice1 = m_editTextSellPri1.getText().toString().replace(",", "");// 권장소비자가
 
 		String ratio = m_textDifferentRatio.getText().toString();// 15.이익률
-		
+
 		String aSell_Pri = m_textASell_Pri.getText().toString();
 		String aProfit_Rate = m_textADifferentRatio.getText().toString();
 		String bSell_Pri = m_textBSell_Pri.getText().toString();
 		String bProfit_Rate = m_textBDifferentRatio.getText().toString();
 		String cSell_Pri = m_textCSell_Pri.getText().toString();
-		String cProfit_Rate = m_textCDifferentRatio.getText().toString();				
-		
+		String cProfit_Rate = m_textCDifferentRatio.getText().toString();
+
 		String goodsType = String.valueOf(m_spinGoodsType.getSelectedItemPosition()); // 18.상품구분
 		String memberpoint = String.valueOf(m_spinMemberPoint.getSelectedItemPosition()); // 마일리지
 		//String g_grade = m_spinGroup.getSelectedItem().toString(); // 그룹구분
@@ -1687,13 +1777,13 @@ public class ManageProductActivityModfiy extends Activity {
 			good_use = "0";
 
 		// if (Obtain.equals("")) Obtain = "0";
-		
+
 		if (aSell_Pri.equals("")) aSell_Pri = "0";
 		if (aProfit_Rate.equals("")) aProfit_Rate = "0";
-		
+
 		if (aSell_Pri.equals("")) bSell_Pri = "0";
 		if (aProfit_Rate.equals("")) bProfit_Rate = "0";
-		
+
 		if (aSell_Pri.equals("")) cSell_Pri = "0";
 		if (aProfit_Rate.equals("")) cProfit_Rate = "0";
 
@@ -1795,6 +1885,7 @@ public class ManageProductActivityModfiy extends Activity {
 			}
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 	}
+	//endregion
 
 	/*
 	 * public void doSearch() {
@@ -1850,7 +1941,7 @@ public class ManageProductActivityModfiy extends Activity {
 	 * m_adapter.notifyDataSetChanged(); }
 	 */
 
-	// 분류관련 메소드
+	//region 분류관련 메소드
 	private void fetchLName() {
 		String query = "";
 		//2019-07-16
@@ -1899,7 +1990,6 @@ public class ManageProductActivityModfiy extends Activity {
 			}
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 	}
-
 	public void onClassification1(View view) {
 		m_buttonCustomerClassification2.setText("");
 		m_tempProduct.put("M_Name", "");
@@ -2083,8 +2173,9 @@ public class ManageProductActivityModfiy extends Activity {
 			}
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 	}
+	//endregion
 
-	// 거래처 코드로 거래처명 자동 완성
+	//region 거래처 코드로 거래처명 자동 완성
 	private void fillBusNameFromBusCode(String customerCode) {
 		// 로딩 다이알로그
 		dialog = new ProgressDialog(this);
@@ -2125,7 +2216,9 @@ public class ManageProductActivityModfiy extends Activity {
 		intent.putExtra("customername", customername);
 		startActivityForResult(intent, CUSTOMER_MANAGER_REQUEST);
 	}
+	//endregion
 
+	//region 상품 찾기
 	public void onBarcodeSearch(View view) {
 		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
 		String list_value = pref.getString("prefSearchMethod", "");
@@ -2171,64 +2264,10 @@ public class ManageProductActivityModfiy extends Activity {
 		Intent intent = new Intent(this, ZBarScannerActivity.class);
 		startActivityForResult(intent, ZBAR_SCANNER_REQUEST);
 	}
+	//endregion
 
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
 
-		switch (requestCode) {
-		// 카메라 스캔을 통한 바코드 검색
-		case ZBAR_SCANNER_REQUEST:
-			if (resultCode == RESULT_OK) {
-				// Scan result is available by making a call to
-				// data.getStringExtra(ZBarConstants.SCAN_RESULT)
-				// Type of the scan result is available by making a call to
-				// data.getStringExtra(ZBarConstants.SCAN_RESULT_TYPE)
-				Toast.makeText(this, "Scan Result = " + data.getStringExtra(ZBarConstants.SCAN_RESULT),
-						Toast.LENGTH_SHORT).show();
-				Toast.makeText(this, "Scan Result Type = " + data.getStringExtra(ZBarConstants.SCAN_RESULT_TYPE),
-						Toast.LENGTH_SHORT).show();
-				// The value of type indicates one of the symbols listed in
-				// Advanced Options below.
-
-				String barcode = data.getStringExtra(ZBarConstants.SCAN_RESULT);
-				m_textBarcode.setText(barcode);
-				doQueryWithBarcode();
-
-			} else if (resultCode == RESULT_CANCELED) {
-				Toast.makeText(this, "Camera unavailable", Toast.LENGTH_SHORT).show();
-			}
-			break;
-		// 목록 검색을 통한 바코드 검색
-		case BARCODE_MANAGER_REQUEST:
-			if (resultCode == RESULT_OK && data != null) {
-				HashMap<String, String> hashMap = (HashMap<String, String>) data.getSerializableExtra("fillmaps");
-				m_textBarcode.setText(hashMap.get("BarCode"));
-				m_tempProduct.put("BarCode", hashMap.get("BarCode")); //
-				doQueryWithBarcode();
-			}
-			break;
-		case CUSTOMER_MANAGER_REQUEST:
-			if (resultCode == RESULT_OK && data != null) {
-				HashMap<String, String> hashMap = (HashMap<String, String>) data.getSerializableExtra("fillmaps");
-				m_textCustomerCode.setText(hashMap.get("Office_Code"));
-				m_textCustomerName.setText(hashMap.get("Office_Name"));
-
-				m_tempProduct.put("Bus_Code", hashMap.get("Office_Code")); //
-				m_tempProduct.put("Bus_Name", hashMap.get("Office_Name")); //
-			}
-			break;
-        case CUSTOMER_BOXPRODUCT_REQUEST:
-            if (resultCode == RESULT_OK && data != null) {
-                String obtain = (String) data.getSerializableExtra("obtain");
-				m_textAcquire.setText(obtain);
-            }
-            break;
-        }
-
-	}
-
-	// SQL QUERY 실행
+	//region SQL QUERY 실행
 	public void doQueryWithBarcode() {
 
 		String query = "";
@@ -2237,7 +2276,7 @@ public class ManageProductActivityModfiy extends Activity {
 
 		if (barcode.equals(""))
 			return;
-		
+
 
 		// 로딩 다이알로그
 		dialog = new ProgressDialog(this);
@@ -2254,7 +2293,7 @@ public class ManageProductActivityModfiy extends Activity {
 				dialog.cancel();
 
 				if (results.length() > 0) {
-					try {						
+					try {
 						m_tempProduct = JsonHelper.toStringHashMap(results.getJSONObject(0));
 						updateFormView(m_tempProduct);
 						historyProductData(m_tempProduct);
@@ -2271,12 +2310,14 @@ public class ManageProductActivityModfiy extends Activity {
 						m_textProductName.requestFocus();
 					}else{
 						Toast.makeText(getApplicationContext(), "조회 실패", Toast.LENGTH_SHORT).show();
-					}					
+					}
 				}
 			}
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 	}
+	//endregion
 
+	//region 등록/수정 구분
 	private void productNewRegisterYN(String proyn) {
 		if ((proyn == "Y" || proyn == "y")) { // 신상품등록
 			m_textBarcode.setEnabled(true);
@@ -2304,11 +2345,12 @@ public class ManageProductActivityModfiy extends Activity {
 			buttonAcquire.setEnabled(true);
 		}
 	}
+	//endregion
 
-	// 포커스 이동시 백그라운드 색 변경 하기
+	//region 포커스 이동시 백그라운드 색 변경 하기
 	/**
 	 * 텍스트 에디터의 색상을 변경 합니다.
-	 * 
+	 *
 	 * @param gubun
 	 *            0 흰색 배경색, 1 노란색 배경색
 	 * @param et
@@ -2317,23 +2359,23 @@ public class ManageProductActivityModfiy extends Activity {
 	private void setChangeBackGroundColor(int gubun, EditText et) {
 
 		switch (gubun) {
-		case 0:
-			//et.setBackgroundColor(Color.WHITE);
-			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-				et.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_border));
-			}
-			break;
-		case 1:
-			//et.setBackgroundColor(Color.YELLOW);
-			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-				et.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_border_focus));
-			}
-			break;
+			case 0:
+				//et.setBackgroundColor(Color.WHITE);
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+					et.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_border));
+				}
+				break;
+			case 1:
+				//et.setBackgroundColor(Color.YELLOW);
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+					et.setBackground(ContextCompat.getDrawable(this,R.drawable.edit_border_focus));
+				}
+				break;
 		}
 	}
+	//endregion
 
-
-	//자체 바코드 생성
+	//region 자체 바코드 생성
 	public void setSelfBarcode(View view){
 
 		//DB에서 바코드의 최고값을 찾아 봅니다.
@@ -2438,85 +2480,65 @@ public class ManageProductActivityModfiy extends Activity {
 		//m_textProductName.setInputType(145); //
 		m_textProductName.setPrivateImeOptions("defaultInputmode=korean;");
 		/* 2023.02.01.
-		*  자체바코드 버튼 이후 상품명에서 한글키보드 안나오고 영문키보드 나오는 에러
-		* 왜 기존 정상처리에 주석 처리 했는지 알 수 없음
-		* 일단 주석해제해서 정성처리 함
-		* 추후 검토
-		* */
+		 *  자체바코드 버튼 이후 상품명에서 한글키보드 안나오고 영문키보드 나오는 에러
+		 * 왜 기존 정상처리에 주석 처리 했는지 알 수 없음
+		 * 일단 주석해제해서 정성처리 함
+		 * 추후 검토
+		 * */
 		m_textProductName.requestFocus();
 
 		upu.hideSoftKeyboard(false);
 
 	}
+	//endregion
 
 	
 	/**************	시스템 함수   **************************************************************************/
-	
-	
-	//2017-04 m3mobile 추가 
-	@Override
-	protected void onResume() {
-	    super.onResume();
-	    if(m3Mobile){
-	    	M3MoblieBarcodeScanBroadcast.setBarcodeEditText(mContext, m_textBarcode, m_textProductName);
-		    M3MoblieBarcodeScanBroadcast.setOnResume();
-	    }	    
-	}
-	
-	//2017-04 m3mobile 추가
-	@Override
-	protected void onDestroy() {	
-		super.onDestroy();		
-		if(m3Mobile){
-			M3MoblieBarcodeScanBroadcast.setOnDestory();
-		}		
-	}
-	
-	
-	/**
-	 * Set up the {@link android.app.ActionBar}.
-	 */
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	public void setupActionBar() {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 
-			ActionBar actionbar = getActionBar();
-			actionbar.setDisplayShowHomeEnabled(true);
-			actionbar.setDisplayShowTitleEnabled(true);
-			actionbar.setDisplayShowCustomEnabled(true);
-			actionbar.setTitle("상품관리1234");
-
-			getActionBar().setDisplayHomeAsUpEnabled(true);
-		}
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.manage_product, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			// This ID represents the Home or Up button. In the case of this
-			// activity, the Up button is shown. Use NavUtils to allow users
-			// to navigate up one level in the application structure. For
-			// more details, see the Navigation pattern on Android Design:
-			//
-			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
-			//
-			NavUtils.navigateUpFromSameTask(this);
-			return true;
-
-		case R.id.action_settings:
-			startActivity(new Intent(this, TIPSPreferences.class));
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+//	/**
+//	 * Set up the {@link android.app.ActionBar}.
+//	 */
+//	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+//	public void setupActionBar() {
+//		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+//
+//			ActionBar actionbar = getActionBar();
+//			actionbar.setDisplayShowHomeEnabled(true);
+//			actionbar.setDisplayShowTitleEnabled(true);
+//			actionbar.setDisplayShowCustomEnabled(true);
+//			actionbar.setTitle("상품관리1234");
+//
+//			getActionBar().setDisplayHomeAsUpEnabled(true);
+//		}
+//	}
+//
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.manage_product, menu);
+//		return true;
+//	}
+//
+//	@Override
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//		switch (item.getItemId()) {
+//		case android.R.id.home:
+//			// This ID represents the Home or Up button. In the case of this
+//			// activity, the Up button is shown. Use NavUtils to allow users
+//			// to navigate up one level in the application structure. For
+//			// more details, see the Navigation pattern on Android Design:
+//			//
+//			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+//			//
+//			NavUtils.navigateUpFromSameTask(this);
+//			return true;
+//
+//		case R.id.action_settings:
+//			startActivity(new Intent(this, TIPSPreferences.class));
+//			return true;
+//		}
+//		return super.onOptionsItemSelected(item);
+//	}
 
 	
 }

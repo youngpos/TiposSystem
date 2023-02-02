@@ -2427,6 +2427,8 @@ style GridDataText_Style
 style GridHeadLinear_Style
 style GridHeadLinear_Style2
 style GridHeadText_Style
+style HeadLinear_Style
+style ItemLinear_Style
 style MainLinear_Style
 style Platform_AppCompat
 style Platform_AppCompat_Light

@@ -26,6 +26,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
+import kr.co.tipos.tips.BuildConfig;
 import kr.co.tipos.tips.R;
 import tipsystem.utils.LocalStorage;
 import tipsystem.utils.Reachability;
@@ -163,19 +164,32 @@ public class TIPSSplashActivity extends Activity {
 		TelephonyManager phoneManager = (TelephonyManager)getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
 
 		String phoneNumber = phoneManager.getLine1Number();
-    	    	
+
+		String aaa = BuildConfig.BUILD_TYPE;
+
+//		if(aaa=="debug") {
+//			Toast.makeText(TIPSSplashActivity.this, "DEBUG 모드입니다.", Toast.LENGTH_SHORT).show();
+//		}else{
+//			Toast.makeText(TIPSSplashActivity.this, "RELEASE 모드입니다.", Toast.LENGTH_SHORT).show();
+//		}
+
     	if (phoneNumber == null || phoneNumber.equals("")) {
-        	AlertDialog.Builder builder = new AlertDialog.Builder(ctx,AlertDialog.THEME_HOLO_LIGHT);
-            builder.setTitle("알림");
-            builder.setMessage("기기에 등록된 전화번호가 없습니다. 어플이용이 불가능합니다!");
-            builder.setNeutralButton("확인", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    finish();
-                }
-            });
-            builder.show();
-            return false;
+			if(aaa=="debug"){
+				Toast.makeText(TIPSSplashActivity.this, "DEBUG 모드입니다.", Toast.LENGTH_SHORT).show();
+				phoneNumber="01090424515";
+			}else{
+				AlertDialog.Builder builder = new AlertDialog.Builder(ctx,AlertDialog.THEME_HOLO_LIGHT);
+				builder.setTitle("알림");
+				builder.setMessage("기기에 등록된 전화번호가 없습니다. 어플이용이 불가능합니다!");
+				builder.setNeutralButton("확인", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						finish();
+					}
+				});
+				builder.show();
+				return false;
+			}
         }
     	
     	String prefix = phoneNumber.substring(0, 3);
