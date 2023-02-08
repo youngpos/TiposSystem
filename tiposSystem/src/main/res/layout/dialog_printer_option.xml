@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLinear_Style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- 2021.07.08. 권장소비자가 선택,분류,출력일 추가 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--행사가 옵션-->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox_sale_yn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_weight="0.8"
+                android:button="@drawable/checkbox_custom"
+                android:padding="0dp"
+                android:text="행사가"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <!-- 권장소비자가 선택-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 권장소비자가 선택 -->
+            <CheckBox
+                android:id="@+id/checkbox_sell_pri1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_weight="1.5"
+                android:button="@drawable/checkbox_custom"
+                android:text="원판매가->권장소비자가"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <!-- 분류 선택 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="분류" />
+
+                <!-- 분류 선택 -->
+                <Spinner
+                    android:id="@+id/spinner_select_branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/barcode_print_branch_name"
+                    android:gravity="center"
+                    android:textAlignment="gravity" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- 추가항목 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="추가항목" />
+
+                <!-- 추가 항목 선택 -->
+                <Spinner
+                    android:id="@+id/spinner_select_add_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:entries="@array/barcode_print_add_item"
+                    android:gravity="center|center_horizontal" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_print_set_date"
+                style="@style/Button_Style"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2021-07-08"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edittext_print_user_text"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="사용자 정의"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <!-- 출력일 문구 출력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_print_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:button="@drawable/checkbox_custom"
+                android:gravity="center"
+                android:text="*출력일: 문구 출력"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

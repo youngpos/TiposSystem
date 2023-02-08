@@ -1101,6 +1101,10 @@ id button_delivery_sender_reg
 id button_detail
 id button_menu01
 id button_newproductreg
+id button_print_set_date
+id button_printer_option
+id button_printer_print
+id button_printer_setting
 id button_printersetting
 id button_printsend
 id button_resend
@@ -1136,7 +1140,11 @@ id checkboxSale_YN
 id checkboxSellPri
 id checkbox_add_total
 id checkbox_date
+id checkbox_print_date_title
 id checkbox_purpritaxgubun
+id checkbox_sale_yn
+id checkbox_self_barcode_prefix_use
+id checkbox_sell_pri1
 id chk_danga_yn
 id chk_office_yn
 id chk_price_yn
@@ -1284,6 +1292,8 @@ id edit_stdsize_garow
 id edit_stdsize_serow
 id edit_str_length
 id editor_textview
+id edittext_print_user_text
+id edittext_self_barcode_prefix_code
 id edittext_smsmessage
 id edittextbarcode
 id edittextboxbarcode
@@ -1605,6 +1615,9 @@ id spinner_price_fontsize
 id spinner_price_garoz
 id spinner_price_rota
 id spinner_price_seroz
+id spinner_select_add_item
+id spinner_select_branch_name
+id spinner_select_printer
 id spinner_sms_gubun
 id spinner_sms_results
 id spinner_stdsize_bold
@@ -1775,9 +1788,11 @@ id textview_marginText
 id textview_payment
 id textview_phonecall
 id textview_phonenumber
+id textview_printer_state
 id textview_printstate
 id textview_profitsText
 id textview_salenum
+id textview_self_barcode_prefix_code
 id textview_shareText
 id textview_smstotal
 id textview_state
@@ -2034,6 +2049,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_printer_option
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

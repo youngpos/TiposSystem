@@ -391,8 +391,9 @@
                     android:button="@drawable/checkbox_custom"
                     android:gravity="center"
                     android:padding="0dp"
-                    android:textColor="#000000"
-                    android:text="신 매출속보 보기" />
+                    android:text="신 매출속보 보기"
+                    android:textColor="#000000" />
+
                 <CheckBox
                     android:id="@+id/checkboxRealSaleNewOnly"
                     android:layout_width="0dip"
@@ -402,19 +403,22 @@
                     android:button="@drawable/checkbox_custom"
                     android:gravity="center"
                     android:padding="0dp"
-                    android:textColor="#000000"
                     android:text="매출속보만 보기"
-                    android:visibility="visible"/>
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
                 <TextView
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0"/>
+                    android:layout_weight="0" />
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -435,6 +439,100 @@
         android:layout_marginBottom="10dp"
         android:background="#BDBDBD" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="자체바코드 자동생성 옵션"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_self_barcode_prefix_use"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="2"
+                    android:button="@drawable/checkbox_custom"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="바코드 자동생성"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textview_self_barcode_prefix_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="1.5"
+                    android:text="바코드 앞 2자리 ">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edittext_self_barcode_prefix_code"
+                    style="@style/EditText_Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="2"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바코드 자동생성 옵션 체크시 바코드 앞 2자리를 입력하세요!"
+                    android:textColor="@color/red"
+                    android:visibility="gone">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#BDBDBD" />
     <!--
          <Button
         android:id="@+id/button_searchData"

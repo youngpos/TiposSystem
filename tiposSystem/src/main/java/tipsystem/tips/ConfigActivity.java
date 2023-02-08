@@ -24,6 +24,7 @@ import tipsystem.utils.LocalStorage;
 import tipsystem.utils.MSSQL2;
 import tipsystem.utils.TIPOS;
 
+import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -31,8 +32,10 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -90,6 +93,10 @@ public class ConfigActivity extends Activity {
     CheckBox checkboxRealSaleNew;
     CheckBox checkboxRealSaleNewOnly;
 
+    CheckBox checkBoxSelfBarcodePrefixUse;
+    EditText editTextSelfBarcodePrefixCode;
+    TextView textViewSelfBarcodePrefixCode;
+
     DBAdapter dba;
 
     Context mContext;
@@ -98,6 +105,7 @@ public class ConfigActivity extends Activity {
     //목록저장맵
     List<HashMap<String, String>> mfillMaps = new ArrayList<HashMap<String, String>>();
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -457,6 +465,66 @@ public class ConfigActivity extends Activity {
         }else{
             checkboxRealSaleNewOnly.setVisibility(View.INVISIBLE);
         }
+
+        //--------------------------------------------------------------------------------//
+        /* 김영목 2023.02.08. 바코드자동생성 옵션 추가 */
+        //--------------------------------------------------------------------------------//
+        boolean isSelfBarcodeUse = LocalStorage.getBoolean(ConfigActivity.this, "SelfBarcodePrefixUse:" + OFFICE_CODE);
+        String selfBarcodePrefixCode = LocalStorage.getString(ConfigActivity.this, "SelfBarcodePrefixCode:" + OFFICE_CODE);
+
+        checkBoxSelfBarcodePrefixUse = (CheckBox) findViewById(R.id.checkbox_self_barcode_prefix_use);
+        checkBoxSelfBarcodePrefixUse.setChecked(isSelfBarcodeUse);
+        checkBoxSelfBarcodePrefixUse.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                try {
+                    String OFFICE_CODE = m_shop.getString("OFFICE_CODE");
+                    LocalStorage.setBoolean(ConfigActivity.this, "SelfBarcodePrefixUse:" + OFFICE_CODE, b);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                if (checkBoxSelfBarcodePrefixUse.isChecked()){
+                    textViewSelfBarcodePrefixCode.setVisibility(View.VISIBLE);
+                    editTextSelfBarcodePrefixCode.setVisibility(View.VISIBLE);
+                }else{
+                    textViewSelfBarcodePrefixCode.setVisibility(View.INVISIBLE);
+                    editTextSelfBarcodePrefixCode.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        editTextSelfBarcodePrefixCode = (EditText) findViewById(R.id.edittext_self_barcode_prefix_code);
+        editTextSelfBarcodePrefixCode.setText(selfBarcodePrefixCode);
+        editTextSelfBarcodePrefixCode.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                // 입력란에 변화가 있을 시
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                // 입력이 끝났을 때
+                String selfBarcodePrefixCode = editTextSelfBarcodePrefixCode.getText().toString();
+                LocalStorage.setString(ConfigActivity.this, "SelfBarcodePrefixCode:" + OFFICE_CODE, selfBarcodePrefixCode);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                // 입력하기 전에
+            }
+        });
+
+        textViewSelfBarcodePrefixCode = (TextView) findViewById(R.id.textview_self_barcode_prefix_code);
+
+        if (isSelfBarcodeUse){
+            textViewSelfBarcodePrefixCode.setVisibility(View.VISIBLE);
+            editTextSelfBarcodePrefixCode.setVisibility(View.VISIBLE);
+        }else{
+            textViewSelfBarcodePrefixCode.setVisibility(View.INVISIBLE);
+            editTextSelfBarcodePrefixCode.setVisibility(View.INVISIBLE);
+        }
+        //--------------------------------------------------------------------------------//
 
     }
 

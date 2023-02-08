@@ -386,7 +386,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 //                        m_count.requestFocus();
 //                    }
                     // 무저건 목록에 저장장
-                   //목록에 저장하기
+                    //목록에 저장하기
                     sendList();
 
                 } else {
@@ -496,20 +496,20 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
         //2022.10.24. 김영목. 옵션설정에 따라 기본값
         //c_countfix.setChecked(true);
-        String countFix=LocalStorage.getString(this,"BarcodePrinterCountFix");
+        String countFix = LocalStorage.getString(this, "BarcodePrinterCountFix");
         // 최초시에는 기본 체크
-        if (countFix.equals("1") || countFix.equals("")){
-            
+        if (countFix.equals("1") || countFix.equals("")) {
+
             c_countfix.setChecked(true);
-            
-            String countNum=LocalStorage.getString(this,"BarcodePrinterCountNum");
+
+            String countNum = LocalStorage.getString(this, "BarcodePrinterCountNum");
             //최초시 1을 세팅한다
-            if (countNum.equals("")){
-                countNum="1";
-                LocalStorage.setString(mContext,"BarcodePrinterCountNum",countNum);
+            if (countNum.equals("")) {
+                countNum = "1";
+                LocalStorage.setString(mContext, "BarcodePrinterCountNum", countNum);
             }
             m_count.setText(countNum);
-        }else{
+        } else {
             c_countfix.setChecked(false);
             m_count.setText("1");
         }
@@ -525,9 +525,9 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                     m_count.setEnabled(false);
                     b_listsave.setEnabled(false);
                     //2022.10.24. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterCountFix","1");
+                    LocalStorage.setString(mContext, "BarcodePrinterCountFix", "1");
                     String countNum = m_count.getText().toString();
-                    LocalStorage.setString(mContext,"BarcodePrinterCountNum",countNum);
+                    LocalStorage.setString(mContext, "BarcodePrinterCountNum", countNum);
                 } else {
                     //수량 고정에 체크 해제되면 모두 보이기
                     b_countdown.setEnabled(true);
@@ -535,8 +535,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                     m_count.setEnabled(true);
                     b_listsave.setEnabled(true);
                     //2022.10.24. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterCountFix","0");
-                    LocalStorage.setString(mContext,"BarcodePrinterCountNum","1");
+                    LocalStorage.setString(mContext, "BarcodePrinterCountFix", "0");
+                    LocalStorage.setString(mContext, "BarcodePrinterCountNum", "1");
                 }
             }
         });
@@ -545,10 +545,10 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         c_Sale_YN = (CheckBox) findViewById(R.id.checkboxSale_YN);
 
         //2022.10.27. 김영목. 행사 옵션 로컬스토리지에서 불러 옴
-        String saleYN=LocalStorage.getString(this,"BarcodePrinterSaleYN");
-        if (saleYN.equals("1")){
+        String saleYN = LocalStorage.getString(this, "BarcodePrinterSaleYN");
+        if (saleYN.equals("1")) {
             c_Sale_YN.setChecked(true);
-        }else{
+        } else {
             c_Sale_YN.setChecked(false);
         }
 
@@ -556,12 +556,12 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         c_Sale_YN.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (c_Sale_YN.isChecked()){
+                if (c_Sale_YN.isChecked()) {
                     //2022.10.27. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterSaleYN","1");
-                }else{
+                    LocalStorage.setString(mContext, "BarcodePrinterSaleYN", "1");
+                } else {
                     //2022.10.27. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterSaleYN","0");
+                    LocalStorage.setString(mContext, "BarcodePrinterSaleYN", "0");
                 }
             }
         });
@@ -576,23 +576,23 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         //----------------------------------------//
         //2022.10.24. 김영목. 옵션설정에 따라 기본값
         //sellPri1CheckBox.setChecked(false); // 권장소비자가 기본은 출력안함
-        String sellPri1=LocalStorage.getString(this,"BarcodePrinterSellPri1");
-        if (sellPri1.equals("1")){
+        String sellPri1 = LocalStorage.getString(this, "BarcodePrinterSellPri1");
+        if (sellPri1.equals("1")) {
             sellPri1CheckBox.setChecked(true);
-        }else{
+        } else {
             sellPri1CheckBox.setChecked(false);
         }
 
         sellPri1CheckBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                   if (sellPri1CheckBox.isChecked()){
-                       //2022.10.24. 김영목. 로컬 스토리지에 저장
-                       LocalStorage.setString(mContext,"BarcodePrinterSellPri1","1");
-                   }else{
-                       //2022.10.24. 김영목. 로컬 스토리지에 저장
-                       LocalStorage.setString(mContext,"BarcodePrinterSellPri1","0");
-                   }
+                if (sellPri1CheckBox.isChecked()) {
+                    //2022.10.24. 김영목. 로컬 스토리지에 저장
+                    LocalStorage.setString(mContext, "BarcodePrinterSellPri1", "1");
+                } else {
+                    //2022.10.24. 김영목. 로컬 스토리지에 저장
+                    LocalStorage.setString(mContext, "BarcodePrinterSellPri1", "0");
+                }
             }
         });
 
@@ -606,22 +606,22 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
         //2022.10.24. 김영목. 옵션설정에 따라 기본값
         //printDateTitleCheckBox.setChecked(true); // 출력일 문구 출력 기본
-        String dateTitle=LocalStorage.getString(this,"BarcodePrinterDateTitle");
-        if (dateTitle.equals("1")){
+        String dateTitle = LocalStorage.getString(this, "BarcodePrinterDateTitle");
+        if (dateTitle.equals("1")) {
             printDateTitleCheckBox.setChecked(true);
-        }else{
+        } else {
             printDateTitleCheckBox.setChecked(false);
         }
 
         printDateTitleCheckBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (printDateTitleCheckBox.isChecked()){
+                if (printDateTitleCheckBox.isChecked()) {
                     //2022.10.24. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterDateTitle","1");
-                }else{
+                    LocalStorage.setString(mContext, "BarcodePrinterDateTitle", "1");
+                } else {
                     //2022.10.24. 김영목. 로컬 스토리지에 저장
-                    LocalStorage.setString(mContext,"BarcodePrinterDateTitle","0");
+                    LocalStorage.setString(mContext, "BarcodePrinterDateTitle", "0");
                 }
             }
         });
@@ -763,7 +763,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         getBarcodePrinterSet();
 
         // 2022.11.09. 임시저장자료 있으면 불러오기
-        if (dba.chkBarPrintTemp()){
+        if (dba.chkBarPrintTemp()) {
             // 확인 창
             new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_LIGHT)
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -790,11 +790,11 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
     @Override
     public void onBackPressed() {
-        if (mfillMaps.size()>0){
+        if (mfillMaps.size() > 0) {
             //자료가 있으면 임시 테이블에 저장하기
             dba.insert_TempBaPrint(mfillMaps, "1");
             finish();
-        }else{
+        } else {
             super.onBackPressed();
         }
 
@@ -1200,11 +1200,11 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                     }
 
                     // 2단 세로 위치
-                    if (y0 <= 1){
+                    if (y0 <= 1) {
                         ty = 28;
-                    }else if (y0 == 2){
+                    } else if (y0 == 2) {
                         ty = 52;
-                    }else if(y0 == 3){
+                    } else if (y0 == 3) {
                         ty = 80;
                     }
                     //----------------------------------------//
@@ -1275,17 +1275,17 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                         }
                         //----------------------------------------//
 
-                        if (bla == true){
+                        if (bla == true) {
                             cpclprinter.setMagnify(stringTointPrint(gname[3]), stringTointPrint(gname[4]));
-                        }else{
-                            cpclprinter.setMagnify(stringTointPrint(gname[3]+1), stringTointPrint(gname[4])+1);
+                        } else {
+                            cpclprinter.setMagnify(stringTointPrint(gname[3] + 1), stringTointPrint(gname[4]) + 1);
                         }
                         cpclprinter.printCPCLText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1]), aaa, 0);
 
-                        if (blb == true){
+                        if (blb == true) {
                             cpclprinter.setMagnify(stringTointPrint(gname[3]), stringTointPrint(gname[4]));
-                        }else{
-                            cpclprinter.setMagnify(stringTointPrint(gname[3])+1, stringTointPrint(gname[4])+1);
+                        } else {
+                            cpclprinter.setMagnify(stringTointPrint(gname[3]) + 1, stringTointPrint(gname[4]) + 1);
                         }
                         cpclprinter.printCPCLText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1] + ty), bbb, 0);
 
@@ -1362,9 +1362,13 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
                 //할인율(%) 출력
                 if (spp.getPrint_SaleSellRate_YN() == 1) {
-                    cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
-                    cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + " %", 0);
-                    cpclprinter.resetMagnify();
+                    try {
+                        cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
+                        cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + " %", 0);
+                        cpclprinter.resetMagnify();
+                    } catch (Exception e) {
+                        //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
                 }
                 //}
                 //--------------------------------------------------------------------------------//
@@ -1385,10 +1389,13 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
                 //품번 출력
                 if (spp.getPrint_NickName_YN() == 1) {
-                    if (!stringToNullCheck(map, "NickName", "").equals("")) {
-                        cpclprinter.printAndroidFont(stringTointPrint(nickName[0]), stringTointPrint(nickName[1]), stringToNullCheck(map, "NickName", " "), intToinchPrint(spp.getLavel_Width()), stringTointPrint(nickName[3] + nickName[4]) + 10);
+                    try {
+                        if (!stringToNullCheck(map, "NickName", "").equals("")) {
+                            cpclprinter.printAndroidFont(stringTointPrint(nickName[0]), stringTointPrint(nickName[1]), stringToNullCheck(map, "NickName", " "), intToinchPrint(spp.getLavel_Width()), stringTointPrint(nickName[3] + nickName[4]) + 10);
+                        }
+                    } catch (Exception e) {
+                        //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
-
                 }
 
                 //분류 출력
@@ -1404,12 +1411,15 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
                 //추가항목 출력
                 if (spp.getPrint_AddItem_YN() == 1) {
-                    if (!stringToNullCheck(map, "AddItem", "").equals("")) {
-                        cpclprinter.printAndroidFont(stringTointPrint(addItem[0]), stringTointPrint(addItem[1]), stringToNullCheck(map, "AddItem", " "), intToinchPrint(spp.getLavel_Width()), stringTointPrint(addItem[3] + addItem[4]) + 10);
+                    try {
+                        if (!stringToNullCheck(map, "AddItem", "").equals("")) {
+                            cpclprinter.printAndroidFont(stringTointPrint(addItem[0]), stringTointPrint(addItem[1]), stringToNullCheck(map, "AddItem", " "), intToinchPrint(spp.getLavel_Width()), stringTointPrint(addItem[3] + addItem[4]) + 10);
+                        }
+                    } catch (Exception e) {
+                        //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
                 //--------------------------------------------------------------------------------//
-
 
                 cpclprinter.setCPCLBarcode(0, 1, 0);
                 cpclprinter.printCPCLBarcode(CPCLConst.LK_CPCL_0_ROTATION, CPCLConst.LK_CPCL_BCS_128, 1, CPCLConst.LK_CPCL_BCS_0RATIO, stringTointPrint(barcode[5]), stringTointPrint(barcode[0]), stringTointPrint(barcode[1]), stringToNullCheck(map, "BarCode", "0"), 0);
@@ -1420,9 +1430,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         }
-
 
         //저장하기
         dba.insert_barPrint(mfillMaps, "1");
@@ -1792,6 +1800,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if (res == null) res = "";
 
         return res;
     }
@@ -2295,7 +2304,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         }
     }
 
-    private void getBaPrintTemp(){
+    private void getBaPrintTemp() {
 
 
     }
