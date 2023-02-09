@@ -416,6 +416,9 @@ public class SPPL3000 {
 
     public void setLKP30_3058() {
 
+        Lavel_Hight = 30;
+        Lavel_Width = 58;
+
         Print_Direction = 0;
         Paper_Gubun = 2;
         Gap_Width = 3;

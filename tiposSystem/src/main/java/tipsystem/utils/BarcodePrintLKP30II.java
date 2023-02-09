@@ -538,6 +538,7 @@ public class BarcodePrintLKP30II extends Activity {
     public void allSave(View view) {
 
         try {
+            //m_paperheight.setText(spp.getLavel_Hight());
 
             String height = m_paperheight.getText().toString();
             if (nullCheck(height)) {

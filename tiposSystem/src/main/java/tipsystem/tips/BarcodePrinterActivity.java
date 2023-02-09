@@ -434,6 +434,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         selectPrinterSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                LocalStorage.setInt(mContext, "SelectBarcodePrinter", i);
                 String tempData = ((Spinner) findViewById(R.id.select_printer_spinner)).getSelectedItem().toString();
                 if (tempData.contains("|") == true) {
 
@@ -1148,8 +1149,9 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 CPCLPrinter cpclprinter = new CPCLPrinter("EUC-KR");
 
                 //인쇄 용지 선택				intToinchPrint(spp.getLavel_Hight())
-                int height = intToinchPrint(spp.getLavel_Hight());
-                cpclprinter.setForm(0, 200, 200, height, count);
+                //int height = intToinchPrint(spp.getLavel_Hight());
+                int width = intToinchPrint(spp.getGap_Width());
+                cpclprinter.setForm(0, 200, 200, width, count);
 
                 //용지 구분
                 cpclprinter.setMedia(intTopapergubun_s(spp.getPaper_Gubun()));
@@ -1173,7 +1175,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 // 용지사이즈 너비 수치
                 // 58:400
                 // 58:464 inch
-                int w0 = spp.getLavel_Hight();
+                //int w0 = spp.getLavel_Hight();
+                int w0 = spp.getLavel_Width();
                 int x0 = 0; // 폰트가로설정값(0,1,2,3)
                 int y0 = 0; // 폰트세로설정값(0,1,2,3)
                 int xp = 0; // 가로 시작위치
@@ -1489,7 +1492,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
         //프린터 셋팅을 합니다.
         //인쇄 용지 선택
-        mBixolonLabelPrinter.setLength(spp.getLavel_Hight(), spp.getGap_Width(), intTopapergubun(spp.getPaper_Gubun()), spp.getGap_Width());
+        //mBixolonLabelPrinter.setLength(spp.getLavel_Hight(), spp.getGap_Width(), intTopapergubun(spp.getPaper_Gubun()), spp.getGap_Width());
+        mBixolonLabelPrinter.setLength(spp.getGap_Width(), spp.getLavel_Hight(), intTopapergubun(spp.getPaper_Gubun()), spp.getGap_Width());
 
         //인쇄방향
         if (spp.getPrint_Direction() == 0) {
@@ -2473,6 +2477,17 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinner_list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         selectPrinterSpinner.setAdapter(adapter);
+
+        //2023.02.09. 여기에서 선택된 바코드프린터 인덱스 체크
+        int SelectBarcodePrinter = 0; //선택바코드프린터 인덱스
+        try {
+            SelectBarcodePrinter = LocalStorage.getInt(mContext, "SelectBarcodePrinter");
+        } catch (RuntimeException e) {
+            LocalStorage.setInt(mContext, "SelectBarcodePrinter", 0);
+        }
+        int spinnerCnt = selectPrinterSpinner.getAdapter().getCount();
+        if (spinnerCnt > SelectBarcodePrinter)
+            selectPrinterSpinner.setSelection(SelectBarcodePrinter);
     }
 
     // 2021.01.05.김영목. 바코드프린터 조회하기

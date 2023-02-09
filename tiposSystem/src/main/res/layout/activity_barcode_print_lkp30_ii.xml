@@ -41,6 +41,25 @@
                 android:layout_width="0dip"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="라벨높이" />
+
+            <EditText
+                android:id="@+id/edit_paperheight"
+                style="@style/EditText_Style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:text="30"
+                android:selectAllOnFocus="true"
+                android:autofillHints="" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="라벨너비" />
 
             <EditText
@@ -53,28 +72,7 @@
                 android:inputType="number"
                 android:gravity="center"
                 android:selectAllOnFocus="true"
-                android:text="30" />
-
-            <TextView
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="라벨높이" />
-
-            <EditText
-                android:id="@+id/edit_paperheight"
-                style="@style/EditText_Style"
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number"
-                android:gravity="center"
-                android:text="58"
-                android:selectAllOnFocus="true"
-                android:autofillHints="" />
-
-
+                android:text="58" />
 
             <TextView
                 android:layout_width="0dip"

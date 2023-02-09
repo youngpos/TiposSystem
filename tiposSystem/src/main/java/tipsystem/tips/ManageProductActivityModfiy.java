@@ -524,6 +524,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         spinnerSelectPrinter.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                LocalStorage.setInt(mContext, "SelectBarcodePrinter", i);
                 String tempData = ((Spinner) findViewById(R.id.spinner_select_printer)).getSelectedItem().toString();
                 if (tempData.contains("|") == true) {
                     try {
@@ -2823,6 +2824,18 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinner_list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerSelectPrinter.setAdapter(adapter);
+
+        //2023.02.09. 여기에서 선택된 바코드프린터 인덱스 체크
+        int SelectBarcodePrinter = 0; //선택바코드프린터 인덱스
+        try {
+            SelectBarcodePrinter = LocalStorage.getInt(mContext, "SelectBarcodePrinter");
+        } catch (RuntimeException e) {
+            LocalStorage.setInt(mContext, "SelectBarcodePrinter", 0);
+        }
+        int spinnerCnt = spinnerSelectPrinter.getAdapter().getCount();
+        if (spinnerCnt > SelectBarcodePrinter)
+            spinnerSelectPrinter.setSelection(SelectBarcodePrinter);
+
     }
 
     //프린터 셋팅 목록

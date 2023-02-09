@@ -436,8 +436,8 @@ public class DBAdapter {
         ContentValues values = new ContentValues();
         //values.put(spp.m_idx, spp.get_idx());
         values.put(spp.m_Print_Size, spp.getPrint_Size());
-        values.put(spp.m_Lavel_Hight, spp.getLavel_Width());
-        values.put(spp.m_Lavel_Width, spp.getLavel_Hight());
+        values.put(spp.m_Lavel_Hight, spp.getLavel_Hight());
+        values.put(spp.m_Lavel_Width, spp.getLavel_Width());
         values.put(spp.m_Print_Direction, spp.getPrint_Direction());
         values.put(spp.m_Paper_Gubun, spp.getPaper_Gubun());
         values.put(spp.m_Gap_Width, spp.getGap_Width());
@@ -505,8 +505,8 @@ public class DBAdapter {
                 //while(cursor.moveToNext()){
                 spp.set_idx(cursor.getInt(0));
                 spp.setPrint_Size(cursor.getString(1));
-                spp.setLavel_Width(cursor.getInt(2));
-                spp.setLavel_Hight(cursor.getInt(3));
+                spp.setLavel_Hight(cursor.getInt(2));
+                spp.setLavel_Width(cursor.getInt(3));
                 spp.setPrint_Direction(cursor.getInt(4));
                 spp.setPaper_Gubun(cursor.getInt(5));
                 spp.setGap_Width(cursor.getInt(6));
