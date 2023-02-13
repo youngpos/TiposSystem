@@ -1,0 +1,1025 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:624:9-632:20
+	android:grantUriPermissions
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:628:13-47
+	android:authorities
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:626:13-60
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:627:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:625:13-67
+manifest
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:17:1-30:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:1-653:12
+	package
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:4:5-31
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:6:5-33
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:5:5-29
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:8:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.CAMERA
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:10:5-65
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-65
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:10:22-62
+uses-permission#android.permission.INTERNET
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:11:22-64
+uses-feature#android.hardware.camera
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:16:5-60
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-60
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-60
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:16:19-57
+uses-permission#android.permission.VIBRATE
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:18:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:19:22-78
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:20:5-74
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:20:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:22:22-65
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:23:5-73
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:23:22-70
+application
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:25:5-651:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-22:19
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:28:9-41
+	android:icon
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:27:9-45
+	android:allowBackup
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:26:9-35
+	android:theme
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:29:9-47
+activity#tipsystem.tips.ShopRebootActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:31:13-61
+activity#tipsystem.tips.ManageSalePosActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:33:9-35:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:34:13-64
+activity#tipsystem.tips.SalesReceiptActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:36:9-39:73
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:39:13-70
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:37:13-63
+activity#tipsystem.tips.SalesDateActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:40:9-42:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:41:13-60
+activity#tipsystem.tips.ManageRealSaleMainActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:43:9-45:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:44:13-69
+activity#tipsystem.tips.RealSaleMainActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:46:9-48:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:48:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:47:13-63
+activity#tipsystem.tips.SalesSlipDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:49:9-51:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:51:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:50:13-66
+activity#tipsystem.tips.SalesSlipActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:52:9-54:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:54:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:53:13-60
+activity#tipsystem.tips.SalesShopActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:55:9-57:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:56:13-60
+activity#tipsystem.tips.MobilePinterTestActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:58:9-60:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:60:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:59:13-67
+activity#tipsystem.tips.ManageEventMenuActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:61:9-63:40
+	android:exported
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:62:13-66
+activity#tipsystem.tips.SaleMessageRegistActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:64:9-66:73
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:66:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:65:13-68
+activity#tipsystem.tips.HotKeyScaleRegistActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:67:9-69:73
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:69:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:68:13-68
+activity#tipsystem.tips.HotKeyRegistActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:70:9-72:73
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:72:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:71:13-63
+activity#tipsystem.tips.CheckRegistActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:9-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:19-68
+activity#tipsystem.tips.TIPSSplashActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:74:9-83:20
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:76:13-45
+	android:theme
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:77:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:75:13-61
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:78:13-82:29
+action#android.intent.action.MAIN
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:17-69
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:17-77
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:27-74
+activity#com.dm.zbar.android.scanner.ZBarScannerActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:84:9-86:53
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-21:53
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-21:53
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:86:13-50
+	android:label
+		ADDED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:85:13-75
+activity#tipsystem.tips.LoginActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:87:9-89:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:89:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:88:13-56
+activity#tipsystem.tips.MainActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:90:9-94:73
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:93:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:92:13-31
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:94:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:91:13-55
+activity#tipsystem.tips.MainMenuActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:95:9-102:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:98:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:97:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:96:13-59
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+	android:value
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+activity#tipsystem.tips.ManageCodeActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:105:9-108:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:108:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:107:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:106:13-61
+activity#tipsystem.tips.ManageProductActivityModfiy
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:109:9-117:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:112:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:111:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:113:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:110:13-70
+activity#tipsystem.tips.ManageCustomerActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:118:9-126:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:121:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:120:13-34
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:122:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:119:13-65
+activity#tipsystem.tips.ComparePriceActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:127:9-135:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:130:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:129:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:131:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:128:13-63
+activity#tipsystem.tips.BarcodePrinterActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:136:9-144:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:139:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:138:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:140:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:137:13-65
+activity#tipsystem.tips.ManageImageFtpActivity_local
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:145:9-154:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:149:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:148:13-37
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:150:13-52
+	android:configChanges
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:147:13-74
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:146:13-71
+activity#tipsystem.tips.ManageImageFtpActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:155:9-164:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:159:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:158:13-37
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:160:13-52
+	android:configChanges
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:157:13-74
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:156:13-65
+activity#tipsystem.tips.ManageSaleMainActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:167:9-174:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:170:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:169:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:168:13-65
+activity#tipsystem.tips.ManageSale_CustomersActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:175:9-183:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:178:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:177:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:179:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:176:13-71
+activity#tipsystem.tips.ManageSalesActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:184:9-191:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:187:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:186:13-38
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:185:13-62
+activity#tipsystem.tips.ManageSale_CategoriActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:192:9-200:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:195:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:194:13-34
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:196:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:193:13-70
+activity#tipsystem.tips.ManageSaleProductActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:201:9-209:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:204:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:203:13-34
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:205:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:202:13-68
+activity#tipsystem.tips.ManageSaleCommissionActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:210:9-218:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:213:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:212:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:214:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:211:13-71
+activity#tipsystem.tips.ManageSaleCommissionDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:219:9-222:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:222:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:221:13-38
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:220:13-77
+activity#tipsystem.tips.ManageSalesCalendarActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:223:9-230:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:226:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:225:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:224:13-70
+activity#tipsystem.tips.ManagePurchaseActivity1_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:234:9-241:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:237:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:236:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:235:13-70
+activity#tipsystem.tips.ManagePurchaseActivity2_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:242:9-245:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:245:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:244:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:243:13-70
+activity#tipsystem.tips.PurchaseListActivity1_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:246:9-249:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:249:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:248:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:247:13-68
+activity#tipsystem.tips.PurchaseListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:250:9-257:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:253:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:252:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:251:13-63
+activity#tipsystem.tips.PurchasePaymentStatusActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:258:9-265:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:261:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:260:13-38
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:259:13-72
+activity#tipsystem.tips.CheckListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:266:9-269:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:269:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:268:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:267:13-60
+activity#tipsystem.tips.PurchaseRegistActivity1_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:270:9-274:55
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:273:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:272:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:274:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:271:13-70
+activity#tipsystem.tips.PurchaseListActivity3_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:275:9-279:55
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:278:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:277:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:279:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:276:13-68
+activity#tipsystem.tips.PurchaseListActivity2_new
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:280:9-283:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:283:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:282:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:281:13-68
+activity#tipsystem.tips.ManageStockActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:287:9-294:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:290:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:289:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:288:13-62
+activity#tipsystem.tips.ManageBaljuRegActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:297:9-305:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:300:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:299:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:301:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:298:13-65
+activity#tipsystem.tips.ManageBaljuDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:306:9-313:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:308:13-49
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:309:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:307:13-68
+activity#tipsystem.tips.ManageEventListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:316:9-323:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:319:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:318:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:317:13-66
+activity#tipsystem.tips.SaleCallHomeManager
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:326:9-330:63
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:329:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:328:13-63
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:330:13-60
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:327:13-62
+activity#tipsystem.tips.ManageDomeSaleCallActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:331:9-334:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:334:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:333:13-38
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:332:13-69
+activity#tipsystem.tips.ManageDomeSaleRegActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:335:9-339:74
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:338:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:337:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:339:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:336:13-68
+activity#tipsystem.tips.HotKeyMainActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:343:9-346:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:346:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:345:13-34
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:344:13-61
+activity#tipsystem.tips.HotKeyManageActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:347:9-350:73
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:349:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:350:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:348:13-63
+activity#tipsystem.tips.HotKeyScaleActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:351:9-354:73
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:353:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:354:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:352:13-62
+activity#tipsystem.tips.SaleMessageManageActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:355:9-358:73
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:357:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:358:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:356:13-68
+activity#tipsystem.tips.ConfigActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:359:9-367:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:362:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:361:13-65
+	android:theme
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:363:13-51
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:360:13-57
+activity#tipsystem.utils.BarcodePrinterSPPL3000
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:368:9-377:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:371:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:370:13-67
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:373:13-70
+	android:theme
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:372:13-51
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:369:13-66
+activity#tipsystem.tips.InputQuestionActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:378:9-385:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:381:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:380:13-66
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:379:13-64
+activity#tipsystem.tips.ReadQuestionActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:386:9-393:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:389:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:388:13-33
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:387:13-63
+activity#tipsystem.tips.ComentQuestionActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:394:9-398:55
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:397:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:396:13-31
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:398:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:395:13-65
+activity#tipsystem.tips.ManageCustomerListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:399:9-402:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:402:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:401:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:400:13-69
+activity#tipsystem.tips.ManageProductActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:403:9-411:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:406:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:405:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:407:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:404:13-64
+activity#tipsystem.tips.ManagerProductBox
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:412:9-420:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:415:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:414:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:416:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:413:13-60
+activity#tipsystem.tips.ManageProductPriceDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:421:9-428:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:424:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:423:13-37
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:422:13-75
+activity#tipsystem.tips.ComparePriceDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:429:9-435:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:431:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:430:13-69
+activity#tipsystem.tips.ManageCodeSmsMessageBoxActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:436:9-444:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:439:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:438:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:440:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:437:13-74
+activity#tipsystem.tips.SmsMessageBoxReg
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:445:9-453:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:448:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:447:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:449:13-73
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:446:13-59
+activity#tipsystem.tips.ManageCodeSMSResults
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:454:9-462:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:457:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:456:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:458:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:455:13-63
+activity#tipsystem.tips.ManageCodeSMSResultsListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:463:9-471:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:466:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:465:13-37
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:467:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:464:13-75
+activity#tipsystem.tips.ManageSMSserverActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:472:9-480:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:475:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:474:13-36
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:476:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:473:13-66
+activity#tipsystem.tips.ManagePurchaseActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:481:9-488:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:484:13-49
+	android:icon
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:483:13-46
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:482:13-65
+activity#tipsystem.tips.PurchaseRegistActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:489:9-497:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:492:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:491:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:493:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:490:13-65
+activity#tipsystem.tips.PurchaseModifyActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:498:9-505:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:501:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:500:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:499:13-65
+activity#tipsystem.tips.PurchaseDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:506:9-513:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:508:13-49
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:509:13-54
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:507:13-65
+activity#tipsystem.tips.PurchaseListDetailViewActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:514:9-520:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:516:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:515:13-73
+activity#tipsystem.tips.PaymentDetailViewActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:521:9-527:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:523:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:522:13-68
+activity#tipsystem.tips.CustomerPurchasePaymentDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:528:9-534:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:530:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:529:13-80
+activity#tipsystem.tips.DeliveryCallHomeManager
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:535:9-539:63
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:538:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:537:13-78
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:539:13-60
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:536:13-66
+activity#tipsystem.tips.ManageHomeDeliveryActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:540:9-547:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:543:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:542:13-35
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:541:13-69
+activity#tipsystem.tips.ManageHomeDeliveryRegActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:548:9-552:74
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:551:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:550:13-35
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:552:13-71
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:549:13-72
+activity#tipsystem.tips.ManageHomeDeliveryCalActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:553:9-557:73
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:556:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:555:13-33
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:557:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:554:13-72
+activity#tipsystem.tips.CustomerProductDetailViewActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:558:9-564:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:560:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:559:13-76
+activity#tipsystem.tips.ManageEventActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:565:9-572:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:567:13-49
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:568:13-52
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:566:13-62
+activity#tipsystem.tips.EventDetailViewActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:573:9-579:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:575:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:574:13-66
+activity#tipsystem.tips.SalesNewsActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:580:9-587:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:583:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:582:13-47
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:581:13-60
+activity#tipsystem.tips.CustomerProductDetailInNewsActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:588:9-594:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:590:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:589:13-78
+activity#tipsystem.tips.ChargeCustomerDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:595:9-601:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:597:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:596:13-71
+activity#tipsystem.tips.ManageProductListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:602:9-604:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:604:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:603:13-68
+activity#tipsystem.tips.TIPSPreferences
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:605:9-607:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:607:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:606:13-58
+activity#tipsystem.tips.TIPSSuSuPreferences
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:608:9-610:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:610:13-49
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:609:13-62
+activity#tipsystem.tips.BarcodePrintHistoryListActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:611:9-614:52
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:614:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:613:13-61
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:612:13-74
+activity#tipsystem.tips.ManageImageListView
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:615:9-622:20
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:618:13-49
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:617:13-74
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:616:13-62
+receiver#tipsystem.utils.M3MoblieBarcodeScanBroadcast
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:9-637:20
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:19-78
+intent-filter#action:name:com.android.server.scannerservice.broadcast
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:634:13-636:29
+action#com.android.server.scannerservice.broadcast
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:17-86
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:25-83
+activity#tipsystem.utils.BarcodePrintLKP30II
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:639:9-642:73
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:641:13-55
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:642:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:640:13-63
+activity#tipsystem.tips.ManageHonmeDeliveryDetailActivity
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:643:9-647:73
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:646:13-55
+	android:label
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:645:13-37
+	android:windowSoftInputMode
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:647:13-70
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:644:13-76
+activity#tipsystem.utils.KisCardPayment
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:648:9-650:58
+	android:screenOrientation
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:650:13-55
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:649:13-58
+uses-sdk
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\pos4515\.gradle\caches\transforms-3\cfe1c0c172ba5188e38e225b6ece245a\transformed\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+		INJECTED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:629:13-631:58
+	android:resource
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:631:17-55
+	android:name
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:630:17-67
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\340a3290f7ebee0cf791d94cb8aeb1f9\transformed\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\1a6b7fcf21c16d26dc81b95bf70bc29b\transformed\transition-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\8a9fb32864e411d4e7a1d1cd949623e0\transformed\support-v4-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\a5926f3f1ba82c3e52d1e3594c7a6451\transformed\animated-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\b4bf66ab3224c94287104245ab89e428\transformed\support-vector-drawable-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\0e03ec9e149d53caf1e35124a69b6998\transformed\support-media-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\f36d7bd50d191fb45b0b426921c7c49f\transformed\support-fragment-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\242f969739a7c4dff742fdffbb6c1c83\transformed\support-core-utils-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\7dc1c7ec1c09a462193002ee85c50a08\transformed\recyclerview-v7-26.1.0\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\47d34e1b2a3f350d8bf0a01c4db18dcf\transformed\support-core-ui-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\48c0538cafdcf213d7341ac14a7a1090\transformed\support-compat-26.1.0\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58

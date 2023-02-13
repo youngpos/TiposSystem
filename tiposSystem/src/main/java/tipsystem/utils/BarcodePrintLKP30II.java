@@ -537,6 +537,15 @@ public class BarcodePrintLKP30II extends Activity {
 
     public void allSave(View view) {
 
+        /* 2023.02.13. 자료유효범위 체크 추가
+         용지크기(mm)단위를 dot단위로 환산하여 각 필드마다 가로세로위치 범위 체크
+         */
+        //----------------------------------------//
+        // 2023.02.13. 유효성 검사 추가
+        //----------------------------------------//
+        if (chkDotValue() == false) return;
+        //----------------------------------------//
+
         try {
             //m_paperheight.setText(spp.getLavel_Hight());
 
@@ -916,4 +925,359 @@ public class BarcodePrintLKP30II extends Activity {
 
 
     }
+
+    private boolean chkDotValue() {
+        boolean rtn = false;
+
+        /* 2023.02.13. 자료유효범위 체크 추가
+         용지크기(mm)단위를 dot단위로 환산하여 각 필드마다 가로세로위치 범위 체크
+         */
+
+        //----------------------------------------//
+        // 리벨 높이,너비
+        //----------------------------------------//
+        //인쇄 용지 가로세로 dot 유효범위를 구한다
+        String s_height = m_paperheight.getText().toString();
+        String s_width = m_paperwidth.getText().toString();
+
+        if (nullCheck(s_height) || nullCheck(s_width)) {
+            Toast.makeText(this, "라벨높이나 너비를 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_paperheight.requestFocus();
+            return rtn;
+        }
+
+        //mm를 dot로 환산
+        int label_height = intToinchPrint(Integer.parseInt(s_height));
+        int label_width = intToinchPrint(Integer.parseInt(s_width));
+
+        if (label_height <= 0 || label_width <= 0) {
+            Toast.makeText(this, "라벨높이나 너비를 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_paperheight.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        int height = 0;
+        int width = 0;
+
+        //----------------------------------------//
+        // GAP간격
+        //----------------------------------------//
+        String s_gap = m_paperinterval.getText().toString();
+        if (nullCheck(s_gap)) {
+            Toast.makeText(this, "GAP 간격을 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_paperinterval.requestFocus();
+            return rtn;
+        }
+
+        int label_gap = Integer.parseInt(s_gap);
+
+        if (label_gap <= 0) {
+            Toast.makeText(this, "GAP 간격을 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_paperinterval.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 품명문자길이
+        //----------------------------------------//
+        String s_length = m_str_length.getText().toString();
+        if (nullCheck(s_length)) {
+            Toast.makeText(this, "품명문자길이를 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_str_length.requestFocus();
+            return rtn;
+        }
+
+        int label_length = Integer.parseInt(s_length);
+
+        if (label_length <= 0) {
+            Toast.makeText(this, "품명문자길이를 입력해 주세요", Toast.LENGTH_SHORT).show();
+            m_str_length.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 상품명 체크
+        //----------------------------------------//
+        s_width = m_gname_garow.getText().toString();
+        s_height = m_gname_serow.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "상품명 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_gname_garow.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "상품명 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_gname_garow.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 규격 체크
+        //----------------------------------------//
+        s_width = m_stdsize_garow.getText().toString();
+        s_height = m_stdsize_serow.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "규격 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_stdsize_garow.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "규격 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_stdsize_garow.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 가격 체크
+        //----------------------------------------//
+        s_width = m_pirce_garow.getText().toString();
+        s_height = m_price_serow.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "가격 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_pirce_garow.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "가격 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_pirce_garow.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 거래처 체크
+        //----------------------------------------//
+        s_width = m_office_garow.getText().toString();
+        s_height = m_office_serow.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "거래처 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_office_garow.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "거래처 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_office_garow.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 단가 체크
+        //----------------------------------------//
+        s_width = m_danga_garow.getText().toString();
+        s_height = m_danga_serow.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "단가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_danga_garow.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "단가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_danga_garow.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 원판매가 체크
+        //----------------------------------------//
+        s_width = sellPriceWidthPointEditText.getText().toString();
+        s_height = sellPriceHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "원판매가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            sellPriceWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "원판매가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            sellPriceWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 할인율 체크
+        //----------------------------------------//
+        s_width = saleSellRateWidthPointEditText.getText().toString();
+        s_height = saleSellRateHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "할인율 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            saleSellRateWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "할인율 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            saleSellRateWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 위치 체크
+        //----------------------------------------//
+        s_width = locationWidthPointEditText.getText().toString();
+        s_height = locationHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "위치 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            locationWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "위치 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            locationWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 품번 체크
+        //----------------------------------------//
+        s_width = nickNameWidthPointEditText.getText().toString();
+        s_height = nickNameHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "품번 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            nickNameWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "품번 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            nickNameWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 분류 체크
+        //----------------------------------------//
+        s_width = branchNameWidthPointEditText.getText().toString();
+        s_height = branchNameHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "분류 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            branchNameWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "분류 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            branchNameWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 추가 체크
+        //----------------------------------------//
+        s_width = addItemWidthPointEditText.getText().toString();
+        s_height = addItemHeightPointEditText.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "추가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            addItemWidthPointEditText.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "추가 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            addItemWidthPointEditText.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        //----------------------------------------//
+        // 바코드 체크
+        //----------------------------------------//
+        s_width = m_barcode_wide.getText().toString();
+        s_height = m_barcode_high.getText().toString();
+
+        if (nullCheck(s_width) || nullCheck(s_height)) {
+            Toast.makeText(this, "바코드 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_barcode_wide.requestFocus();
+            return rtn;
+        }
+
+        height = Integer.parseInt(s_height);
+        width = Integer.parseInt(s_width);
+
+        if (height > label_height || width > label_width) {
+            Toast.makeText(this, "바코드 가로,세로를 확인해 주세요", Toast.LENGTH_SHORT).show();
+            m_barcode_wide.requestFocus();
+            return rtn;
+        }
+        //----------------------------------------//
+
+        rtn = true;
+        return rtn;
+    }
+
+    /**
+     * 인트를 넣으면 도트로 환산해서 출력
+     *
+     * @param milli String
+     * @return int
+     */
+    private int intToinchPrint(int milli) {
+        int res = 0;
+        //res = (int)(milli / 25.4f * 203);
+        res = (int) (milli * 8);
+        Log.d(TAG, res + "");
+        return res;
+    }
+
 }

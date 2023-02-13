@@ -1149,9 +1149,10 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 CPCLPrinter cpclprinter = new CPCLPrinter("EUC-KR");
 
                 //인쇄 용지 선택				intToinchPrint(spp.getLavel_Hight())
-                //int height = intToinchPrint(spp.getLavel_Hight());
-                int width = intToinchPrint(spp.getGap_Width());
-                cpclprinter.setForm(0, 200, 200, width, count);
+                int height = intToinchPrint(spp.getLavel_Hight()); //인트를 넣으면 도트로 환산해서 출력
+                int width = intToinchPrint(spp.getLavel_Width()); //인트를 넣으면 도트로 환산해서 출력
+                cpclprinter.setForm(0, 200, 200, height, count);
+                //cpclprinter.setForm(0, 100, 100, 100, count);
 
                 //용지 구분
                 cpclprinter.setMedia(intTopapergubun_s(spp.getPaper_Gubun()));
@@ -1474,7 +1475,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         return result;
     }
 
-
     //바코드 발행하기
     //바코드 프린터 spp-l3000 전송하기
     //SPP3000
@@ -1667,7 +1667,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
     }
 
-
     //빅슬론 프린터 변환값
 
     /**
@@ -1846,7 +1845,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
     }
 
-
     //리스트저장하기
     private void sendList() {
         String barcode = m_barcode.getText().toString();
@@ -1972,7 +1970,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
     }
 
-
     //거래처 상품 조회하기
     public void doOfficeProductSearch() {
 
@@ -2085,7 +2082,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         }).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
     }
 
-
     //목록에 뿌려줍니다.
     private void printerListViewOffice(JSONArray results) {
 
@@ -2123,7 +2119,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         m_adapter.notifyDataSetChanged();
         m_barcode.requestFocus();
     }
-
 
     //상품조회하기
     public void doQueryWithBarcode(String barcode) {
