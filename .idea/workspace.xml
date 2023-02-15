@@ -13,8 +13,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8454eb2-d0a3-4705-b719-b3b1d0806082" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,14 +20,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/generated/source/buildConfig/debug/kr/co/tipos/tips/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/generated/source/buildConfig/debug/kr/co/tipos/tips/BuildConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/kr/co/tipos/tips/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/kr/co/tipos/tips/BuildConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$21.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$22.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$23.class" afterDir="false" />
@@ -40,15 +36,11 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$28.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/BarcodePrintLKP30II.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/BarcodePrintLKP30II.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_manifests/debug/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_res/debug/layout_activity_barcode_print_lkp30_ii.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/merged_res/debug/layout_activity_barcode_print_lkp30_ii.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/packaged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/packaged_manifests/debug/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/processed_res/debug/out/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/processed_res/debug/out/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/kr/co/tipos/tips/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/kr/co/tipos/tips/BuildConfig.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity$21.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity$21.dex" afterDir="false" />
@@ -62,11 +54,12 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/tips/BarcodePrinterActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/utils/BarcodePrintLKP30II.dex" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/project_dex_archive/debug/out/tipsystem/utils/BarcodePrintLKP30II.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/tiposSystem-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/tiposSystem-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/BarcodePrintLKP30II.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/BarcodePrintLKP30II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/res/layout/activity_barcode_print_lkp30_ii.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/res/layout/activity_barcode_print_lkp30_ii.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
     </list>
@@ -75,7 +68,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R3CM70AV4JJ]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[52003f4ff41894b7]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -226,7 +219,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>1178</line>
+          <line>1176</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
@@ -245,14 +238,64 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>1314</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/BarcodePrintLKP30II.java</url>
           <line>1025</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java</url>
+          <line>953</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>2597</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>2573</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>2596</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>1146</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>2273</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrintHistoryListActivity.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>338</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>793</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>2757</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

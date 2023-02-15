@@ -1,8 +1,0 @@
-CREATE TABLE Temp_EvtPDA (
-_id INTEGER PRIMARY KEY AUTOINCREMENT, Evt_CD TEXT, Evt_Name TEXT, Evt_Gubun TEXT, BarCode TEXT, Evt_SDate TEXT, Evt_EDate TEXT, Evt_STime TEXT,
-Evt_ETime TEXT, DC_Pri TEXT, DC_Rate TEXT, Profit_Rate TEXT, Profit_Pri TEXT, UP_Limit TEXT, DN_Limit TEXT, Bigo TEXT, Write_Date TEXT, Edit_Date TEXT, Writer TEXT,
-Editor TEXT,Sale_Pur TEXT, Sale_Sell TEXT, INEvt_SDate TEXT, INEvt_EDate TEXT, Sell_YN TEXT, G_Name TEXT );
-
-CREATE TABLE BaPrint_History (
-_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,
-Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );

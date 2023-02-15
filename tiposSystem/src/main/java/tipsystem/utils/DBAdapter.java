@@ -44,7 +44,6 @@ public class DBAdapter {
         tipssql = new TipsSQLitHelper(context, name, null, VERSION);
         this.m_officeCode = name.substring(0, 7);
 
-
         //this.open();
         Log.i("DB Start", "start");
 
@@ -56,6 +55,11 @@ public class DBAdapter {
         alterTable_BaPrint();
         //--------------------//
 
+        //--------------------//
+        // 2023.02.15. 김영목. 바코드피린터 히스토리 필드 추가 업데이트
+        //--------------------//
+        alterTable_BaPrintHistory();
+        //--------------------//
     }
 
     //DB open
@@ -118,7 +122,8 @@ public class DBAdapter {
                 }
 
                 query = "insert into BaPrint_History(BaPrint_Num, BarCode, G_Name, Std_Size, Count, Sell_Pri, Bus_Name, "
-                        + "Con_Rate, Unit, Std_Rate, OrgSell_Pri, Print_Date, Print_DateTime, Office_Code) values("
+                        + "Con_Rate, Unit, Std_Rate, OrgSell_Pri, Print_Date, Print_DateTime, Office_Code, "
+                        + "SaleRate, Location, NickName, BranchName, AddItem) values("
                         + "'" + BaPrint_Num + "', "
                         + "'" + map.get("BarCode") + "', "
                         + "'" + map.get("G_Name") + "', "
@@ -136,7 +141,14 @@ public class DBAdapter {
 
                         + "'" + currentDate.toString() + "', "
                         + "'" + currentDateTime.toString() + "', "
-                        + "'" + m_officeCode + "' "
+                        + "'" + m_officeCode + "', "
+
+                        + "'" + map.get("SaleRate") + "', "
+                        + "'" + map.get("Location") + "', "
+                        + "'" + map.get("NickName") + "', "
+                        + "'" + map.get("BranchName") + "', "
+                        + "'" + map.get("AddItem") + "' "
+
                         + ");";
 
                 Log.d(query, "db in");
@@ -938,9 +950,14 @@ public class DBAdapter {
             Log.d(TAG, "Create Table Temp_EvtPDA" + sql);
             db.execSQL(sql);
 
+//			2023.02.15.김영목. 바코드프린터 히스토리 테이블에 필드 추가
+//            sql = "CREATE TABLE BaPrint_History ("
+//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
+//                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
             sql = "CREATE TABLE BaPrint_History ("
                     + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
+                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT ,"
+                    + "Sale_Rate TEXT, Location TEXT, NickName TEXT, BranchName TEXT, AddItem TEXT );";
             Log.d(TAG, "Create Table BaPrint_History" + sql);
             db.execSQL(sql);
 
@@ -1171,27 +1188,59 @@ public class DBAdapter {
 
     }
 
-    // 테이블 컬럼 존재 여부 처리(2021.05.04.김영목)
-    public boolean isColumnExists(String table, String column) {
+    // 2023.02.15. 김영목. 바코드피린터 히스토리 필드 추가 업데이트
+    private void alterTable_BaPrintHistory() {
+        String sql = "";
         boolean isExists = false;
-        Cursor cursor = null;
+
+        db = getSQLiteDatabase("write");
+
+        String exQuery = "";
+        Log.i("DB update ", "Update start");
+
+        db.beginTransaction();
         try {
-            cursor = db.rawQuery("PRAGMA table_info(" + table + ")", null);
-            if (cursor != null) {
-                while (cursor.moveToNext()) {
-                    String name = cursor.getString(cursor.getColumnIndex("name"));
-                    if (column.equalsIgnoreCase(name)) {
-                        isExists = true;
-                        break;
-                    }
-                }
-            }
+            // 할인율(%),위치,품번,분류명,출력일
+            doColumnAlter("BaPrint_History", "SaleRate", "TEXT", "0");
+            doColumnAlter("BaPrint_History", "Location", "TEXT", "");
+            doColumnAlter("BaPrint_History", "NickName", "TEXT", "");
+            doColumnAlter("BaPrint_History", "BranchName", "TEXT", "");
+            doColumnAlter("BaPrint_History", "AddItem", "TEXT", "");
+
+            db.setTransactionSuccessful();
+            Log.i(TAG, "DB Alter Table Successful");
+
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            Log.i(TAG, "DB Alter Table Faild");
+
         } finally {
-            if (cursor != null && !cursor.isClosed())
-                cursor.close();
+            db.endTransaction();
         }
-        return isExists;
     }
+
+//    // 테이블 컬럼 존재 여부 처리(2021.05.04.김영목)
+//    public boolean isColumnExists(String table, String column) {
+//        boolean isExists = false;
+//        Cursor cursor = null;
+//        try {
+//            cursor = db.rawQuery("PRAGMA table_info(" + table + ")", null);
+//            if (cursor != null) {
+//                while (cursor.moveToNext()) {
+//                    String name = cursor.getString(cursor.getColumnIndex("name"));
+//                    if (column.equalsIgnoreCase(name)) {
+//                        isExists = true;
+//                        break;
+//                    }
+//                }
+//            }
+//        } finally {
+//            if (cursor != null && !cursor.isClosed())
+//                cursor.close();
+//        }
+//        return isExists;
+//    }
 
     public void doColumnAlter(String table, String column, String type, String defaultValue) {
 

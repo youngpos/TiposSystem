@@ -112,9 +112,15 @@ public class TipsSQLitHelper extends SQLiteOpenHelper {
 			Log.d(TAG, "Create Table Temp_EvtPDA" + exQuery);
 			db.execSQL(exQuery);
 
+//			2023.02.15.김영목. 바코드프린터 히스토리 테이블에 필드 추가
+//			exQuery = "CREATE TABLE BaPrint_History ("
+//					+"_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
+//					+"Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
 			exQuery = "CREATE TABLE BaPrint_History ("
 					+"_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-					+"Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
+					+"Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT, "
+					+ "Sale_Rate TEXT, Location TEXT, NickName TEXT, BranchName TEXT, AddItem TEXT );";
+
 			Log.d(TAG, "Create Table BaPrint_History" + exQuery);
 			db.execSQL(exQuery);
 

@@ -58,1193 +58,1194 @@
 31-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:27:9-45
 32        android:label="@string/app_name"
 32-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:28:9-41
-33        android:theme="@style/AppSpinnerTheme" >
-33-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:29:9-47
-34        <activity
-34-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:30:9-32:40
-35            android:name="tipsystem.tips.ShopRebootActivity"
-35-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:31:13-61
-36            android:exported="false" />
-36-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:32:13-37
-37        <activity
-37-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:33:9-35:40
-38            android:name="tipsystem.tips.ManageSalePosActivity"
-38-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:34:13-64
-39            android:exported="false" />
-39-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:35:13-37
-40        <activity
-40-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:36:9-39:73
-41            android:name="tipsystem.tips.SalesReceiptActivity"
-41-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:37:13-63
-42            android:exported="false"
-42-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:38:13-37
-43            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-43-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:39:13-70
-44        <activity
-44-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:40:9-42:40
-45            android:name="tipsystem.tips.SalesDateActivity"
-45-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:41:13-60
-46            android:exported="false" />
-46-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:42:13-37
-47        <activity
-47-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:43:9-45:40
-48            android:name="tipsystem.tips.ManageRealSaleMainActivity"
-48-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:44:13-69
-49            android:exported="false" />
-49-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:45:13-37
-50        <activity
-50-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:46:9-48:40
-51            android:name="tipsystem.tips.RealSaleMainActivity"
-51-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:47:13-63
-52            android:exported="false" />
-52-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:48:13-37
-53        <activity
-53-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:49:9-51:40
-54            android:name="tipsystem.tips.SalesSlipDetailActivity"
-54-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:50:13-66
-55            android:exported="false" />
-55-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:51:13-37
-56        <activity
-56-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:52:9-54:40
-57            android:name="tipsystem.tips.SalesSlipActivity"
-57-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:53:13-60
-58            android:exported="false" />
-58-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:54:13-37
-59        <activity
-59-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:55:9-57:40
-60            android:name="tipsystem.tips.SalesShopActivity"
-60-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:56:13-60
-61            android:exported="false" />
-61-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:57:13-37
-62        <activity
-62-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:58:9-60:40
-63            android:name="tipsystem.tips.MobilePinterTestActivity"
-63-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:59:13-67
-64            android:exported="false" />
-64-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:60:13-37
-65        <activity
-65-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:61:9-63:40
-66            android:name="tipsystem.tips.ManageEventMenuActivity"
-66-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:62:13-66
-67            android:exported="false" />
-67-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:63:13-37
-68        <activity
-68-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:64:9-66:73
-69            android:name="tipsystem.tips.SaleMessageRegistActivity"
-69-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:65:13-68
-70            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-70-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:66:13-70
-71        <activity
-71-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:67:9-69:73
-72            android:name="tipsystem.tips.HotKeyScaleRegistActivity"
-72-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:68:13-68
-73            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-73-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:69:13-70
-74        <activity
-74-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:70:9-72:73
-75            android:name="tipsystem.tips.HotKeyRegistActivity"
-75-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:71:13-63
-76            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-76-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:72:13-70
-77        <activity android:name="tipsystem.tips.CheckRegistActivity" />
-77-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:9-71
-77-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:19-68
-78        <activity
-78-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:74:9-83:20
-79            android:name="tipsystem.tips.TIPSSplashActivity"
-79-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:75:13-61
-80            android:label="@string/app_name"
-80-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:76:13-45
-81            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-81-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:77:13-71
-82            <intent-filter>
-82-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:78:13-82:29
-83                <action android:name="android.intent.action.MAIN" />
-83-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:17-69
-83-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:25-66
-84
-85                <category android:name="android.intent.category.LAUNCHER" />
-85-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:17-77
-85-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:27-74
-86            </intent-filter>
-87        </activity>
-88        <activity
-88-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:84:9-86:53
-89            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
-89-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:85:13-75
-90            android:label="@string/app_name"
-90-->[:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-45
-91            android:screenOrientation="landscape" />
-91-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:86:13-50
-92        <activity
-92-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:87:9-89:52
-93            android:name="tipsystem.tips.LoginActivity"
-93-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:88:13-56
-94            android:screenOrientation="portrait" />
-94-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:89:13-49
-95        <activity
-95-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:90:9-94:73
-96            android:name="tipsystem.tips.MainActivity"
-96-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:91:13-55
-97            android:label="인증"
-97-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:92:13-31
-98            android:screenOrientation="portrait"
-98-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:93:13-49
-99            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- 키보드 입력창 안보임 -->
-99-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:94:13-70
-100        <activity
-100-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:95:9-102:20
-101            android:name="tipsystem.tips.MainMenuActivity"
-101-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:96:13-59
-102            android:label="메인메뉴"
-102-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:97:13-33
-103            android:screenOrientation="portrait" >
-103-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:98:13-49
-104            <meta-data
-104-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-105                android:name="android.support.PARENT_ACTIVITY"
-105-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-106                android:value="tipsystem.tips.MainActivity" />
-106-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-107        </activity> <!-- **************************************** -->
-108        <!-- 기본관리 메인페이지 -->
-109        <!-- **************************************** -->
-110        <activity
-110-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:105:9-108:52
-111            android:name="tipsystem.tips.ManageCodeActivity"
-111-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:106:13-61
-112            android:label="기본관리"
-112-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:107:13-33
-113            android:screenOrientation="portrait" />
-113-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:108:13-49
-114        <activity
-114-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:109:9-117:20
-115            android:name="tipsystem.tips.ManageProductActivityModfiy"
-115-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:110:13-70
-116            android:label="상품관리"
-116-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:111:13-33
-117            android:screenOrientation="portrait"
-117-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:112:13-49
-118            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-118-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:113:13-70
-119            <meta-data
-119-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-120                android:name="android.support.PARENT_ACTIVITY"
-120-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-121                android:value="tipsystem.tips.ManageProductActivity" />
-121-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-122        </activity>
-123        <activity
-123-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:118:9-126:20
-124            android:name="tipsystem.tips.ManageCustomerActivity"
-124-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:119:13-65
-125            android:label="거래처관리"
-125-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:120:13-34
-126            android:screenOrientation="portrait"
-126-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:121:13-49
-127            android:windowSoftInputMode="adjustPan" >
-127-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:122:13-52
-128            <meta-data
-128-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-129                android:name="android.support.PARENT_ACTIVITY"
-129-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-130                android:value="tipsystem.tips.ManageCodeActivity" />
-130-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-131        </activity>
-132        <activity
-132-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:127:9-135:20
-133            android:name="tipsystem.tips.ComparePriceActivity"
-133-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:128:13-63
-134            android:label="가격비교"
-134-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:129:13-33
-135            android:screenOrientation="portrait"
-135-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:130:13-49
-136            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-136-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:131:13-70
-137            <meta-data
-137-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-138                android:name="android.support.PARENT_ACTIVITY"
-138-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-139                android:value="tipsystem.tips.ManageCodeActivity" />
-139-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-140        </activity>
-141        <activity
-141-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:136:9-144:20
-142            android:name="tipsystem.tips.BarcodePrinterActivity"
-142-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:137:13-65
-143            android:label="바코드발행관리"
-143-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:138:13-36
-144            android:screenOrientation="portrait"
-144-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:139:13-49
-145            android:windowSoftInputMode="adjustPan" >
-145-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:140:13-52
-146            <meta-data
-146-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-147                android:name="android.support.PARENT_ACTIVITY"
-147-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-148                android:value="tipsystem.tips.ManageCodeActivity" />
-148-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-149        </activity>
-150        <activity
-150-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:145:9-154:20
-151            android:name="tipsystem.tips.ManageImageFtpActivity_local"
-151-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:146:13-71
-152            android:configChanges="keyboardHidden|orientation|screenSize"
-152-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:147:13-74
-153            android:label="이미지FTP전송"
-153-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:148:13-37
-154            android:screenOrientation="portrait"
-154-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:149:13-49
-155            android:windowSoftInputMode="adjustPan" >
-155-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:150:13-52
-156            <meta-data
-156-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-157                android:name="android.support.PARENT_ACTIVITY"
-157-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-158                android:value="tipsystem.tips.ManageCodeActivity" />
-158-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-159        </activity>
-160        <activity
-160-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:155:9-164:20
-161            android:name="tipsystem.tips.ManageImageFtpActivity"
-161-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:156:13-65
-162            android:configChanges="keyboardHidden|orientation|screenSize"
-162-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:157:13-74
-163            android:label="쇼핑몰이미지관리"
-163-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:158:13-37
-164            android:screenOrientation="portrait"
-164-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:159:13-49
-165            android:windowSoftInputMode="adjustPan" >
-165-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:160:13-52
-166            <meta-data
-166-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-167                android:name="android.support.PARENT_ACTIVITY"
-167-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-168                android:value="tipsystem.tips.ManageCodeActivity" />
-168-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-169        </activity> <!-- **************************************** -->
-170        <!-- 매출분석 메인페이지 -->
-171        <!-- **************************************** -->
-172        <activity
-172-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:167:9-174:20
-173            android:name="tipsystem.tips.ManageSaleMainActivity"
-173-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:168:13-65
-174            android:label="매출분석"
-174-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:169:13-33
-175            android:screenOrientation="portrait" >
-175-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:170:13-49
-176            <meta-data
-176-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-177                android:name="android.support.PARENT_ACTIVITY"
-177-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-178                android:value="tipsystem.tips.MainMenuActivity" />
-178-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-179        </activity>
-180        <activity
-180-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:175:9-183:20
-181            android:name="tipsystem.tips.ManageSale_CustomersActivity"
-181-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:176:13-71
-182            android:label="거래처별분석"
-182-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:177:13-35
-183            android:screenOrientation="portrait"
-183-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:178:13-49
-184            android:windowSoftInputMode="stateHidden" >
-184-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:179:13-54
-185            <meta-data
-185-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-186                android:name="android.support.PARENT_ACTIVITY"
-186-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-187                android:value="tipsystem.tips.ManageSaleMainActivity" />
-187-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-188        </activity>
-189        <activity
-189-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:184:9-191:20
-190            android:name="tipsystem.tips.ManageSalesActivity"
-190-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:185:13-62
-191            android:label="거래처별매출분석2"
-191-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:186:13-38
-192            android:screenOrientation="portrait" >
-192-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:187:13-49
-193            <meta-data
-193-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-194                android:name="android.support.PARENT_ACTIVITY"
-194-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-195                android:value="tipsystem.tips.ManageSaleMainActivity" />
-195-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-196        </activity>
-197        <activity
-197-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:192:9-200:20
-198            android:name="tipsystem.tips.ManageSale_CategoriActivity"
-198-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:193:13-70
-199            android:label="분류별분석"
-199-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:194:13-34
-200            android:screenOrientation="portrait"
-200-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:195:13-49
-201            android:windowSoftInputMode="stateHidden" >
-201-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:196:13-54
-202            <meta-data
-202-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-203                android:name="android.support.PARENT_ACTIVITY"
-203-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-204                android:value="tipsystem.tips.ManageSaleMainActivity" />
-204-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-205        </activity>
-206        <activity
-206-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:201:9-209:20
-207            android:name="tipsystem.tips.ManageSaleProductActivity"
-207-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:202:13-68
-208            android:label="상품별분석"
-208-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:203:13-34
-209            android:screenOrientation="portrait"
-209-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:204:13-49
-210            android:windowSoftInputMode="stateHidden" >
-210-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:205:13-54
-211            <meta-data
-211-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-212                android:name="android.support.PARENT_ACTIVITY"
-212-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-213                android:value="tipsystem.tips.ManageSaleMainActivity" />
-213-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-214        </activity>
-215        <activity
-215-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:210:9-218:20
-216            android:name="tipsystem.tips.ManageSaleCommissionActivity"
-216-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:211:13-71
-217            android:label="수수료매출분석"
-217-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:212:13-36
-218            android:screenOrientation="portrait"
-218-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:213:13-49
-219            android:windowSoftInputMode="stateHidden" >
-219-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:214:13-54
-220            <meta-data
-220-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-221                android:name="android.support.PARENT_ACTIVITY"
-221-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-222                android:value="tipsystem.tips.ManageSaleMainActivity" />
-222-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-223        </activity>
-224        <activity
-224-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:219:9-222:52
-225            android:name="tipsystem.tips.ManageSaleCommissionDetailActivity"
-225-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:220:13-77
-226            android:label="수수료매출분석상세"
-226-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:221:13-38
-227            android:screenOrientation="portrait" />
-227-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:222:13-49
-228        <activity
-228-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:223:9-230:20
-229            android:name="tipsystem.tips.ManageSalesCalendarActivity"
-229-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:224:13-70
-230            android:label="달력매출분석"
-230-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:225:13-35
-231            android:screenOrientation="portrait" >
-231-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:226:13-49
-232            <meta-data
-232-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-233                android:name="android.support.PARENT_ACTIVITY"
-233-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-234                android:value="tipsystem.tips.ManageSalesActivity" />
-234-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-235        </activity> <!-- 매출관리 끝 -->
-236        <!-- **************************************** -->
-237        <!-- 신규 매입등록 화면 -->
-238        <!-- **************************************** -->
-239        <activity
-239-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:234:9-241:20
-240            android:name="tipsystem.tips.ManagePurchaseActivity1_new"
-240-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:235:13-70
-241            android:label="매입관리"
-241-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:236:13-33
-242            android:screenOrientation="portrait" >
-242-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:237:13-49
-243            <meta-data
-243-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-244                android:name="android.support.PARENT_ACTIVITY"
-244-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-245                android:value="tipsystem.tips.MainMenuActivity" />
-245-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-246        </activity>
-247        <activity
-247-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:242:9-245:52
-248            android:name="tipsystem.tips.ManagePurchaseActivity2_new"
-248-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:243:13-70
-249            android:label="매입등록"
-249-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:244:13-33
-250            android:screenOrientation="portrait" />
-250-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:245:13-49
-251        <activity
-251-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:246:9-249:52
-252            android:name="tipsystem.tips.PurchaseListActivity1_new"
-252-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:247:13-68
-253            android:label="매입전표목록"
-253-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:248:13-35
-254            android:screenOrientation="portrait" />
-254-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:249:13-49
-255        <activity
-255-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:250:9-257:20
-256            android:name="tipsystem.tips.PurchaseListActivity"
-256-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:251:13-63
-257            android:label="매입전표상세"
-257-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:252:13-35
-258            android:screenOrientation="portrait" >
-258-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:253:13-49
-259            <meta-data
-259-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-260                android:name="android.support.PARENT_ACTIVITY"
-260-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-261                android:value="tipsystem.tips.ManagePurchaseActivity" />
-261-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-262        </activity>
-263        <activity
-263-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:258:9-265:20
-264            android:name="tipsystem.tips.PurchasePaymentStatusActivity"
-264-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:259:13-72
-265            android:label="매입/대금결제현황"
-265-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:260:13-38
-266            android:screenOrientation="portrait" >
-266-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:261:13-49
-267            <meta-data
-267-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-268                android:name="android.support.PARENT_ACTIVITY"
-268-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-269                android:value="tipsystem.tips.ManagePurchaseActivity" />
-269-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-270        </activity>
-271        <activity
-271-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:266:9-269:52
-272            android:name="tipsystem.tips.CheckListActivity"
-272-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:267:13-60
-273            android:label="검수등록"
-273-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:268:13-33
-274            android:screenOrientation="portrait" />
-274-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:269:13-49
-275        <activity
-275-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:270:9-274:55
-276            android:name="tipsystem.tips.PurchaseRegistActivity1_new"
-276-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:271:13-70
-277            android:label="매입등록"
-277-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:272:13-33
-278            android:screenOrientation="portrait"
-278-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:273:13-49
-279            android:windowSoftInputMode="adjustPan" />
-279-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:274:13-52
-280        <activity
-280-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:275:9-279:55
-281            android:name="tipsystem.tips.PurchaseListActivity3_new"
-281-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:276:13-68
-282            android:label="매입미전송목록"
-282-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:277:13-36
-283            android:screenOrientation="portrait"
-283-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:278:13-49
-284            android:windowSoftInputMode="adjustPan" />
-284-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:279:13-52
-285        <activity
-285-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:280:9-283:52
-286            android:name="tipsystem.tips.PurchaseListActivity2_new"
-286-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:281:13-68
-287            android:label="매입전송목록"
-287-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:282:13-35
-288            android:screenOrientation="portrait" /> <!-- 신규 매입등록 끝 -->
-288-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:283:13-49
-289        <!-- **************************************** -->
-290        <!-- 재고관리 -->
-291        <!-- **************************************** -->
-292        <activity
-292-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:287:9-294:20
-293            android:name="tipsystem.tips.ManageStockActivity"
-293-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:288:13-62
-294            android:label="재고관리"
-294-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:289:13-33
-295            android:screenOrientation="portrait" >
-295-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:290:13-49
-296            <meta-data
-296-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-297                android:name="android.support.PARENT_ACTIVITY"
-297-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-298                android:value="tipsystem.tips.MainMenuActivity" />
-298-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-299        </activity> <!-- **************************************** -->
-300        <!-- 발주관리 페이지 -->
-301        <!-- **************************************** -->
-302        <activity
-302-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:297:9-305:20
-303            android:name="tipsystem.tips.ManageBaljuRegActivity"
-303-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:298:13-65
-304            android:label="발주목록"
-304-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:299:13-33
-305            android:screenOrientation="portrait"
-305-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:300:13-49
-306            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
-306-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:301:13-71
-307            <meta-data
-307-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-308                android:name="android.support.PARENT_ACTIVITY"
-308-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-309                android:value="tipsystem.tips.ManageBaljuRegActivity" />
-309-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-310        </activity>
-311        <activity
-311-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:306:9-313:20
-312            android:name="tipsystem.tips.ManageBaljuDetailActivity"
-312-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:307:13-68
-313            android:screenOrientation="portrait"
-313-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:308:13-49
-314            android:windowSoftInputMode="stateHidden" >
-314-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:309:13-54
-315            <meta-data
-315-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-316                android:name="android.support.PARENT_ACTIVITY"
-316-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-317                android:value="tipsystem.tips.ManageBaljuDetailActivity" />
-317-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-318        </activity> <!-- **************************************** -->
-319        <!-- 행사관리 페이지 -->
-320        <!-- **************************************** -->
-321        <activity
-321-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:316:9-323:20
-322            android:name="tipsystem.tips.ManageEventListActivity"
-322-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:317:13-66
-323            android:label="행사관리"
-323-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:318:13-33
-324            android:screenOrientation="portrait" >
-324-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:319:13-49
-325            <meta-data
-325-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-326                android:name="android.support.PARENT_ACTIVITY"
-326-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-327                android:value="tipsystem.tips.MainMenuActivity" />
-327-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-328        </activity> <!-- **************************************** -->
-329        <!-- 도매등록 견적서 관리 -->
-330        <!-- **************************************** -->
-331        <activity
-331-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:326:9-330:63
-332            android:name="tipsystem.tips.SaleCallHomeManager"
-332-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:327:13-62
-333            android:label="@string/title_activity_homemanager"
-333-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:328:13-63
-334            android:screenOrientation="portrait"
-334-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:329:13-49
-335            android:windowSoftInputMode="stateAlwaysHidden" />
-335-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:330:13-60
-336        <activity
-336-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:331:9-334:52
-337            android:name="tipsystem.tips.ManageDomeSaleCallActivity"
-337-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:332:13-69
-338            android:label="도매관리(견적서)"
-338-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:333:13-38
-339            android:screenOrientation="portrait" />
-339-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:334:13-49
-340        <activity
-340-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:335:9-339:74
-341            android:name="tipsystem.tips.ManageDomeSaleRegActivity"
-341-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:336:13-68
-342            android:label="출고등록관리"
-342-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:337:13-35
-343            android:screenOrientation="portrait"
-343-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:338:13-49
-344            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" /> <!-- 도매등록 견적서 관리 -->
-344-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:339:13-71
-345        <!-- **************************************** -->
-346        <!-- 단축키등록 -->
-347        <!-- **************************************** -->
-348        <activity
-348-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:343:9-346:52
-349            android:name="tipsystem.tips.HotKeyMainActivity"
-349-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:344:13-61
-350            android:label="단축키등록"
-350-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:345:13-34
-351            android:screenOrientation="portrait" />
-351-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:346:13-49
-352        <activity
-352-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:347:9-350:73
-353            android:name="tipsystem.tips.HotKeyManageActivity"
-353-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:348:13-63
-354            android:label="소매단축키관리"
-354-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:349:13-36
-355            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-355-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:350:13-70
-356        <activity
-356-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:351:9-354:73
-357            android:name="tipsystem.tips.HotKeyScaleActivity"
-357-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:352:13-62
-358            android:label="저울단축키관리"
-358-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:353:13-36
-359            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-359-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:354:13-70
-360        <activity
-360-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:355:9-358:73
-361            android:name="tipsystem.tips.SaleMessageManageActivity"
-361-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:356:13-68
-362            android:label="판매메세지관리"
-362-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:357:13-36
-363            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-363-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:358:13-70
-364        <activity
-364-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:359:9-367:20
-365            android:name="tipsystem.tips.ConfigActivity"
-365-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:360:13-57
-366            android:label="@string/title_activity_config_detail"
-366-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:361:13-65
-367            android:screenOrientation="portrait"
-367-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:362:13-49
-368            android:theme="@style/AppSpinnerTheme" >
-368-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:363:13-51
-369            <meta-data
-369-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-370                android:name="android.support.PARENT_ACTIVITY"
-370-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-371                android:value="tipsystem.tips.ConfigActivity" />
-371-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-372        </activity>
-373        <activity
-373-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:368:9-377:20
-374            android:name="tipsystem.utils.BarcodePrinterSPPL3000"
-374-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:369:13-66
-375            android:label="@string/title_activity_config_sppl3000"
-375-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:370:13-67
-376            android:screenOrientation="portrait"
-376-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:371:13-49
-377            android:theme="@style/AppSpinnerTheme"
-377-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:372:13-51
-378            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-378-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:373:13-70
-379            <meta-data
-379-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-380                android:name="android.support.PARENT_ACTIVITY"
-380-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-381                android:value="tipsystem.tips.ConfigActivity" />
-381-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-382        </activity>
-383        <activity
-383-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:378:9-385:20
-384            android:name="tipsystem.tips.InputQuestionActivity"
-384-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:379:13-64
-385            android:label="@string/title_activity_input_question"
-385-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:380:13-66
-386            android:screenOrientation="portrait" >
-386-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:381:13-49
-387            <meta-data
-387-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-388                android:name="android.support.PARENT_ACTIVITY"
-388-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-389                android:value="tipsystem.tips.MainMenuActivity" />
-389-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-390        </activity>
-391        <activity
-391-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:386:9-393:20
-392            android:name="tipsystem.tips.ReadQuestionActivity"
-392-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:387:13-63
-393            android:label="문의사항"
-393-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:388:13-33
-394            android:screenOrientation="portrait" >
-394-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:389:13-49
-395            <meta-data
-395-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-396                android:name="android.support.PARENT_ACTIVITY"
-396-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-397                android:value="tipsystem.tips.MainMenuActivity" />
-397-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-398        </activity>
-399        <activity
-399-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:394:9-398:55
-400            android:name="tipsystem.tips.ComentQuestionActivity"
-400-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:395:13-65
-401            android:label="댓글"
-401-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:396:13-31
-402            android:screenOrientation="portrait"
-402-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:397:13-49
-403            android:windowSoftInputMode="adjustPan" />
-403-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:398:13-52
-404        <activity
-404-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:399:9-402:52
-405            android:name="tipsystem.tips.ManageCustomerListActivity"
-405-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:400:13-69
-406            android:label="거래처 선택"
-406-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:401:13-35
-407            android:screenOrientation="portrait" />
-407-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:402:13-49
-408        <activity
-408-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:403:9-411:20
-409            android:name="tipsystem.tips.ManageProductActivity"
-409-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:404:13-64
-410            android:label="상품등록"
-410-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:405:13-33
-411            android:screenOrientation="portrait"
-411-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:406:13-49
-412            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-412-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:407:13-70
-413            <meta-data
-413-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-414                android:name="android.support.PARENT_ACTIVITY"
-414-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-415                android:value="tipsystem.tips.ManageCodeActivity" />
-415-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-416        </activity>
-417        <activity
-417-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:412:9-420:20
-418            android:name="tipsystem.tips.ManagerProductBox"
-418-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:413:13-60
-419            android:label="박스상품등록"
-419-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:414:13-35
-420            android:screenOrientation="portrait"
-420-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:415:13-49
-421            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
-421-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:416:13-71
-422            <meta-data
-422-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-423                android:name="android.support.PARENT_ACTIVITY"
-423-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-424                android:value="tipsystem.tips.ManageProductActivityModfiy" />
-424-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-425        </activity>
-426        <activity
-426-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:421:9-428:20
-427            android:name="tipsystem.tips.ManageProductPriceDetailActivity"
-427-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:422:13-75
-428            android:label="상품등록가격비교"
-428-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:423:13-37
-429            android:screenOrientation="portrait" >
-429-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:424:13-49
-430            <meta-data
-430-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-431                android:name="android.support.PARENT_ACTIVITY"
-431-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-432                android:value="tipsystem.tips.ManageProductPriceDetailActivity" />
-432-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-433        </activity>
-434        <activity
-434-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:429:9-435:20
-435            android:name="tipsystem.tips.ComparePriceDetailActivity"
-435-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:430:13-69
-436            android:screenOrientation="portrait" >
-436-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:431:13-49
-437            <meta-data
-437-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-438                android:name="android.support.PARENT_ACTIVITY"
-438-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-439                android:value="tipsystem.tips.ComparePriceActivity" />
-439-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-440        </activity>
-441        <activity
-441-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:436:9-444:20
-442            android:name="tipsystem.tips.ManageCodeSmsMessageBoxActivity"
-442-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:437:13-74
-443            android:label="문자메세지함"
-443-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:438:13-35
-444            android:screenOrientation="portrait"
-444-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:439:13-49
-445            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-445-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:440:13-70
-446            <meta-data
-446-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-447                android:name="android.support.PARENT_ACTIVITY"
-447-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-448                android:value="tipsystem.tips.ManageCodeActivity" />
-448-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-449        </activity>
-450        <activity
-450-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:445:9-453:20
-451            android:name="tipsystem.tips.SmsMessageBoxReg"
-451-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:446:13-59
-452            android:label="문자메세지작성"
-452-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:447:13-36
-453            android:screenOrientation="portrait"
-453-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:448:13-49
-454            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
-454-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:449:13-73
-455            <meta-data
-455-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-456                android:name="android.support.PARENT_ACTIVITY"
-456-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-457                android:value="tipsystem.tips.ManageCodeSmsMessageBoxActivity" />
-457-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-458        </activity>
-459        <activity
-459-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:454:9-462:20
-460            android:name="tipsystem.tips.ManageCodeSMSResults"
-460-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:455:13-63
-461            android:label="문자전송결과"
-461-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:456:13-35
-462            android:screenOrientation="portrait"
-462-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:457:13-49
-463            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-463-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:458:13-70
-464            <meta-data
-464-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-465                android:name="android.support.PARENT_ACTIVITY"
-465-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-466                android:value="tipsystem.tips.ManageCodeActivity" />
-466-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-467        </activity>
-468        <activity
-468-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:463:9-471:20
-469            android:name="tipsystem.tips.ManageCodeSMSResultsListActivity"
-469-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:464:13-75
-470            android:label="문자전송결과목록"
-470-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:465:13-37
-471            android:screenOrientation="portrait"
-471-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:466:13-49
-472            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-472-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:467:13-70
-473            <meta-data
-473-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-474                android:name="android.support.PARENT_ACTIVITY"
-474-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-475                android:value="tipsystem.tips.ManageCodeSMSResults" />
-475-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-476        </activity>
-477        <activity
-477-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:472:9-480:20
-478            android:name="tipsystem.tips.ManageSMSserverActivity"
-478-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:473:13-66
-479            android:label="문자메세지전송"
-479-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:474:13-36
-480            android:screenOrientation="portrait"
-480-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:475:13-49
-481            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
-481-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:476:13-70
-482            <meta-data
-482-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-483                android:name="android.support.PARENT_ACTIVITY"
-483-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-484                android:value="tipsystem.tips.ManageCodeActivity" />
-484-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-485        </activity>
-486        <activity
-486-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:481:9-488:20
-487            android:name="tipsystem.tips.ManagePurchaseActivity"
-487-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:482:13-65
-488            android:icon="@drawable/home_btn"
-488-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:483:13-46
-489            android:screenOrientation="portrait" >
-489-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:484:13-49
-490            <meta-data
-490-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-491                android:name="android.support.PARENT_ACTIVITY"
-491-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-492                android:value="tipsystem.tips.MainMenuActivity" />
-492-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-493        </activity>
-494        <activity
-494-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:489:9-497:20
-495            android:name="tipsystem.tips.PurchaseRegistActivity"
-495-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:490:13-65
-496            android:label="매입신규등록"
-496-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:491:13-35
-497            android:screenOrientation="portrait"
-497-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:492:13-49
-498            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
-498-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:493:13-71
-499            <meta-data
-499-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-500                android:name="android.support.PARENT_ACTIVITY"
-500-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-501                android:value="tipsystem.tips.PurchaseListActivity" />
-501-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-502        </activity>
-503        <activity
-503-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:498:9-505:20
-504            android:name="tipsystem.tips.PurchaseModifyActivity"
-504-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:499:13-65
-505            android:label="매입수정등록"
-505-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:500:13-35
-506            android:screenOrientation="portrait" >
-506-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:501:13-49
-507            <meta-data
-507-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-508                android:name="android.support.PARENT_ACTIVITY"
-508-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-509                android:value="tipsystem.tips.PurchaseListActivity" />
-509-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-510        </activity>
-511        <activity
-511-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:506:9-513:20
-512            android:name="tipsystem.tips.PurchaseDetailActivity"
-512-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:507:13-65
-513            android:screenOrientation="portrait"
-513-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:508:13-49
-514            android:windowSoftInputMode="stateHidden" >
-514-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:509:13-54
-515            <meta-data
-515-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-516                android:name="android.support.PARENT_ACTIVITY"
-516-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-517                android:value="tipsystem.tips.PurchaseDetailActivity" />
-517-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-518        </activity>
-519        <activity
-519-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:514:9-520:20
-520            android:name="tipsystem.tips.PurchaseListDetailViewActivity"
-520-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:515:13-73
-521            android:screenOrientation="portrait" >
-521-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:516:13-49
-522            <meta-data
-522-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-523                android:name="android.support.PARENT_ACTIVITY"
-523-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-524                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
-524-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-525        </activity>
-526        <activity
-526-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:521:9-527:20
-527            android:name="tipsystem.tips.PaymentDetailViewActivity"
-527-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:522:13-68
-528            android:screenOrientation="portrait" >
-528-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:523:13-49
-529            <meta-data
-529-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-530                android:name="android.support.PARENT_ACTIVITY"
-530-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-531                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
-531-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-532        </activity>
-533        <activity
-533-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:528:9-534:20
-534            android:name="tipsystem.tips.CustomerPurchasePaymentDetailActivity"
-534-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:529:13-80
-535            android:screenOrientation="portrait" >
-535-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:530:13-49
-536            <meta-data
-536-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-537                android:name="android.support.PARENT_ACTIVITY"
-537-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-538                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
-538-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-539        </activity> <!-- 배달관리 -->
-540        <activity
-540-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:535:9-539:63
-541            android:name="tipsystem.tips.DeliveryCallHomeManager"
-541-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:536:13-66
-542            android:label="@string/title_activity_delivery_call_home_manager"
-542-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:537:13-78
-543            android:screenOrientation="portrait"
-543-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:538:13-49
-544            android:windowSoftInputMode="stateAlwaysHidden" />
-544-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:539:13-60
-545        <activity
-545-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:540:9-547:20
-546            android:name="tipsystem.tips.ManageHomeDeliveryActivity"
-546-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:541:13-69
-547            android:label="배송상품등록"
-547-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:542:13-35
-548            android:screenOrientation="portrait" >
-548-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:543:13-49
-549            <meta-data
-549-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-550                android:name="android.support.PARENT_ACTIVITY"
-550-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-551                android:value="tipsystem.tips.MainMenuActivity" />
-551-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-552        </activity>
-553        <activity
-553-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:548:9-552:74
-554            android:name="tipsystem.tips.ManageHomeDeliveryRegActivity"
-554-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:549:13-72
-555            android:label="배송상품등록"
-555-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:550:13-35
-556            android:screenOrientation="portrait"
-556-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:551:13-49
-557            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
-557-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:552:13-71
-558        <activity
-558-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:553:9-557:73
-559            android:name="tipsystem.tips.ManageHomeDeliveryCalActivity"
-559-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:554:13-72
-560            android:label="배송관리"
-560-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:555:13-33
-561            android:screenOrientation="portrait"
-561-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:556:13-49
-562            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- 배달관리 -->
-562-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:557:13-70
-563        <activity
-563-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:558:9-564:20
-564            android:name="tipsystem.tips.CustomerProductDetailViewActivity"
-564-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:559:13-76
-565            android:screenOrientation="portrait" >
-565-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:560:13-49
-566            <meta-data
-566-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-567                android:name="android.support.PARENT_ACTIVITY"
-567-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-568                android:value="tipsystem.tips.ManageSalesActivity" />
-568-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-569        </activity>
-570        <activity
-570-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:565:9-572:20
-571            android:name="tipsystem.tips.ManageEventActivity"
-571-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:566:13-62
-572            android:screenOrientation="portrait"
-572-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:567:13-49
-573            android:windowSoftInputMode="adjustPan" >
-573-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:568:13-52
-574            <meta-data
-574-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-575                android:name="android.support.PARENT_ACTIVITY"
-575-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-576                android:value="tipsystem.tips.MainMenuActivity" />
-576-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-577        </activity>
-578        <activity
-578-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:573:9-579:20
-579            android:name="tipsystem.tips.EventDetailViewActivity"
-579-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:574:13-66
-580            android:screenOrientation="portrait" >
-580-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:575:13-49
-581            <meta-data
-581-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-582                android:name="android.support.PARENT_ACTIVITY"
-582-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-583                android:value="tipsystem.tips.ManageEventActivity" />
-583-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-584        </activity>
-585        <activity
-585-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:580:9-587:20
-586            android:name="tipsystem.tips.SalesNewsActivity"
-586-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:581:13-60
-587            android:label="@string/sales_news"
-587-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:582:13-47
-588            android:screenOrientation="portrait" >
-588-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:583:13-49
-589            <meta-data
-589-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-590                android:name="android.support.PARENT_ACTIVITY"
-590-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-591                android:value="tipsystem.tips.MainMenuActivity" />
-591-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-592        </activity>
-593        <activity
-593-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:588:9-594:20
-594            android:name="tipsystem.tips.CustomerProductDetailInNewsActivity"
-594-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:589:13-78
-595            android:screenOrientation="portrait" >
-595-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:590:13-49
-596            <meta-data
-596-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-597                android:name="android.support.PARENT_ACTIVITY"
-597-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-598                android:value="tipsystem.tips.SalesNewsActivity" />
-598-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-599        </activity>
-600        <activity
-600-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:595:9-601:20
-601            android:name="tipsystem.tips.ChargeCustomerDetailActivity"
-601-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:596:13-71
-602            android:screenOrientation="portrait" >
-602-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:597:13-49
-603            <meta-data
-603-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-604                android:name="android.support.PARENT_ACTIVITY"
-604-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-605                android:value="tipsystem.tips.ManageSalesActivity" />
-605-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-606        </activity>
-607        <activity
-607-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:602:9-604:52
-608            android:name="tipsystem.tips.ManageProductListActivity"
-608-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:603:13-68
-609            android:screenOrientation="portrait" />
-609-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:604:13-49
-610        <activity
-610-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:605:9-607:52
-611            android:name="tipsystem.tips.TIPSPreferences"
-611-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:606:13-58
-612            android:screenOrientation="portrait" />
-612-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:607:13-49
-613        <activity
-613-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:608:9-610:52
-614            android:name="tipsystem.tips.TIPSSuSuPreferences"
-614-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:609:13-62
-615            android:screenOrientation="portrait" />
-615-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:610:13-49
-616        <activity
-616-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:611:9-614:52
-617            android:name="tipsystem.tips.BarcodePrintHistoryListActivity"
-617-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:612:13-74
-618            android:label="@string/barcodeprint_historylist"
-618-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:613:13-61
-619            android:screenOrientation="portrait" />
-619-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:614:13-49
-620        <activity
-620-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:615:9-622:20
-621            android:name="tipsystem.tips.ManageImageListView"
-621-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:616:13-62
-622            android:label="@string/title_activity_manage_image_list_view"
-622-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:617:13-74
-623            android:screenOrientation="portrait" >
-623-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:618:13-49
-624            <meta-data
-624-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
-625                android:name="android.support.PARENT_ACTIVITY"
-625-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
-626                android:value="tipsystem.tips.ManageImageListView" />
-626-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
-627        </activity>
-628
-629        <provider
-630            android:name="android.support.v4.content.FileProvider"
-630-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:625:13-67
-631            android:authorities="kr.co.tipos.tips.provider"
-631-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:626:13-60
-632            android:exported="false"
-632-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:627:13-37
-633            android:grantUriPermissions="true" >
-633-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:628:13-47
-634            <meta-data
-634-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:629:13-631:58
-635                android:name="android.support.FILE_PROVIDER_PATHS"
-635-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:630:17-67
-636                android:resource="@xml/provider_paths" />
-636-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:631:17-55
-637        </provider> <!-- M3 모바일 스캔 결과 받기 -->
-638        <receiver android:name="tipsystem.utils.M3MoblieBarcodeScanBroadcast" >
-638-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:9-637:20
-638-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:19-78
-639            <intent-filter>
-639-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:634:13-636:29
-640                <action android:name="com.android.server.scannerservice.broadcast" />
-640-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:17-86
-640-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:25-83
-641            </intent-filter>
-642        </receiver>
-643
-644        <activity
-644-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:639:9-642:73
-645            android:name="tipsystem.utils.BarcodePrintLKP30II"
-645-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:640:13-63
-646            android:screenOrientation="sensorPortrait"
-646-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:641:13-55
-647            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-647-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:642:13-70
-648        <activity
-648-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:643:9-647:73
-649            android:name="tipsystem.tips.ManageHonmeDeliveryDetailActivity"
-649-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:644:13-76
-650            android:label="배송전표상세보기"
-650-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:645:13-37
-651            android:screenOrientation="sensorPortrait"
-651-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:646:13-55
-652            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-652-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:647:13-70
-653        <activity
-653-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:648:9-650:58
-654            android:name="tipsystem.utils.KisCardPayment"
-654-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:649:13-58
-655            android:screenOrientation="sensorPortrait" />
-655-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:650:13-55
-656
-657        <meta-data
-657-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:26:9-28:38
-658            android:name="android.support.VERSION"
-658-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:27:13-51
-659            android:value="26.1.0" />
-659-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:28:13-35
-660        <meta-data
-660-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
-661            android:name="android.arch.lifecycle.VERSION"
-661-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
-662            android:value="27.0.0-SNAPSHOT" />
-662-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
-663    </application>
-664
-665</manifest>
+33        android:testOnly="true"
+34        android:theme="@style/AppSpinnerTheme" >
+34-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:29:9-47
+35        <activity
+35-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:30:9-32:40
+36            android:name="tipsystem.tips.ShopRebootActivity"
+36-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:31:13-61
+37            android:exported="false" />
+37-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:32:13-37
+38        <activity
+38-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:33:9-35:40
+39            android:name="tipsystem.tips.ManageSalePosActivity"
+39-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:34:13-64
+40            android:exported="false" />
+40-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:35:13-37
+41        <activity
+41-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:36:9-39:73
+42            android:name="tipsystem.tips.SalesReceiptActivity"
+42-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:37:13-63
+43            android:exported="false"
+43-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:38:13-37
+44            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+44-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:39:13-70
+45        <activity
+45-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:40:9-42:40
+46            android:name="tipsystem.tips.SalesDateActivity"
+46-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:41:13-60
+47            android:exported="false" />
+47-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:42:13-37
+48        <activity
+48-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:43:9-45:40
+49            android:name="tipsystem.tips.ManageRealSaleMainActivity"
+49-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:44:13-69
+50            android:exported="false" />
+50-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:45:13-37
+51        <activity
+51-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:46:9-48:40
+52            android:name="tipsystem.tips.RealSaleMainActivity"
+52-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:47:13-63
+53            android:exported="false" />
+53-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:48:13-37
+54        <activity
+54-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:49:9-51:40
+55            android:name="tipsystem.tips.SalesSlipDetailActivity"
+55-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:50:13-66
+56            android:exported="false" />
+56-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:51:13-37
+57        <activity
+57-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:52:9-54:40
+58            android:name="tipsystem.tips.SalesSlipActivity"
+58-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:53:13-60
+59            android:exported="false" />
+59-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:54:13-37
+60        <activity
+60-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:55:9-57:40
+61            android:name="tipsystem.tips.SalesShopActivity"
+61-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:56:13-60
+62            android:exported="false" />
+62-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:57:13-37
+63        <activity
+63-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:58:9-60:40
+64            android:name="tipsystem.tips.MobilePinterTestActivity"
+64-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:59:13-67
+65            android:exported="false" />
+65-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:60:13-37
+66        <activity
+66-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:61:9-63:40
+67            android:name="tipsystem.tips.ManageEventMenuActivity"
+67-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:62:13-66
+68            android:exported="false" />
+68-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:63:13-37
+69        <activity
+69-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:64:9-66:73
+70            android:name="tipsystem.tips.SaleMessageRegistActivity"
+70-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:65:13-68
+71            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+71-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:66:13-70
+72        <activity
+72-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:67:9-69:73
+73            android:name="tipsystem.tips.HotKeyScaleRegistActivity"
+73-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:68:13-68
+74            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+74-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:69:13-70
+75        <activity
+75-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:70:9-72:73
+76            android:name="tipsystem.tips.HotKeyRegistActivity"
+76-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:71:13-63
+77            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+77-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:72:13-70
+78        <activity android:name="tipsystem.tips.CheckRegistActivity" />
+78-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:9-71
+78-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:73:19-68
+79        <activity
+79-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:74:9-83:20
+80            android:name="tipsystem.tips.TIPSSplashActivity"
+80-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:75:13-61
+81            android:label="@string/app_name"
+81-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:76:13-45
+82            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+82-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:77:13-71
+83            <intent-filter>
+83-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:78:13-82:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:17-69
+84-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:79:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:17-77
+86-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:81:27-74
+87            </intent-filter>
+88        </activity>
+89        <activity
+89-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:84:9-86:53
+90            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+90-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:85:13-75
+91            android:label="@string/app_name"
+91-->[:zBarScannerActivity] D:\TIPS\poson_app\TiposSystem\zBarScannerActivity\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-45
+92            android:screenOrientation="landscape" />
+92-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:86:13-50
+93        <activity
+93-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:87:9-89:52
+94            android:name="tipsystem.tips.LoginActivity"
+94-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:88:13-56
+95            android:screenOrientation="portrait" />
+95-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:89:13-49
+96        <activity
+96-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:90:9-94:73
+97            android:name="tipsystem.tips.MainActivity"
+97-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:91:13-55
+98            android:label="인증"
+98-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:92:13-31
+99            android:screenOrientation="portrait"
+99-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:93:13-49
+100            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- 키보드 입력창 안보임 -->
+100-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:94:13-70
+101        <activity
+101-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:95:9-102:20
+102            android:name="tipsystem.tips.MainMenuActivity"
+102-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:96:13-59
+103            android:label="메인메뉴"
+103-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:97:13-33
+104            android:screenOrientation="portrait" >
+104-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:98:13-49
+105            <meta-data
+105-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+106                android:name="android.support.PARENT_ACTIVITY"
+106-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+107                android:value="tipsystem.tips.MainActivity" />
+107-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+108        </activity> <!-- **************************************** -->
+109        <!-- 기본관리 메인페이지 -->
+110        <!-- **************************************** -->
+111        <activity
+111-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:105:9-108:52
+112            android:name="tipsystem.tips.ManageCodeActivity"
+112-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:106:13-61
+113            android:label="기본관리"
+113-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:107:13-33
+114            android:screenOrientation="portrait" />
+114-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:108:13-49
+115        <activity
+115-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:109:9-117:20
+116            android:name="tipsystem.tips.ManageProductActivityModfiy"
+116-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:110:13-70
+117            android:label="상품관리"
+117-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:111:13-33
+118            android:screenOrientation="portrait"
+118-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:112:13-49
+119            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+119-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:113:13-70
+120            <meta-data
+120-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+121                android:name="android.support.PARENT_ACTIVITY"
+121-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+122                android:value="tipsystem.tips.ManageProductActivity" />
+122-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+123        </activity>
+124        <activity
+124-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:118:9-126:20
+125            android:name="tipsystem.tips.ManageCustomerActivity"
+125-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:119:13-65
+126            android:label="거래처관리"
+126-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:120:13-34
+127            android:screenOrientation="portrait"
+127-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:121:13-49
+128            android:windowSoftInputMode="adjustPan" >
+128-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:122:13-52
+129            <meta-data
+129-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+130                android:name="android.support.PARENT_ACTIVITY"
+130-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+131                android:value="tipsystem.tips.ManageCodeActivity" />
+131-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+132        </activity>
+133        <activity
+133-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:127:9-135:20
+134            android:name="tipsystem.tips.ComparePriceActivity"
+134-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:128:13-63
+135            android:label="가격비교"
+135-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:129:13-33
+136            android:screenOrientation="portrait"
+136-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:130:13-49
+137            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+137-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:131:13-70
+138            <meta-data
+138-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+139                android:name="android.support.PARENT_ACTIVITY"
+139-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+140                android:value="tipsystem.tips.ManageCodeActivity" />
+140-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+141        </activity>
+142        <activity
+142-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:136:9-144:20
+143            android:name="tipsystem.tips.BarcodePrinterActivity"
+143-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:137:13-65
+144            android:label="바코드발행관리"
+144-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:138:13-36
+145            android:screenOrientation="portrait"
+145-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:139:13-49
+146            android:windowSoftInputMode="adjustPan" >
+146-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:140:13-52
+147            <meta-data
+147-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+148                android:name="android.support.PARENT_ACTIVITY"
+148-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+149                android:value="tipsystem.tips.ManageCodeActivity" />
+149-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+150        </activity>
+151        <activity
+151-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:145:9-154:20
+152            android:name="tipsystem.tips.ManageImageFtpActivity_local"
+152-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:146:13-71
+153            android:configChanges="keyboardHidden|orientation|screenSize"
+153-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:147:13-74
+154            android:label="이미지FTP전송"
+154-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:148:13-37
+155            android:screenOrientation="portrait"
+155-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:149:13-49
+156            android:windowSoftInputMode="adjustPan" >
+156-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:150:13-52
+157            <meta-data
+157-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+158                android:name="android.support.PARENT_ACTIVITY"
+158-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+159                android:value="tipsystem.tips.ManageCodeActivity" />
+159-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+160        </activity>
+161        <activity
+161-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:155:9-164:20
+162            android:name="tipsystem.tips.ManageImageFtpActivity"
+162-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:156:13-65
+163            android:configChanges="keyboardHidden|orientation|screenSize"
+163-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:157:13-74
+164            android:label="쇼핑몰이미지관리"
+164-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:158:13-37
+165            android:screenOrientation="portrait"
+165-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:159:13-49
+166            android:windowSoftInputMode="adjustPan" >
+166-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:160:13-52
+167            <meta-data
+167-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+168                android:name="android.support.PARENT_ACTIVITY"
+168-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+169                android:value="tipsystem.tips.ManageCodeActivity" />
+169-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+170        </activity> <!-- **************************************** -->
+171        <!-- 매출분석 메인페이지 -->
+172        <!-- **************************************** -->
+173        <activity
+173-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:167:9-174:20
+174            android:name="tipsystem.tips.ManageSaleMainActivity"
+174-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:168:13-65
+175            android:label="매출분석"
+175-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:169:13-33
+176            android:screenOrientation="portrait" >
+176-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:170:13-49
+177            <meta-data
+177-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+178                android:name="android.support.PARENT_ACTIVITY"
+178-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+179                android:value="tipsystem.tips.MainMenuActivity" />
+179-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+180        </activity>
+181        <activity
+181-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:175:9-183:20
+182            android:name="tipsystem.tips.ManageSale_CustomersActivity"
+182-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:176:13-71
+183            android:label="거래처별분석"
+183-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:177:13-35
+184            android:screenOrientation="portrait"
+184-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:178:13-49
+185            android:windowSoftInputMode="stateHidden" >
+185-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:179:13-54
+186            <meta-data
+186-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+187                android:name="android.support.PARENT_ACTIVITY"
+187-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+188                android:value="tipsystem.tips.ManageSaleMainActivity" />
+188-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+189        </activity>
+190        <activity
+190-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:184:9-191:20
+191            android:name="tipsystem.tips.ManageSalesActivity"
+191-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:185:13-62
+192            android:label="거래처별매출분석2"
+192-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:186:13-38
+193            android:screenOrientation="portrait" >
+193-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:187:13-49
+194            <meta-data
+194-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+195                android:name="android.support.PARENT_ACTIVITY"
+195-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+196                android:value="tipsystem.tips.ManageSaleMainActivity" />
+196-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+197        </activity>
+198        <activity
+198-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:192:9-200:20
+199            android:name="tipsystem.tips.ManageSale_CategoriActivity"
+199-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:193:13-70
+200            android:label="분류별분석"
+200-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:194:13-34
+201            android:screenOrientation="portrait"
+201-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:195:13-49
+202            android:windowSoftInputMode="stateHidden" >
+202-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:196:13-54
+203            <meta-data
+203-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+204                android:name="android.support.PARENT_ACTIVITY"
+204-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+205                android:value="tipsystem.tips.ManageSaleMainActivity" />
+205-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+206        </activity>
+207        <activity
+207-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:201:9-209:20
+208            android:name="tipsystem.tips.ManageSaleProductActivity"
+208-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:202:13-68
+209            android:label="상품별분석"
+209-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:203:13-34
+210            android:screenOrientation="portrait"
+210-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:204:13-49
+211            android:windowSoftInputMode="stateHidden" >
+211-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:205:13-54
+212            <meta-data
+212-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+213                android:name="android.support.PARENT_ACTIVITY"
+213-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+214                android:value="tipsystem.tips.ManageSaleMainActivity" />
+214-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+215        </activity>
+216        <activity
+216-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:210:9-218:20
+217            android:name="tipsystem.tips.ManageSaleCommissionActivity"
+217-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:211:13-71
+218            android:label="수수료매출분석"
+218-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:212:13-36
+219            android:screenOrientation="portrait"
+219-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:213:13-49
+220            android:windowSoftInputMode="stateHidden" >
+220-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:214:13-54
+221            <meta-data
+221-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+222                android:name="android.support.PARENT_ACTIVITY"
+222-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+223                android:value="tipsystem.tips.ManageSaleMainActivity" />
+223-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+224        </activity>
+225        <activity
+225-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:219:9-222:52
+226            android:name="tipsystem.tips.ManageSaleCommissionDetailActivity"
+226-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:220:13-77
+227            android:label="수수료매출분석상세"
+227-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:221:13-38
+228            android:screenOrientation="portrait" />
+228-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:222:13-49
+229        <activity
+229-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:223:9-230:20
+230            android:name="tipsystem.tips.ManageSalesCalendarActivity"
+230-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:224:13-70
+231            android:label="달력매출분석"
+231-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:225:13-35
+232            android:screenOrientation="portrait" >
+232-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:226:13-49
+233            <meta-data
+233-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+234                android:name="android.support.PARENT_ACTIVITY"
+234-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+235                android:value="tipsystem.tips.ManageSalesActivity" />
+235-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+236        </activity> <!-- 매출관리 끝 -->
+237        <!-- **************************************** -->
+238        <!-- 신규 매입등록 화면 -->
+239        <!-- **************************************** -->
+240        <activity
+240-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:234:9-241:20
+241            android:name="tipsystem.tips.ManagePurchaseActivity1_new"
+241-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:235:13-70
+242            android:label="매입관리"
+242-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:236:13-33
+243            android:screenOrientation="portrait" >
+243-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:237:13-49
+244            <meta-data
+244-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+245                android:name="android.support.PARENT_ACTIVITY"
+245-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+246                android:value="tipsystem.tips.MainMenuActivity" />
+246-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+247        </activity>
+248        <activity
+248-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:242:9-245:52
+249            android:name="tipsystem.tips.ManagePurchaseActivity2_new"
+249-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:243:13-70
+250            android:label="매입등록"
+250-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:244:13-33
+251            android:screenOrientation="portrait" />
+251-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:245:13-49
+252        <activity
+252-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:246:9-249:52
+253            android:name="tipsystem.tips.PurchaseListActivity1_new"
+253-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:247:13-68
+254            android:label="매입전표목록"
+254-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:248:13-35
+255            android:screenOrientation="portrait" />
+255-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:249:13-49
+256        <activity
+256-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:250:9-257:20
+257            android:name="tipsystem.tips.PurchaseListActivity"
+257-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:251:13-63
+258            android:label="매입전표상세"
+258-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:252:13-35
+259            android:screenOrientation="portrait" >
+259-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:253:13-49
+260            <meta-data
+260-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+261                android:name="android.support.PARENT_ACTIVITY"
+261-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+262                android:value="tipsystem.tips.ManagePurchaseActivity" />
+262-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+263        </activity>
+264        <activity
+264-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:258:9-265:20
+265            android:name="tipsystem.tips.PurchasePaymentStatusActivity"
+265-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:259:13-72
+266            android:label="매입/대금결제현황"
+266-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:260:13-38
+267            android:screenOrientation="portrait" >
+267-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:261:13-49
+268            <meta-data
+268-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+269                android:name="android.support.PARENT_ACTIVITY"
+269-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+270                android:value="tipsystem.tips.ManagePurchaseActivity" />
+270-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+271        </activity>
+272        <activity
+272-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:266:9-269:52
+273            android:name="tipsystem.tips.CheckListActivity"
+273-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:267:13-60
+274            android:label="검수등록"
+274-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:268:13-33
+275            android:screenOrientation="portrait" />
+275-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:269:13-49
+276        <activity
+276-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:270:9-274:55
+277            android:name="tipsystem.tips.PurchaseRegistActivity1_new"
+277-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:271:13-70
+278            android:label="매입등록"
+278-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:272:13-33
+279            android:screenOrientation="portrait"
+279-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:273:13-49
+280            android:windowSoftInputMode="adjustPan" />
+280-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:274:13-52
+281        <activity
+281-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:275:9-279:55
+282            android:name="tipsystem.tips.PurchaseListActivity3_new"
+282-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:276:13-68
+283            android:label="매입미전송목록"
+283-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:277:13-36
+284            android:screenOrientation="portrait"
+284-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:278:13-49
+285            android:windowSoftInputMode="adjustPan" />
+285-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:279:13-52
+286        <activity
+286-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:280:9-283:52
+287            android:name="tipsystem.tips.PurchaseListActivity2_new"
+287-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:281:13-68
+288            android:label="매입전송목록"
+288-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:282:13-35
+289            android:screenOrientation="portrait" /> <!-- 신규 매입등록 끝 -->
+289-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:283:13-49
+290        <!-- **************************************** -->
+291        <!-- 재고관리 -->
+292        <!-- **************************************** -->
+293        <activity
+293-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:287:9-294:20
+294            android:name="tipsystem.tips.ManageStockActivity"
+294-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:288:13-62
+295            android:label="재고관리"
+295-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:289:13-33
+296            android:screenOrientation="portrait" >
+296-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:290:13-49
+297            <meta-data
+297-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+298                android:name="android.support.PARENT_ACTIVITY"
+298-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+299                android:value="tipsystem.tips.MainMenuActivity" />
+299-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+300        </activity> <!-- **************************************** -->
+301        <!-- 발주관리 페이지 -->
+302        <!-- **************************************** -->
+303        <activity
+303-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:297:9-305:20
+304            android:name="tipsystem.tips.ManageBaljuRegActivity"
+304-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:298:13-65
+305            android:label="발주목록"
+305-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:299:13-33
+306            android:screenOrientation="portrait"
+306-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:300:13-49
+307            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+307-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:301:13-71
+308            <meta-data
+308-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+309                android:name="android.support.PARENT_ACTIVITY"
+309-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+310                android:value="tipsystem.tips.ManageBaljuRegActivity" />
+310-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+311        </activity>
+312        <activity
+312-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:306:9-313:20
+313            android:name="tipsystem.tips.ManageBaljuDetailActivity"
+313-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:307:13-68
+314            android:screenOrientation="portrait"
+314-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:308:13-49
+315            android:windowSoftInputMode="stateHidden" >
+315-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:309:13-54
+316            <meta-data
+316-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+317                android:name="android.support.PARENT_ACTIVITY"
+317-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+318                android:value="tipsystem.tips.ManageBaljuDetailActivity" />
+318-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+319        </activity> <!-- **************************************** -->
+320        <!-- 행사관리 페이지 -->
+321        <!-- **************************************** -->
+322        <activity
+322-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:316:9-323:20
+323            android:name="tipsystem.tips.ManageEventListActivity"
+323-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:317:13-66
+324            android:label="행사관리"
+324-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:318:13-33
+325            android:screenOrientation="portrait" >
+325-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:319:13-49
+326            <meta-data
+326-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+327                android:name="android.support.PARENT_ACTIVITY"
+327-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+328                android:value="tipsystem.tips.MainMenuActivity" />
+328-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+329        </activity> <!-- **************************************** -->
+330        <!-- 도매등록 견적서 관리 -->
+331        <!-- **************************************** -->
+332        <activity
+332-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:326:9-330:63
+333            android:name="tipsystem.tips.SaleCallHomeManager"
+333-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:327:13-62
+334            android:label="@string/title_activity_homemanager"
+334-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:328:13-63
+335            android:screenOrientation="portrait"
+335-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:329:13-49
+336            android:windowSoftInputMode="stateAlwaysHidden" />
+336-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:330:13-60
+337        <activity
+337-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:331:9-334:52
+338            android:name="tipsystem.tips.ManageDomeSaleCallActivity"
+338-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:332:13-69
+339            android:label="도매관리(견적서)"
+339-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:333:13-38
+340            android:screenOrientation="portrait" />
+340-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:334:13-49
+341        <activity
+341-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:335:9-339:74
+342            android:name="tipsystem.tips.ManageDomeSaleRegActivity"
+342-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:336:13-68
+343            android:label="출고등록관리"
+343-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:337:13-35
+344            android:screenOrientation="portrait"
+344-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:338:13-49
+345            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" /> <!-- 도매등록 견적서 관리 -->
+345-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:339:13-71
+346        <!-- **************************************** -->
+347        <!-- 단축키등록 -->
+348        <!-- **************************************** -->
+349        <activity
+349-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:343:9-346:52
+350            android:name="tipsystem.tips.HotKeyMainActivity"
+350-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:344:13-61
+351            android:label="단축키등록"
+351-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:345:13-34
+352            android:screenOrientation="portrait" />
+352-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:346:13-49
+353        <activity
+353-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:347:9-350:73
+354            android:name="tipsystem.tips.HotKeyManageActivity"
+354-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:348:13-63
+355            android:label="소매단축키관리"
+355-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:349:13-36
+356            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+356-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:350:13-70
+357        <activity
+357-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:351:9-354:73
+358            android:name="tipsystem.tips.HotKeyScaleActivity"
+358-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:352:13-62
+359            android:label="저울단축키관리"
+359-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:353:13-36
+360            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+360-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:354:13-70
+361        <activity
+361-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:355:9-358:73
+362            android:name="tipsystem.tips.SaleMessageManageActivity"
+362-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:356:13-68
+363            android:label="판매메세지관리"
+363-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:357:13-36
+364            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+364-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:358:13-70
+365        <activity
+365-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:359:9-367:20
+366            android:name="tipsystem.tips.ConfigActivity"
+366-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:360:13-57
+367            android:label="@string/title_activity_config_detail"
+367-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:361:13-65
+368            android:screenOrientation="portrait"
+368-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:362:13-49
+369            android:theme="@style/AppSpinnerTheme" >
+369-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:363:13-51
+370            <meta-data
+370-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+371                android:name="android.support.PARENT_ACTIVITY"
+371-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+372                android:value="tipsystem.tips.ConfigActivity" />
+372-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+373        </activity>
+374        <activity
+374-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:368:9-377:20
+375            android:name="tipsystem.utils.BarcodePrinterSPPL3000"
+375-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:369:13-66
+376            android:label="@string/title_activity_config_sppl3000"
+376-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:370:13-67
+377            android:screenOrientation="portrait"
+377-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:371:13-49
+378            android:theme="@style/AppSpinnerTheme"
+378-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:372:13-51
+379            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+379-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:373:13-70
+380            <meta-data
+380-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+381                android:name="android.support.PARENT_ACTIVITY"
+381-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+382                android:value="tipsystem.tips.ConfigActivity" />
+382-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+383        </activity>
+384        <activity
+384-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:378:9-385:20
+385            android:name="tipsystem.tips.InputQuestionActivity"
+385-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:379:13-64
+386            android:label="@string/title_activity_input_question"
+386-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:380:13-66
+387            android:screenOrientation="portrait" >
+387-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:381:13-49
+388            <meta-data
+388-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+389                android:name="android.support.PARENT_ACTIVITY"
+389-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+390                android:value="tipsystem.tips.MainMenuActivity" />
+390-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+391        </activity>
+392        <activity
+392-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:386:9-393:20
+393            android:name="tipsystem.tips.ReadQuestionActivity"
+393-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:387:13-63
+394            android:label="문의사항"
+394-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:388:13-33
+395            android:screenOrientation="portrait" >
+395-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:389:13-49
+396            <meta-data
+396-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+397                android:name="android.support.PARENT_ACTIVITY"
+397-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+398                android:value="tipsystem.tips.MainMenuActivity" />
+398-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+399        </activity>
+400        <activity
+400-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:394:9-398:55
+401            android:name="tipsystem.tips.ComentQuestionActivity"
+401-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:395:13-65
+402            android:label="댓글"
+402-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:396:13-31
+403            android:screenOrientation="portrait"
+403-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:397:13-49
+404            android:windowSoftInputMode="adjustPan" />
+404-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:398:13-52
+405        <activity
+405-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:399:9-402:52
+406            android:name="tipsystem.tips.ManageCustomerListActivity"
+406-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:400:13-69
+407            android:label="거래처 선택"
+407-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:401:13-35
+408            android:screenOrientation="portrait" />
+408-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:402:13-49
+409        <activity
+409-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:403:9-411:20
+410            android:name="tipsystem.tips.ManageProductActivity"
+410-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:404:13-64
+411            android:label="상품등록"
+411-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:405:13-33
+412            android:screenOrientation="portrait"
+412-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:406:13-49
+413            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+413-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:407:13-70
+414            <meta-data
+414-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+415                android:name="android.support.PARENT_ACTIVITY"
+415-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+416                android:value="tipsystem.tips.ManageCodeActivity" />
+416-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+417        </activity>
+418        <activity
+418-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:412:9-420:20
+419            android:name="tipsystem.tips.ManagerProductBox"
+419-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:413:13-60
+420            android:label="박스상품등록"
+420-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:414:13-35
+421            android:screenOrientation="portrait"
+421-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:415:13-49
+422            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+422-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:416:13-71
+423            <meta-data
+423-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+424                android:name="android.support.PARENT_ACTIVITY"
+424-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+425                android:value="tipsystem.tips.ManageProductActivityModfiy" />
+425-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+426        </activity>
+427        <activity
+427-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:421:9-428:20
+428            android:name="tipsystem.tips.ManageProductPriceDetailActivity"
+428-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:422:13-75
+429            android:label="상품등록가격비교"
+429-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:423:13-37
+430            android:screenOrientation="portrait" >
+430-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:424:13-49
+431            <meta-data
+431-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+432                android:name="android.support.PARENT_ACTIVITY"
+432-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+433                android:value="tipsystem.tips.ManageProductPriceDetailActivity" />
+433-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+434        </activity>
+435        <activity
+435-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:429:9-435:20
+436            android:name="tipsystem.tips.ComparePriceDetailActivity"
+436-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:430:13-69
+437            android:screenOrientation="portrait" >
+437-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:431:13-49
+438            <meta-data
+438-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+439                android:name="android.support.PARENT_ACTIVITY"
+439-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+440                android:value="tipsystem.tips.ComparePriceActivity" />
+440-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+441        </activity>
+442        <activity
+442-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:436:9-444:20
+443            android:name="tipsystem.tips.ManageCodeSmsMessageBoxActivity"
+443-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:437:13-74
+444            android:label="문자메세지함"
+444-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:438:13-35
+445            android:screenOrientation="portrait"
+445-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:439:13-49
+446            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+446-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:440:13-70
+447            <meta-data
+447-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+448                android:name="android.support.PARENT_ACTIVITY"
+448-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+449                android:value="tipsystem.tips.ManageCodeActivity" />
+449-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+450        </activity>
+451        <activity
+451-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:445:9-453:20
+452            android:name="tipsystem.tips.SmsMessageBoxReg"
+452-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:446:13-59
+453            android:label="문자메세지작성"
+453-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:447:13-36
+454            android:screenOrientation="portrait"
+454-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:448:13-49
+455            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+455-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:449:13-73
+456            <meta-data
+456-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+457                android:name="android.support.PARENT_ACTIVITY"
+457-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+458                android:value="tipsystem.tips.ManageCodeSmsMessageBoxActivity" />
+458-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+459        </activity>
+460        <activity
+460-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:454:9-462:20
+461            android:name="tipsystem.tips.ManageCodeSMSResults"
+461-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:455:13-63
+462            android:label="문자전송결과"
+462-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:456:13-35
+463            android:screenOrientation="portrait"
+463-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:457:13-49
+464            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+464-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:458:13-70
+465            <meta-data
+465-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+466                android:name="android.support.PARENT_ACTIVITY"
+466-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+467                android:value="tipsystem.tips.ManageCodeActivity" />
+467-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+468        </activity>
+469        <activity
+469-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:463:9-471:20
+470            android:name="tipsystem.tips.ManageCodeSMSResultsListActivity"
+470-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:464:13-75
+471            android:label="문자전송결과목록"
+471-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:465:13-37
+472            android:screenOrientation="portrait"
+472-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:466:13-49
+473            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+473-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:467:13-70
+474            <meta-data
+474-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+475                android:name="android.support.PARENT_ACTIVITY"
+475-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+476                android:value="tipsystem.tips.ManageCodeSMSResults" />
+476-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+477        </activity>
+478        <activity
+478-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:472:9-480:20
+479            android:name="tipsystem.tips.ManageSMSserverActivity"
+479-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:473:13-66
+480            android:label="문자메세지전송"
+480-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:474:13-36
+481            android:screenOrientation="portrait"
+481-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:475:13-49
+482            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+482-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:476:13-70
+483            <meta-data
+483-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+484                android:name="android.support.PARENT_ACTIVITY"
+484-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+485                android:value="tipsystem.tips.ManageCodeActivity" />
+485-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+486        </activity>
+487        <activity
+487-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:481:9-488:20
+488            android:name="tipsystem.tips.ManagePurchaseActivity"
+488-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:482:13-65
+489            android:icon="@drawable/home_btn"
+489-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:483:13-46
+490            android:screenOrientation="portrait" >
+490-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:484:13-49
+491            <meta-data
+491-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+492                android:name="android.support.PARENT_ACTIVITY"
+492-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+493                android:value="tipsystem.tips.MainMenuActivity" />
+493-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+494        </activity>
+495        <activity
+495-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:489:9-497:20
+496            android:name="tipsystem.tips.PurchaseRegistActivity"
+496-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:490:13-65
+497            android:label="매입신규등록"
+497-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:491:13-35
+498            android:screenOrientation="portrait"
+498-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:492:13-49
+499            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+499-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:493:13-71
+500            <meta-data
+500-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+501                android:name="android.support.PARENT_ACTIVITY"
+501-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+502                android:value="tipsystem.tips.PurchaseListActivity" />
+502-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+503        </activity>
+504        <activity
+504-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:498:9-505:20
+505            android:name="tipsystem.tips.PurchaseModifyActivity"
+505-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:499:13-65
+506            android:label="매입수정등록"
+506-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:500:13-35
+507            android:screenOrientation="portrait" >
+507-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:501:13-49
+508            <meta-data
+508-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+509                android:name="android.support.PARENT_ACTIVITY"
+509-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+510                android:value="tipsystem.tips.PurchaseListActivity" />
+510-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+511        </activity>
+512        <activity
+512-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:506:9-513:20
+513            android:name="tipsystem.tips.PurchaseDetailActivity"
+513-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:507:13-65
+514            android:screenOrientation="portrait"
+514-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:508:13-49
+515            android:windowSoftInputMode="stateHidden" >
+515-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:509:13-54
+516            <meta-data
+516-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+517                android:name="android.support.PARENT_ACTIVITY"
+517-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+518                android:value="tipsystem.tips.PurchaseDetailActivity" />
+518-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+519        </activity>
+520        <activity
+520-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:514:9-520:20
+521            android:name="tipsystem.tips.PurchaseListDetailViewActivity"
+521-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:515:13-73
+522            android:screenOrientation="portrait" >
+522-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:516:13-49
+523            <meta-data
+523-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+524                android:name="android.support.PARENT_ACTIVITY"
+524-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+525                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
+525-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+526        </activity>
+527        <activity
+527-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:521:9-527:20
+528            android:name="tipsystem.tips.PaymentDetailViewActivity"
+528-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:522:13-68
+529            android:screenOrientation="portrait" >
+529-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:523:13-49
+530            <meta-data
+530-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+531                android:name="android.support.PARENT_ACTIVITY"
+531-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+532                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
+532-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+533        </activity>
+534        <activity
+534-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:528:9-534:20
+535            android:name="tipsystem.tips.CustomerPurchasePaymentDetailActivity"
+535-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:529:13-80
+536            android:screenOrientation="portrait" >
+536-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:530:13-49
+537            <meta-data
+537-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+538                android:name="android.support.PARENT_ACTIVITY"
+538-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+539                android:value="tipsystem.tips.PurchasePaymentStatusActivity" />
+539-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+540        </activity> <!-- 배달관리 -->
+541        <activity
+541-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:535:9-539:63
+542            android:name="tipsystem.tips.DeliveryCallHomeManager"
+542-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:536:13-66
+543            android:label="@string/title_activity_delivery_call_home_manager"
+543-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:537:13-78
+544            android:screenOrientation="portrait"
+544-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:538:13-49
+545            android:windowSoftInputMode="stateAlwaysHidden" />
+545-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:539:13-60
+546        <activity
+546-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:540:9-547:20
+547            android:name="tipsystem.tips.ManageHomeDeliveryActivity"
+547-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:541:13-69
+548            android:label="배송상품등록"
+548-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:542:13-35
+549            android:screenOrientation="portrait" >
+549-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:543:13-49
+550            <meta-data
+550-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+551                android:name="android.support.PARENT_ACTIVITY"
+551-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+552                android:value="tipsystem.tips.MainMenuActivity" />
+552-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+553        </activity>
+554        <activity
+554-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:548:9-552:74
+555            android:name="tipsystem.tips.ManageHomeDeliveryRegActivity"
+555-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:549:13-72
+556            android:label="배송상품등록"
+556-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:550:13-35
+557            android:screenOrientation="portrait"
+557-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:551:13-49
+558            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+558-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:552:13-71
+559        <activity
+559-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:553:9-557:73
+560            android:name="tipsystem.tips.ManageHomeDeliveryCalActivity"
+560-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:554:13-72
+561            android:label="배송관리"
+561-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:555:13-33
+562            android:screenOrientation="portrait"
+562-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:556:13-49
+563            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- 배달관리 -->
+563-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:557:13-70
+564        <activity
+564-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:558:9-564:20
+565            android:name="tipsystem.tips.CustomerProductDetailViewActivity"
+565-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:559:13-76
+566            android:screenOrientation="portrait" >
+566-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:560:13-49
+567            <meta-data
+567-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+568                android:name="android.support.PARENT_ACTIVITY"
+568-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+569                android:value="tipsystem.tips.ManageSalesActivity" />
+569-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+570        </activity>
+571        <activity
+571-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:565:9-572:20
+572            android:name="tipsystem.tips.ManageEventActivity"
+572-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:566:13-62
+573            android:screenOrientation="portrait"
+573-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:567:13-49
+574            android:windowSoftInputMode="adjustPan" >
+574-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:568:13-52
+575            <meta-data
+575-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+576                android:name="android.support.PARENT_ACTIVITY"
+576-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+577                android:value="tipsystem.tips.MainMenuActivity" />
+577-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+578        </activity>
+579        <activity
+579-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:573:9-579:20
+580            android:name="tipsystem.tips.EventDetailViewActivity"
+580-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:574:13-66
+581            android:screenOrientation="portrait" >
+581-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:575:13-49
+582            <meta-data
+582-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+583                android:name="android.support.PARENT_ACTIVITY"
+583-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+584                android:value="tipsystem.tips.ManageEventActivity" />
+584-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+585        </activity>
+586        <activity
+586-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:580:9-587:20
+587            android:name="tipsystem.tips.SalesNewsActivity"
+587-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:581:13-60
+588            android:label="@string/sales_news"
+588-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:582:13-47
+589            android:screenOrientation="portrait" >
+589-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:583:13-49
+590            <meta-data
+590-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+591                android:name="android.support.PARENT_ACTIVITY"
+591-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+592                android:value="tipsystem.tips.MainMenuActivity" />
+592-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+593        </activity>
+594        <activity
+594-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:588:9-594:20
+595            android:name="tipsystem.tips.CustomerProductDetailInNewsActivity"
+595-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:589:13-78
+596            android:screenOrientation="portrait" >
+596-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:590:13-49
+597            <meta-data
+597-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+598                android:name="android.support.PARENT_ACTIVITY"
+598-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+599                android:value="tipsystem.tips.SalesNewsActivity" />
+599-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+600        </activity>
+601        <activity
+601-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:595:9-601:20
+602            android:name="tipsystem.tips.ChargeCustomerDetailActivity"
+602-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:596:13-71
+603            android:screenOrientation="portrait" >
+603-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:597:13-49
+604            <meta-data
+604-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+605                android:name="android.support.PARENT_ACTIVITY"
+605-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+606                android:value="tipsystem.tips.ManageSalesActivity" />
+606-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+607        </activity>
+608        <activity
+608-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:602:9-604:52
+609            android:name="tipsystem.tips.ManageProductListActivity"
+609-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:603:13-68
+610            android:screenOrientation="portrait" />
+610-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:604:13-49
+611        <activity
+611-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:605:9-607:52
+612            android:name="tipsystem.tips.TIPSPreferences"
+612-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:606:13-58
+613            android:screenOrientation="portrait" />
+613-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:607:13-49
+614        <activity
+614-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:608:9-610:52
+615            android:name="tipsystem.tips.TIPSSuSuPreferences"
+615-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:609:13-62
+616            android:screenOrientation="portrait" />
+616-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:610:13-49
+617        <activity
+617-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:611:9-614:52
+618            android:name="tipsystem.tips.BarcodePrintHistoryListActivity"
+618-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:612:13-74
+619            android:label="@string/barcodeprint_historylist"
+619-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:613:13-61
+620            android:screenOrientation="portrait" />
+620-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:614:13-49
+621        <activity
+621-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:615:9-622:20
+622            android:name="tipsystem.tips.ManageImageListView"
+622-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:616:13-62
+623            android:label="@string/title_activity_manage_image_list_view"
+623-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:617:13-74
+624            android:screenOrientation="portrait" >
+624-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:618:13-49
+625            <meta-data
+625-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:99:13-101:63
+626                android:name="android.support.PARENT_ACTIVITY"
+626-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:100:17-63
+627                android:value="tipsystem.tips.ManageImageListView" />
+627-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:101:17-60
+628        </activity>
+629
+630        <provider
+631            android:name="android.support.v4.content.FileProvider"
+631-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:625:13-67
+632            android:authorities="kr.co.tipos.tips.provider"
+632-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:626:13-60
+633            android:exported="false"
+633-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:627:13-37
+634            android:grantUriPermissions="true" >
+634-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:628:13-47
+635            <meta-data
+635-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:629:13-631:58
+636                android:name="android.support.FILE_PROVIDER_PATHS"
+636-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:630:17-67
+637                android:resource="@xml/provider_paths" />
+637-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:631:17-55
+638        </provider> <!-- M3 모바일 스캔 결과 받기 -->
+639        <receiver android:name="tipsystem.utils.M3MoblieBarcodeScanBroadcast" >
+639-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:9-637:20
+639-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:633:19-78
+640            <intent-filter>
+640-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:634:13-636:29
+641                <action android:name="com.android.server.scannerservice.broadcast" />
+641-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:17-86
+641-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:635:25-83
+642            </intent-filter>
+643        </receiver>
+644
+645        <activity
+645-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:639:9-642:73
+646            android:name="tipsystem.utils.BarcodePrintLKP30II"
+646-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:640:13-63
+647            android:screenOrientation="sensorPortrait"
+647-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:641:13-55
+648            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+648-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:642:13-70
+649        <activity
+649-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:643:9-647:73
+650            android:name="tipsystem.tips.ManageHonmeDeliveryDetailActivity"
+650-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:644:13-76
+651            android:label="배송전표상세보기"
+651-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:645:13-37
+652            android:screenOrientation="sensorPortrait"
+652-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:646:13-55
+653            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+653-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:647:13-70
+654        <activity
+654-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:648:9-650:58
+655            android:name="tipsystem.utils.KisCardPayment"
+655-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:649:13-58
+656            android:screenOrientation="sensorPortrait" />
+656-->D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:650:13-55
+657
+658        <meta-data
+658-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:26:9-28:38
+659            android:name="android.support.VERSION"
+659-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:27:13-51
+660            android:value="26.1.0" />
+660-->[com.android.support:design:26.1.0] C:\Users\pos4515\.gradle\caches\transforms-3\06794084a2567c5e1d2f6673d0f56d55\transformed\design-26.1.0\AndroidManifest.xml:28:13-35
+661        <meta-data
+661-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+662            android:name="android.arch.lifecycle.VERSION"
+662-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
+663            android:value="27.0.0-SNAPSHOT" />
+663-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\caches\transforms-3\77f46fb5c4028bdba1febe5fd57e4a48\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
+664    </application>
+665
+666</manifest>

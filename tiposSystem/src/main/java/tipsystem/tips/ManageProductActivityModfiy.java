@@ -2708,9 +2708,9 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         }
 
         //세우테크 lkp30
-        if (barcodePrinterCheck == 3 && bluetoothPort.isConnected()) {
-            blueConnect.close();
-        }
+//        if (barcodePrinterCheck == 3 && bluetoothPort.isConnected()) {
+//            blueConnect.close();
+//        }
     }
 
     /**
@@ -3417,7 +3417,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             // 용지사이즈 너비 수치
             // 58:400
             // 58:464 inch
-            int w0 = spp.getLavel_Hight();
+            int w0 = spp.getLavel_Width();
             int x0 = 0; // 폰트가로설정값(0,1,2,3)
             int y0 = 0; // 폰트세로설정값(0,1,2,3)
             int xp = 0; // 가로 시작위치
@@ -3831,182 +3831,6 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
     }
     //세우 프린터 변환값 - 끝 -
 
-    //바코드 프린터 소켓통신으로 전송하기
-    public class BarcodePrinterAsyncTask2 extends AsyncTask<String, Integer, Boolean> {
-
-        PrintWriter out;
-        Socket socket = null;
-        private int count_num = 0;
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            Toast.makeText(getApplicationContext(), "발행시작", Toast.LENGTH_SHORT).show();
-        }
-
-        @Override
-        protected Boolean doInBackground(String... params) {
-            // TODO Auto-generated method stub
-
-            // 2021.01.05.김영목. 포트 동적으로 수정
-            // 2021.01.05.김영목. 포트 동적으로 수정
-            //SocketAddress socketAddress = new InetSocketAddress(m_barcodePrinter, 8671);
-            //SocketAddress socketAddress = new InetSocketAddress(m_barcodePrinter, port);
-
-            int port = Integer.parseInt(barcodePrinterPort);
-            SocketAddress socketAddress = new InetSocketAddress(barcodePrinterAddress, port);
-
-            socket = new Socket();
-            try {
-                //socket = new Socket("192.168.10.156", 8671);
-                //socket = new Socket(m_barcodePrinter, 8671);
-
-                socket.setSoTimeout(5000);
-                try {
-                    socket.connect(socketAddress, 5000);
-                } catch (SocketTimeoutException e) {
-                    return false;
-                }
-                out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "MS949")), true);
-                HashMap<String, String> map = new HashMap<String, String>();
-                for (int i = 0; i < mfillMaps.size(); i++) {
-                    String content = "";
-                    map.putAll(mfillMaps.get(i));
-                    content = map.get("BarCode");
-                    //content += "; \n\r";
-                    content += "; ";
-                    content += map.get("G_Name");
-                    //content += "; \n\r";
-                    content += "; ";
-                    content += map.get("Std_Size");
-                    //content += "; \n\r";
-                    content += "; ";
-                    content += 1;
-                    count_num = count_num + 1;
-                    //content += "; \n\r";
-                    content += "; ";
-                    content += StringFormat.convertToNumberFormat(map.get("Sell_Pri_2"));
-                    //content += "; \n\r";
-                    content += "; ";
-                    content += map.get("Bus_Name");
-                    //content += "; \n\r";
-                    content += "; ";
-
-                    double a = Double.parseDouble(map.get("Con_Rate"));
-                    double b = Double.parseDouble(map.get("Std_Rate"));
-                    double c = Double.parseDouble(map.get("Sell_Pri_2"));
-                    a = a / b;
-
-                    content += String.valueOf(Math.round(c / a)) + " / " + map.get("Std_Rate") + map.get("Unit");
-                    Log.i("기준단가", content.toString());
-
-                    //--------------------------------------------------------------------------------//
-                    // 2021.01.06.김영목. 원판매가 추가
-                    //--------------------------------------------------------------------------------//
-                    //double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri", "0"));
-                    //double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org", "0"));
-/*                    if (org > pri) {
-                        content += "; ";
-                        content += StringFormat.convertToNumberFormat(map.get("Sell_Org"));
-                    }*/
-                    //--------------------------------------------------------------------------------//
-                    // 2021.07.20.김영목. 원판매가 필수 추가
-                    //--------------------------------------------------------------------------------//
-                    content += "; ";
-                    content += StringFormat.convertToNumberFormat(map.get("Sell_Org_2"));
-                    //----------------------------------------//
-
-                    //----------------------------------------//
-                    // 2021.07.08.김영목. 위치,품번,분류,권장소비자가 추가
-                    //----------------------------------------//
-                    //위치
-                    content += "; ";
-                    content += map.get("Location");
-
-                    //품번
-                    content += "; ";
-                    content += map.get("NickName");
-
-                    //분류
-                    content += "; ";
-                    //content += map.get("BranchName");
-
-                    String branchname = "";
-
-                    if (mSelectBranchName == 1) {  // 대분류
-                        branchname = stringToNullCheck(map, "L_Name", " ");
-                    } else if (mSelectBranchName == 2) {  // 중분류
-                        branchname = stringToNullCheck(map, "M_Name", " ");
-                    } else if (mSelectBranchName == 3) {  // 소분류
-                        branchname = stringToNullCheck(map, "S_Name", " ");
-                    } else {  // 기본 대분류
-                        branchname = stringToNullCheck(map, "L_Name", " ");
-                    }
-                    content += branchname;
-
-                    //추가항목
-                    content += "; ";
-                    //content += map.get("AddItem");
-                    String additem = "";
-
-                    if (mSelectAddItem == 1) {
-                        if (mPrintDateTitle.equals("1")) {
-                            additem = "*출력일:" + mPrintSetDate;
-                        } else {
-                            additem = mPrintSetDate;
-                        }
-                    } else if (mSelectAddItem == 2) {
-                        additem = mPrintUserText;
-                    }
-                    content += additem;
-                    //----------------------------------------//
-
-                    //2018년 12월 17일 추가
-                    content += "\u0003";
-
-                    try {
-                        sleep(300);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    out.println(content.toString());
-                    out.flush();
-                }
-                out.close();
-            } catch (SocketException e) {
-                e.printStackTrace();
-                return false;
-            } catch (SocketTimeoutException e) {
-                e.printStackTrace();
-                return false;
-            } catch (IOException e) {
-                e.printStackTrace();
-                return false;
-            } finally {
-                try {
-                    socket.close();
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            }
-            return true;
-        }
-
-        @Override
-        protected void onPostExecute(Boolean result) {
-            super.onPostExecute(result);
-            if (result) {
-                dba.insert_barPrint(mfillMapsBar, "1");
-                mfillMapsBar.removeAll(mfillMapsBar);
-                //m_adapter.notifyDataSetChanged();
-                Toast.makeText(getApplicationContext(), String.valueOf(count_num) + " 개 발행완료", Toast.LENGTH_LONG).show();
-            } else {
-                Toast.makeText(getApplicationContext(), "바코드프린터 소켓연결을 확인해 주세요.", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
-
     // SQL QUERY 실행
     public void doQueryWithBarcodePrinter() {
 
@@ -4329,6 +4153,182 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         Toast.makeText(this, "발행이 완료 되었습니다.", Toast.LENGTH_SHORT).show();
 
 
+    }
+
+    //바코드 프린터 소켓통신으로 전송하기
+    public class BarcodePrinterAsyncTask2 extends AsyncTask<String, Integer, Boolean> {
+
+        PrintWriter out;
+        Socket socket = null;
+        private int count_num = 0;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            Toast.makeText(getApplicationContext(), "발행시작", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        protected Boolean doInBackground(String... params) {
+            // TODO Auto-generated method stub
+
+            // 2021.01.05.김영목. 포트 동적으로 수정
+            // 2021.01.05.김영목. 포트 동적으로 수정
+            //SocketAddress socketAddress = new InetSocketAddress(m_barcodePrinter, 8671);
+            //SocketAddress socketAddress = new InetSocketAddress(m_barcodePrinter, port);
+
+            int port = Integer.parseInt(barcodePrinterPort);
+            SocketAddress socketAddress = new InetSocketAddress(barcodePrinterAddress, port);
+
+            socket = new Socket();
+            try {
+                //socket = new Socket("192.168.10.156", 8671);
+                //socket = new Socket(m_barcodePrinter, 8671);
+
+                socket.setSoTimeout(5000);
+                try {
+                    socket.connect(socketAddress, 5000);
+                } catch (SocketTimeoutException e) {
+                    return false;
+                }
+                out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "MS949")), true);
+                HashMap<String, String> map = new HashMap<String, String>();
+                for (int i = 0; i < mfillMapsBar.size(); i++) {
+                    String content = "";
+                    map.putAll(mfillMapsBar.get(i));
+                    content = map.get("BarCode");
+                    //content += "; \n\r";
+                    content += "; ";
+                    content += map.get("G_Name");
+                    //content += "; \n\r";
+                    content += "; ";
+                    content += map.get("Std_Size");
+                    //content += "; \n\r";
+                    content += "; ";
+                    content += 1;
+                    count_num = count_num + 1;
+                    //content += "; \n\r";
+                    content += "; ";
+                    content += StringFormat.convertToNumberFormat(map.get("Sell_Pri_2"));
+                    //content += "; \n\r";
+                    content += "; ";
+                    content += map.get("Bus_Name");
+                    //content += "; \n\r";
+                    content += "; ";
+
+                    double a = Double.parseDouble(map.get("Con_Rate"));
+                    double b = Double.parseDouble(map.get("Std_Rate"));
+                    double c = Double.parseDouble(map.get("Sell_Pri_2"));
+                    a = a / b;
+
+                    content += String.valueOf(Math.round(c / a)) + " / " + map.get("Std_Rate") + map.get("Unit");
+                    Log.i("기준단가", content.toString());
+
+                    //--------------------------------------------------------------------------------//
+                    // 2021.01.06.김영목. 원판매가 추가
+                    //--------------------------------------------------------------------------------//
+                    //double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri", "0"));
+                    //double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org", "0"));
+/*                    if (org > pri) {
+                        content += "; ";
+                        content += StringFormat.convertToNumberFormat(map.get("Sell_Org"));
+                    }*/
+                    //--------------------------------------------------------------------------------//
+                    // 2021.07.20.김영목. 원판매가 필수 추가
+                    //--------------------------------------------------------------------------------//
+                    content += "; ";
+                    content += StringFormat.convertToNumberFormat(map.get("Sell_Org_2"));
+                    //----------------------------------------//
+
+                    //----------------------------------------//
+                    // 2021.07.08.김영목. 위치,품번,분류,권장소비자가 추가
+                    //----------------------------------------//
+                    //위치
+                    content += "; ";
+                    content += map.get("Location");
+
+                    //품번
+                    content += "; ";
+                    content += map.get("NickName");
+
+                    //분류
+                    content += "; ";
+                    //content += map.get("BranchName");
+
+                    String branchname = "";
+
+                    if (mSelectBranchName == 1) {  // 대분류
+                        branchname = stringToNullCheck(map, "L_Name", " ");
+                    } else if (mSelectBranchName == 2) {  // 중분류
+                        branchname = stringToNullCheck(map, "M_Name", " ");
+                    } else if (mSelectBranchName == 3) {  // 소분류
+                        branchname = stringToNullCheck(map, "S_Name", " ");
+                    } else {  // 기본 대분류
+                        branchname = stringToNullCheck(map, "L_Name", " ");
+                    }
+                    content += branchname;
+
+                    //추가항목
+                    content += "; ";
+                    //content += map.get("AddItem");
+                    String additem = "";
+
+                    if (mSelectAddItem == 1) {
+                        if (mPrintDateTitle.equals("1")) {
+                            additem = "*출력일:" + mPrintSetDate;
+                        } else {
+                            additem = mPrintSetDate;
+                        }
+                    } else if (mSelectAddItem == 2) {
+                        additem = mPrintUserText;
+                    }
+                    content += additem;
+                    //----------------------------------------//
+
+                    //2018년 12월 17일 추가
+                    content += "\u0003";
+
+                    try {
+                        sleep(300);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    out.println(content.toString());
+                    out.flush();
+                }
+                out.close();
+            } catch (SocketException e) {
+                e.printStackTrace();
+                return false;
+            } catch (SocketTimeoutException e) {
+                e.printStackTrace();
+                return false;
+            } catch (IOException e) {
+                e.printStackTrace();
+                return false;
+            } finally {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+            return true;
+        }
+
+        @Override
+        protected void onPostExecute(Boolean result) {
+            super.onPostExecute(result);
+            if (result) {
+                dba.insert_barPrint(mfillMapsBar, "1");
+                mfillMapsBar.removeAll(mfillMapsBar);
+                //m_adapter.notifyDataSetChanged();
+                Toast.makeText(getApplicationContext(), String.valueOf(count_num) + " 개 발행완료", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "바코드프린터 소켓연결을 확인해 주세요.", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
 }

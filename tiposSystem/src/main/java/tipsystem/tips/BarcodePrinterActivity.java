@@ -822,7 +822,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         }
     }
 
-
     //신상품 등록
     public void regNewProduct(String barcode) {
         String m_barcode = "";
@@ -844,7 +843,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         intent.putExtra("customername", customername);
         startActivityForResult(intent, CUSTOMER_MANAGER_REQUEST);
     }
-
 
     //바코드검색
     public void onBarcodeSearch(View view) {
@@ -1738,7 +1736,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         }
     }
 
-
     //빅슬론 프린터 변환값 - 끝 -
 
 
@@ -2287,6 +2284,35 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
             mfillMaps.removeAll(mfillMaps);
             String query = "Select * From BaPrint_History Where BaPrint_Num='" + baprint_num.toString() + "' ; ";
             mfillMaps.addAll(dba.getBarPrintHistory(query));
+
+
+            //----------------------------------------//
+            // 2023.02.15.김영목. 재발행시 누락된 목록 추가
+            // Sell_Org, Sale_Rate, Location,NickName,BranchName,AddItem
+            //----------------------------------------//
+            HashMap<String, String> map = new HashMap<String, String>();
+                String content = "";
+                map.putAll(mfillMaps.get(0));
+
+            float f_ratio = 0;
+            float f_sellPri = Float.valueOf(map.get("Sell_Pri")).floatValue();
+            float f_sellOrg = Float.valueOf(map.get("Sell_Org")).floatValue();
+
+            try {
+                if (f_sellOrg > f_sellPri) {
+                    f_ratio = (f_sellOrg - f_sellPri) / f_sellOrg * 100;
+                    if (Float.isInfinite(f_ratio) || Float.isNaN(f_ratio)) {
+                        f_ratio = 0;
+                    }
+                }
+            } catch (Exception e) {
+            }
+            map.put("Sale_Rate", String.format("%.0f", f_ratio)); // 할인율
+
+            //----------------------------------------//
+
+
+
             Log.d(TAG, this.mfillMaps.toString());
 
             m_adapter.notifyDataSetChanged();

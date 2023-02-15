@@ -260,7 +260,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:checked="true"
-                        android:text="추가" />
+                        android:text="출력일" />
 
                 </LinearLayout>
 
@@ -1499,7 +1499,8 @@
             </LinearLayout>
             <!-- 분류 끝-->
 
-            <!-- 추가-->
+            <!-- 추가 -->
+<!--            출력일로 변경 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1510,8 +1511,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
                     android:gravity="center_vertical|center"
-                    android:text="추가항목" />
-
+                    android:text="출력일" />
 
                 <LinearLayout
                     android:layout_width="0dp"

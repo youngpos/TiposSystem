@@ -1,3 +1,0 @@
-com.dm.zbar.android.scanner
-drawable ic_launcher
-string app_name
