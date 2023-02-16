@@ -146,6 +146,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
     String m_barcode;
     String productReg_YN;
     String mGubun;        //어디서 넘어왔는지 저장합니다.
+    String mPreviousActivity = "";
 
     EditText m_textBarcode; // 1.바코드
     EditText m_textProductName; // 2.상품명
@@ -567,6 +568,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         m_barcode = getIntent().getStringExtra("barcode"); // 넘어온바코드
         productReg_YN = getIntent().getStringExtra("productRegYN");
         mGubun = getIntent().getStringExtra("Gubun");        //출처구분  -상품//매입
+        mPreviousActivity = getIntent().getStringExtra("PreviousActivity");
         String officeCode = getIntent().getStringExtra("officeCode"); // 오피스코드
         String officeName = getIntent().getStringExtra("officeName"); // 오피스명
         Log.d("오피스 정보", officeCode + " " + officeName);
@@ -2707,10 +2709,14 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             mBixolonLabelPrinter.disconnect();
         }
 
+        String aaa = blueConnect.toString();
+
         //세우테크 lkp30
-//        if (barcodePrinterCheck == 3 && bluetoothPort.isConnected()) {
-//            blueConnect.close();
-//        }
+        if (barcodePrinterCheck == 3 && bluetoothPort.isConnected()) {
+            if (!mPreviousActivity.equals("BarcodePrinter")){
+                blueConnect.close();
+            }
+        }
     }
 
     /**

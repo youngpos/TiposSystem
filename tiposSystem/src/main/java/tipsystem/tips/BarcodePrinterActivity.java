@@ -364,6 +364,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         b_newproductreg.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                //String tmp = m_barcode.getText().toString();
                 regNewProduct("");
             }
         });
@@ -756,6 +757,9 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //zplprinter = new ZPLRFIDPrinter();
                 bluetoothPort = BluetoothPort.getInstance();
                 blueConnect = new BluetoothConnectMenu(mContext, bluetoothPort);
+
+                String aaa = blueConnect.toString();
+
                 break;
         }
 
@@ -831,6 +835,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
         Intent intent = new Intent(this, ManageProductActivityModfiy.class);
         intent.putExtra("barcode", m_barcode);
+        intent.putExtra("PreviousActivity", "BarcodePrinter");
         startActivity(intent);
     }
 
