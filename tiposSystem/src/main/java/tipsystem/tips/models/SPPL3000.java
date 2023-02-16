@@ -427,35 +427,64 @@ public class SPPL3000 {
         Print_Office_YN = 1;
         Print_Danga_YN = 1;
         Word_Length = 30;
-        Goods_Setting = "0|0|0|1|2|0|0";
-        Stdsize_Setting = "230|50|0|1|1|1|0";
-        Price_Setting = "180|60|0|2|2|0|0";
-        Office_Setting = "200|30|0|1|1|0|0";
-        Danga_Setting = "200|110|0|1|1|1|0";
-        Barcode_Setting = "0|170|7|2|6|30|0|1";
+//        Goods_Setting = "0|0|0|1|2|0|0";
+//        Stdsize_Setting = "230|50|0|1|1|1|0";
+//        Price_Setting = "180|60|0|2|2|0|0";
+//        Office_Setting = "200|30|0|1|1|0|0";
+//        Danga_Setting = "200|110|0|1|1|1|0";
+//        Barcode_Setting = "0|170|7|2|6|30|0|1";
+//        //----------------------------------------//
+//        // 2021.01.05. 김영목. 원판매가,할인율,인쇄구분 추가
+//        //----------------------------------------//
+//        Print_SellPrice_YN = 1;
+//        Print_SaleSellRate_YN = 1;
+//        SellPrice_Setting = "0|60|1|2|2|0|0";
+//        SaleSellRate_Setting = "0|110|1|1|1|0|0";
+//        //----------------------------------------//
+//        //----------------------------------------//
+//        // 2021.07.07. 김영목. 1위치, 2품번, 3분류, 4추가항목
+//        //----------------------------------------//
+//        // 위치
+//        Print_Location_YN = 1;
+//        Location_Setting = "200|0|1|1|1|0|0";
+//        // 품번
+//        Print_NickName_YN = 1;
+//        NickName_Setting = "200|30|1|1|1|0|0";
+//        // 분류
+//        Print_BranchName_YN = 1;
+//        BranchName_Setting = "0|140|1|1|1|0|0";
+//        // 추가항목
+//        Print_AddItem_YN = 1;
+//        AddItem_Setting = "200|140|1|1|1|0|0";
         //----------------------------------------//
-        // 2021.01.05. 김영목. 원판매가,할인율,인쇄구분 추가
+        // 2023.02.165. 김영목. 기본값 새로 정의
         //----------------------------------------//
+        Goods_Setting = "10|0|0|1|2|0|0";       // 상품명
+        Stdsize_Setting = "185|70|0|1|1|1|0";   // 규격
+        Price_Setting = "225|130|0|2|2|0|0";    // 가격
+        Office_Setting = "10|110|0|1|1|0|0";    // 거래처
+        Danga_Setting = "240|100|0|1|1|1|0";    // 단가
+        Barcode_Setting = "100|190|7|2|6|30|0|1";   // 바코드
         Print_SellPrice_YN = 1;
         Print_SaleSellRate_YN = 1;
-        SellPrice_Setting = "0|60|1|2|2|0|0";
-        SaleSellRate_Setting = "0|110|1|1|1|0|0";
+        SellPrice_Setting = "10|60|1|2|2|0|0";   // 원판매가
+        SaleSellRate_Setting = "185|100|1|1|1|0|0";   // 할인율
         //----------------------------------------//
         //----------------------------------------//
         // 2021.07.07. 김영목. 1위치, 2품번, 3분류, 4추가항목
         //----------------------------------------//
         // 위치
         Print_Location_YN = 1;
-        Location_Setting = "200|0|1|1|1|0|0";
+        Location_Setting = "310|70|1|1|1|0|0";   // 위치
         // 품번
         Print_NickName_YN = 1;
-        NickName_Setting = "200|30|1|1|1|0|0";
+        NickName_Setting = "300|50|1|1|1|0|0";  // 품번
         // 분류
         Print_BranchName_YN = 1;
-        BranchName_Setting = "0|140|1|1|1|0|0";
+        BranchName_Setting = "10|132|1|1|1|0|0"; // 분류
         // 추가항목
         Print_AddItem_YN = 1;
-        AddItem_Setting = "200|140|1|1|1|0|0";
+        AddItem_Setting = "10|155|1|1|1|0|0";  // 추가(출력일)
         //----------------------------------------//
 
     }
