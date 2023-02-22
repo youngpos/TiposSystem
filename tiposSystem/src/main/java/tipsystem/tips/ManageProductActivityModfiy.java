@@ -1133,7 +1133,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
                 // 2021.01.08.김영목. 원판매가 추가
                 //----------------------------------------//
                 //m_tempProduct.put("Sell_Pri", m_textSalesPrice.getText().toString().replace(",", ""));
-                m_tempProduct.put("Sell_Org", m_tempProduct.get("Sell_Pri"));
+                m_tempProduct.put("Sell_Org", m_tempProduct.get("Sell_Pri1"));
                 //----------------------------------------//
 
                 mfillMapsBar.add(m_tempProduct);
@@ -2576,9 +2576,9 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         String query = "";
         //query = "Select Max(LEFT(BarCode,12)) As selfBarcode From Goods a, Pos_Set b Where Left(BarCode, 2)  = left([106], 2) AND LEN(Barcode)=13";
         // 2023.02.28. 바코드 자동생성 옵션 추가에 따라 분기한다
-        if(isSelfBarcodeUse==true && selfBarcodePrefixCode.length()==2){
+        if (isSelfBarcodeUse == true && selfBarcodePrefixCode.length() == 2) {
             query = "Select Max(LEFT(BarCode,12)) As selfBarcode From Goods Where Left(BarCode, 2)  = '" + selfBarcodePrefixCode + "' AND LEN(Barcode)=13";
-        }else{
+        } else {
             query = "Select Max(LEFT(BarCode,12)) As selfBarcode From Goods a, Pos_Set b Where Left(BarCode, 2)  = left([106], 2) AND LEN(Barcode)=13";
         }
 
@@ -2713,7 +2713,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
 
         //세우테크 lkp30
         if (barcodePrinterCheck == 3 && bluetoothPort.isConnected()) {
-            if (!mPreviousActivity.equals("BarcodePrinter")){
+            if (!mPreviousActivity.equals("BarcodePrinter")) {
                 blueConnect.close();
             }
         }
@@ -3278,6 +3278,14 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             m_tempProduct.put("Sell_Pri_2", map.get("Sell_Pri"));
             m_tempProduct.put("Sell_Org_2", map.get("Sell_Org"));
 
+            // 2023.02.20.김영목. 바코드발행관리에서 재발행시 안나오는 항목 추가
+            m_tempProduct.put("NickName", map.get("NickName"));
+            m_tempProduct.put("Location", map.get("Location"));
+            m_tempProduct.put("BranchName", map.get("BranchName"));
+            m_tempProduct.put("AddItem", map.get("AddItem"));
+
+
+
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), "바코드프린터 조회가 안되어 있습니다.", Toast.LENGTH_LONG).show();
@@ -3288,7 +3296,27 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         // 2023.02.08. 에러 때문에 필수 추가
         //----------------------------------------//
         m_tempProduct.put("Count", "1");
-        m_tempProduct.put("Sell_Org", m_tempProduct.get("Sell_Pri"));
+        m_tempProduct.put("Sell_Pri", m_tempProduct.get("Sell_Pri_2"));
+        m_tempProduct.put("Sell_Org", m_tempProduct.get("Sell_Org_2"));
+
+        //----------------------------------------//
+        // 2021.01.06.김영목. 할인율 추가
+        //----------------------------------------//
+        float f_ratio = 0;
+        float f_sellPri = Float.valueOf(m_tempProduct.get("Sell_Pri")).floatValue();
+        float f_sellOrg = Float.valueOf(m_tempProduct.get("Sell_Org")).floatValue();
+
+        try {
+            if (f_sellOrg > f_sellPri) {
+                f_ratio = (f_sellOrg - f_sellPri) / f_sellOrg * 100;
+                if (Float.isInfinite(f_ratio) || Float.isNaN(f_ratio)) {
+                    f_ratio = 0;
+                }
+            }
+        } catch (Exception e) {
+        }
+        m_tempProduct.put("Sale_Rate", String.format("%.0f", f_ratio)); // 할인율
+
         //----------------------------------------//
 
         mfillMapsBar.removeAll(mfillMapsBar);
@@ -3556,7 +3584,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             //가격 출력
             if (spp.getPrint_Price_YN() == 1) {
                 cpclprinter.setMagnify(stringTointPrint(price[3]), stringTointPrint(price[4]));
-                cpclprinter.printCPCLText(stringTointPrint(price[6]), 7, 0, stringTointPrint(price[0]), stringTointPrint(price[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri_2", "0")) + " 원", 0);
+                cpclprinter.printCPCLText(stringTointPrint(price[6]), 7, 0, stringTointPrint(price[0]), stringTointPrint(price[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri_2", "0")) + "원", 0);
                 cpclprinter.resetMagnify();
             }
 
@@ -3580,25 +3608,33 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
 
             //--------------------------------------------------------------------------------//
             // 2021.01.06.김영목. 원판매가,할인율 추가
+            // 2023.02.20.김영목. 원판매가=0 또는 원판매가=판매가 인 경우 출력 안함
+            // StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri", "0")) 판매가
+            // StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) 원판매가
             //--------------------------------------------------------------------------------//
             double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri_2", "0"));
             double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org_2", "0"));
+            double rat = Double.parseDouble(stringToNullCheck(map, "Sale_Rate", "0"));   //할인율
             //if (org > pri) {
             //원판매가 출력
             if (spp.getPrint_SellPrice_YN() == 1) {
-                cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
-                cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org_2", "0")) + "", 0);
-                cpclprinter.resetMagnify();
+                if (pri != org || org != 0){
+                    cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
+                    cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org_2", "0")) + "", 0);
+                    cpclprinter.resetMagnify();
+                }
             }
 
             //할인율(%) 출력
             if (spp.getPrint_SaleSellRate_YN() == 1) {
-                try {
-                    cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
-                    cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + " %", 0);
-                    cpclprinter.resetMagnify();
-                } catch (Exception e) {
-                    //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                if (rat != 0) {
+                    try {
+                        cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
+                        cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + "%", 0);
+                        cpclprinter.resetMagnify();
+                    } catch (Exception e) {
+                        //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
             //}
@@ -3832,6 +3868,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if (res == null) res = def;
 
         return res;
     }
@@ -4047,9 +4084,13 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
 
             //--------------------------------------------------------------------------------//
             // 2021.01.06.김영목. 원판매가,할인율 추가
+            // 2023.02.20.김영목. 원판매가=0 또는 원판매가=판매가 인 경우 출력 안함
+            // StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri", "0")) 판매가
+            // StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) 원판매가
             //--------------------------------------------------------------------------------//
-            double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri_2", "0"));
-            double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org_2", "0"));
+            double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri_2", "0")); // 판매가
+            double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org_2", "0")); // 원판매가
+            double rat = Double.parseDouble(stringToNullCheck(map, "Sale_Rate", "0"));  //할인율
             if (org > pri) {
                 //원판매가 출력
                 if (spp.getPrint_SellPrice_YN() == 1) {

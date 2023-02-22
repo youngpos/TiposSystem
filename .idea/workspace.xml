@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/generated/res/pngs/release/drawable-anydpi-v21/ic_baseline_find_in_page_48.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/generated/res/pngs/release/drawable-anydpi-v21/ic_baseline_refresh_12.xml" beforeDir="false" />
@@ -142,8 +143,6 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/generated/res/pngs/release/drawable-xxxhdpi/ic_twotone_warehouse_48.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/generated/source/buildConfig/release/kr/co/tipos/tips/BuildConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/annotation_processor_list/release/annotationProcessors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/apk/debug/output-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/apk/debug/tiposSystem-debug.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/apk_ide_redirect_file/debug/redirect.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/apk_ide_redirect_file/debug/redirect.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/apk_ide_redirect_file/release/redirect.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/app_metadata/release/app-metadata.properties" beforeDir="false" />
@@ -334,7 +333,21 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/release/mergeReleaseResources/merged.dir/values-zu/values-zu.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/release/mergeReleaseResources/merged.dir/values/values.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/incremental/release/mergeReleaseResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/models/SPPL3000.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/models/SPPL3000.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity$BarcodePrinterAsyncTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/BarcodePrinterActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy$53.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy$53.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy$BarcodePrinterAsyncTask2.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy$BarcodePrinterAsyncTask2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/tips/ManageProductActivityModfiy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/DBAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/DBAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/TipsSQLitHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/debug/classes/tipsystem/utils/TipsSQLitHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/release/classes/kr/co/tipos/tips/BuildConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/release/classes/tippsystem/adapter/ImgArrayAdapter$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/javac/release/classes/tippsystem/adapter/ImgArrayAdapter$ViewHolder.class" beforeDir="false" />
@@ -3711,7 +3724,6 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/signing_config_versions/debug/signing-config-versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/intermediates/signing_config_versions/debug/signing-config-versions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/signing_config_versions/release/signing-config-versions.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/source_set_path_map/release/file-map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/stripped_native_libs/release/out/lib/arm64-v8a/libZBarDecoder.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/stripped_native_libs/release/out/lib/arm64-v8a/libiconv.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/stripped_native_libs/release/out/lib/arm64-v8a/libzbarjni.so" beforeDir="false" />
@@ -3735,28 +3747,28 @@
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/stripped_native_libs/release/out/lib/x86_64/libzbarjni.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/symbol_list_with_package_name/release/package-aware-r.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/intermediates/variant_model/release/out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/tiposSystem-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/tiposSystem-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/apk/debug/tiposSystem-debug.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/outputs/sdk-dependencies/release/sdkDependencies.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tiposSystem/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/models/SPPL3000.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/models/SPPL3000.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/676317004a93ec19332299a5b9049222/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/676317004a93ec19332299a5b9049222/transformed/classes/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/9825939f1c13b939867d2c6fdb7e0cff/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/BuildConfig.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/CameraPreview.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/ZBarConstants.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/ZBarScannerActivity$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/ZBarScannerActivity$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/debug/com/dm/zbar/android/scanner/ZBarScannerActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/b372843643e58445f440bed635274fa2/transformed/desugar_graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/6da510c1e189fd06602a9fc978f945b0/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/.transforms/6da510c1e189fd06602a9fc978f945b0/transformed/classes/classes.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/generated/source/buildConfig/release/com/dm/zbar/android/scanner/BuildConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/aapt_friendly_merged_manifests/release/aapt/AndroidManifest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/aapt_friendly_merged_manifests/release/aapt/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/aar_libs_directory/debug/libs/zbar.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/aar_main_jar/debug/classes.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/aar_metadata/release/aar-metadata.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/annotation_processor_list/release/annotationProcessors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/annotations_typedef_file/debug/typedefs.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compile_library_classes_jar/release/classes.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compile_r_class_jar/release/R.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compile_symbol_list/release/R.txt" beforeDir="false" />
@@ -3764,6 +3776,8 @@
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compiled_local_resources/release/out/drawable-ldpi-v4_ic_launcher.png.flat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compiled_local_resources/release/out/drawable-mdpi-v4_ic_launcher.png.flat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/compiled_local_resources/release/out/drawable-xhdpi-v4_ic_launcher.png.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/dU3tzl902wuRnKQDviLkia88xv4=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/incremental/mergeReleaseShaders/merger.xml" beforeDir="false" />
@@ -3777,6 +3791,27 @@
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/javac/release/classes/com/dm/zbar/android/scanner/ZBarScannerActivity$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/javac/release/classes/com/dm/zbar/android/scanner/ZBarScannerActivity$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/javac/release/classes/com/dm/zbar/android/scanner/ZBarScannerActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/arm64-v8a/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/arm64-v8a/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/arm64-v8a/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi-v7a/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi-v7a/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi-v7a/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips64/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips64/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/mips64/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86_64/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86_64/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_and_local_jars_jni/debug/jni/x86_64/libzbarjni.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_jni/release/jni/arm64-v8a/libZBarDecoder.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_jni/release/jni/arm64-v8a/libiconv.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_jni/release/jni/arm64-v8a/libzbarjni.so" beforeDir="false" />
@@ -3800,6 +3835,7 @@
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/library_jni/release/jni/x86_64/libzbarjni.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/local_only_symbol_list/release/R-def.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/manifest_merge_blame_file/release/manifest-merger-blame-release-report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/merged_java_res/debug/feature-zBarScannerActivity.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/merged_jni_libs/release/out/arm64-v8a/libZBarDecoder.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/merged_jni_libs/release/out/arm64-v8a/libiconv.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/merged_jni_libs/release/out/arm64-v8a/libzbarjni.so" beforeDir="false" />
@@ -3850,14 +3886,32 @@
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/packaged_res/release/drawable-mdpi-v4/ic_launcher.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/packaged_res/release/drawable-xhdpi-v4/ic_launcher.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/packaged_res/release/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/CameraPreview.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/ZBarConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/ZBarScannerActivity$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/ZBarScannerActivity$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_dir/debug/com/dm/zbar/android/scanner/ZBarScannerActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_jar/debug/classes.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/runtime_library_classes_jar/release/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips64/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips64/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/mips64/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86/libzbarjni.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86_64/libZBarDecoder.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86_64/libiconv.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/stripped_native_libs/debug/out/lib/x86_64/libzbarjni.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/symbol_list_with_package_name/release/package-aware-r.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/intermediates/variant_model/debug/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/outputs/aar/zBarScannerActivity-debug.aar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zBarScannerActivity/build/tmp/compileReleaseJavaWithJavac/previous-compilation-data.bin" beforeDir="false" />
     </list>
@@ -3922,7 +3976,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Work/OkMeat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SqlData" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -4044,11 +4098,6 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java</url>
-          <line>953</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/TipsSQLitHelper.java</url>
           <line>115</line>
           <option name="timeStamp" value="36" />
@@ -4075,22 +4124,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>2276</line>
+          <line>2282</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrintHistoryListActivity.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>338</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>2760</line>
+          <line>2765</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
@@ -4099,14 +4138,34 @@
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
-          <line>2714</line>
-          <option name="timeStamp" value="65" />
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
+          <line>2320</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/BarcodePrinterActivity.java</url>
-          <line>760</line>
-          <option name="timeStamp" value="69" />
+          <line>2294</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>1135</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>3278</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/utils/DBAdapter.java</url>
+          <line>380</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/tiposSystem/src/main/java/tipsystem/tips/ManageProductActivityModfiy.java</url>
+          <line>3308</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

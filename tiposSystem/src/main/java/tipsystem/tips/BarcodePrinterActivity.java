@@ -839,7 +839,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         startActivity(intent);
     }
 
-    //거래처 검색
+    //거래처 검색 (New Activity)
     public void onCustomerSearch(View view) {
         String customer = m_officecode.getText().toString();
         String customername = m_officename.getText().toString();
@@ -849,7 +849,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         startActivityForResult(intent, CUSTOMER_MANAGER_REQUEST);
     }
 
-    //바코드검색
+    //바코드검색 (목록/카메라 선택창)
     public void onBarcodeSearch(View view) {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
         String list_value = pref.getString("prefSearchMethod", "");
@@ -885,7 +885,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         }
     }
 
-    //상품검색 화면목록
+    //상품검색 화면목록 ( New Activity)
     private void startProductList() {
         String barcode = m_barcode.getText().toString();
         String gname = m_gname.getText().toString();
@@ -1327,7 +1327,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //가격 출력
                 if (spp.getPrint_Price_YN() == 1) {
                     cpclprinter.setMagnify(stringTointPrint(price[3]), stringTointPrint(price[4]));
-                    cpclprinter.printCPCLText(stringTointPrint(price[6]), 7, 0, stringTointPrint(price[0]), stringTointPrint(price[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri", "0")) + " 원", 0);
+                    cpclprinter.printCPCLText(stringTointPrint(price[6]), 7, 0, stringTointPrint(price[0]), stringTointPrint(price[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Pri", "0")) + "원", 0);
                     cpclprinter.resetMagnify();
                     //cpclprinter.printAndroidFont(stringTointPrint(price[0]), stringTointPrint(price[1]), map.get("Std_Size"), intToinchPrint(spp.getLavel_Width()), stringTointPrint(price[3]+price[4])+10);
                 }
@@ -1356,25 +1356,31 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
                 //--------------------------------------------------------------------------------//
                 // 2021.01.06.김영목. 원판매가,할인율 추가
+                // 2023.02.20.김영목. 원판매가=0 또는 원판매가=판매가 인 경우 출력 안함
                 //--------------------------------------------------------------------------------//
-                double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri", "0"));
-                double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org", "0"));
+                double pri = Double.parseDouble(stringToNullCheck(map, "Sell_Pri", "0"));   //판매가
+                double org = Double.parseDouble(stringToNullCheck(map, "Sell_Org", "0"));   //원판매가
+                double rat = Double.parseDouble(stringToNullCheck(map, "Sale_Rate", "0"));   //할인율
                 //if (org > pri) {
                 //원판매가 출력
                 if (spp.getPrint_SellPrice_YN() == 1) {
-                    cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
-                    cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
-                    cpclprinter.resetMagnify();
+                    if (pri != org || org != 0) {
+                        cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
+                        cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
+                        cpclprinter.resetMagnify();
+                    }
                 }
 
                 //할인율(%) 출력
                 if (spp.getPrint_SaleSellRate_YN() == 1) {
-                    try {
-                        cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
-                        cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + " %", 0);
-                        cpclprinter.resetMagnify();
-                    } catch (Exception e) {
-                        //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    if (rat != 0) {
+                        try {
+                            cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
+                            cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + "%", 0);
+                            cpclprinter.resetMagnify();
+                        } catch (Exception e) {
+                            //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
                 //}
@@ -1805,7 +1811,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (res == null) res = "";
+        if (res == null) res = def;
 
         return res;
     }
@@ -2296,8 +2302,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
             // Sell_Org, Sale_Rate, Location,NickName,BranchName,AddItem
             //----------------------------------------//
             HashMap<String, String> map = new HashMap<String, String>();
-                String content = "";
-                map.putAll(mfillMaps.get(0));
+            String content = "";
+            map.putAll(mfillMaps.get(0));
 
             float f_ratio = 0;
             float f_sellPri = Float.valueOf(map.get("Sell_Pri")).floatValue();
@@ -2315,7 +2321,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
             map.put("Sale_Rate", String.format("%.0f", f_ratio)); // 할인율
 
             //----------------------------------------//
-
 
 
             Log.d(TAG, this.mfillMaps.toString());
