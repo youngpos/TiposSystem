@@ -1184,6 +1184,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 int x0 = 0; // 폰트가로설정값(0,1,2,3)
                 int y0 = 0; // 폰트세로설정값(0,1,2,3)
                 int xp = 0; // 가로 시작위치
+                int yp = 0; // 세로 시작위치
+                int rt = 0; // 인쇄방향
 
                 int xl = 0; // 가로 유효 길이
                 int tl = 0; // 1단 최대 글자수
@@ -1194,8 +1196,11 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                     x0 = stringTointPrint(gname[3]);
                     y0 = stringTointPrint(gname[4]);
                     xp = stringTointPrint(gname[0]);
+                    yp = stringTointPrint(gname[1]);
+                    rt = stringTointPrint(gname[6]);
 
-                    xl = (int) Math.round((400 * w0 / 58) - xp);
+                    //xl = (int) Math.round((400 * w0 / 58) - xp);
+                    xl = (int) Math.round((400 * w0 / w0) - xp);
                     // 폰트 크기에 따라 최대 글자 구함
                     // 0,1 = 36, 2=18,3=12
                     if (x0 <= 1) {
@@ -1282,6 +1287,13 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                         }
                         //----------------------------------------//
 
+                        // test
+                        //cpclprinter.setMagnify(stringTointPrint(gname[3]), stringTointPrint(gname[4]));
+//                        cpclprinter.setMultiLine(10);
+//                        cpclprinter.multiLineText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1]));
+//                        cpclprinter.multiLineData(g_name);
+//                        cpclprinter.resetMultiLine();
+
                         if (bla == true) {
                             cpclprinter.setMagnify(stringTointPrint(gname[3]), stringTointPrint(gname[4]));
                         } else {
@@ -1294,7 +1306,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                         } else {
                             cpclprinter.setMagnify(stringTointPrint(gname[3]) + 1, stringTointPrint(gname[4]) + 1);
                         }
-                        cpclprinter.printCPCLText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1] + ty), bbb, 0);
+                        cpclprinter.printCPCLText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1]) + ty, bbb, 0);
 
 //
 //                        cpclprinter.setMagnify(stringTointPrint(gname[3]), stringTointPrint(gname[4]));
@@ -1310,7 +1322,6 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                         cpclprinter.printCPCLText(stringTointPrint(gname[6]), 0, 0, stringTointPrint(gname[0]), stringTointPrint(gname[1]), g_name, 0);
 
                     }
-
                     //cpclprinter.printAndroidFont(stringTointPrint(gname[0]), stringTointPrint(gname[1]), g_name, intToinchPrint(spp.getLavel_Width()), stringTointPrint(gname[3]+gname[4])+10);}
                 }
 
@@ -1365,21 +1376,25 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //원판매가 출력
                 if (spp.getPrint_SellPrice_YN() == 1) {
                     if (pri != org || org != 0) {
-                        cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
-                        cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
-                        cpclprinter.resetMagnify();
+                        if (org>0){
+                            cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
+                            cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
+                            cpclprinter.resetMagnify();
+                        }
                     }
                 }
 
                 //할인율(%) 출력
                 if (spp.getPrint_SaleSellRate_YN() == 1) {
                     if (rat != 0) {
-                        try {
-                            cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
-                            cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + "%", 0);
-                            cpclprinter.resetMagnify();
-                        } catch (Exception e) {
-                            //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        if (rat>0){
+                            try {
+                                cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
+                                cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + "%", 0);
+                                cpclprinter.resetMagnify();
+                            } catch (Exception e) {
+                                //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
                 }
