@@ -419,14 +419,14 @@ public class SPPL3000 {
         Lavel_Hight = 30;
         Lavel_Width = 58;
 
-        Print_Direction = 0;
-        Paper_Gubun = 2;
-        Gap_Width = 3;
-        Print_StdSize_YN = 1;
-        Print_Price_YN = 1;
-        Print_Office_YN = 1;
-        Print_Danga_YN = 1;
-        Word_Length = 30;
+        Print_Direction = 0;    // 인쇄방향(0)
+        Paper_Gubun = 2;        // 블랙마크 구분(2)
+        Gap_Width = 3;          // GAP간격(3)
+        Print_StdSize_YN = 1;   // 규격
+        Print_Price_YN = 1;     // 가격
+        Print_Office_YN = 1;    // 거래처
+        Print_Danga_YN = 1;     // 단가
+        Word_Length = 30;       // 품명문자길이
 //        Goods_Setting = "0|0|0|1|2|0|0";
 //        Stdsize_Setting = "230|50|0|1|1|1|0";
 //        Price_Setting = "180|60|0|2|2|0|0";
@@ -459,7 +459,7 @@ public class SPPL3000 {
         //----------------------------------------//
         // 2023.02.165. 김영목. 기본값 새로 정의
         //----------------------------------------//
-        Goods_Setting = "10|0|0|1|2|0|0";       // 상품명
+        Goods_Setting = "10|0|0|1|2|0|0";       // 상품명(가로위치,세로위치, ,폰트너비,폰트높이, ,인쇄방향)
         Stdsize_Setting = "185|70|0|1|1|1|0";   // 규격
         Price_Setting = "225|130|0|2|2|0|0";    // 가격
         Office_Setting = "10|110|0|1|1|0|0";    // 거래처

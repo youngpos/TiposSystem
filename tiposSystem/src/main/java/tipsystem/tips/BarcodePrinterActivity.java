@@ -1152,10 +1152,17 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 CPCLPrinter cpclprinter = new CPCLPrinter("EUC-KR");
 
                 //인쇄 용지 선택				intToinchPrint(spp.getLavel_Hight())
-                int height = intToinchPrint(spp.getLavel_Hight()); //인트를 넣으면 도트로 환산해서 출력
-                int width = intToinchPrint(spp.getLavel_Width()); //인트를 넣으면 도트로 환산해서 출력
-                cpclprinter.setForm(0, 200, 200, height, count);
-                //cpclprinter.setForm(0, 100, 100, 100, count);
+                int height = intToinchPrint(spp.getLavel_Hight());  //라벨용지 높이
+                int width = intToinchPrint(spp.getLavel_Width());   //라벨용지 너비
+                int direction = spp.getPrint_Direction();   //인쇄방향
+
+                // 기존 소스
+                //cpclprinter.setForm(0, 200, 200, height, count);
+                //public void setForm(int horizonOffset, int resolX, int resolY, int labelHeight, int quantity)
+                //public void setForm(int horizonOffset, int resolX, int resolY, int labelHeight, int labelWidth, int rotate, int quantity) {
+                // 2023.02.27.김영목. 회전 추가
+                cpclprinter.setForm(0, 200, 200, height, width, direction, count);
+
 
                 //용지 구분
                 cpclprinter.setMedia(intTopapergubun_s(spp.getPaper_Gubun()));
@@ -1376,7 +1383,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //원판매가 출력
                 if (spp.getPrint_SellPrice_YN() == 1) {
                     if (pri != org || org != 0) {
-                        if (org>0){
+                        if (org > 0) {
                             cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
                             cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
                             cpclprinter.resetMagnify();
@@ -1387,7 +1394,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //할인율(%) 출력
                 if (spp.getPrint_SaleSellRate_YN() == 1) {
                     if (rat != 0) {
-                        if (rat>0){
+                        if (rat > 0) {
                             try {
                                 cpclprinter.setMagnify(stringTointPrint(saleSellRate[3]), stringTointPrint(saleSellRate[4]));
                                 cpclprinter.printCPCLText(stringTointPrint(saleSellRate[6]), 7, 0, stringTointPrint(saleSellRate[0]), stringTointPrint(saleSellRate[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sale_Rate", "0")) + "%", 0);

@@ -1,4 +1,4 @@
-#Thu Feb 23 17:55:18 KST 2023
+#Mon Feb 27 13:22:02 KST 2023
 base.0=D\:\\TIPS\\poson_app\\TiposSystem\\tiposSystem\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

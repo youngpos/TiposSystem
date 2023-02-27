@@ -343,11 +343,11 @@ public class BarcodePrintLKP30II extends Activity {
 
     public void setting_view() {
 
-        if (spp.getPrint_Size().equals(TIPOS.BARCODE_PRINTER_PAPERGUBUN_0) || spp.getPrint_Size().equals(TIPOS.BARCODE_PRINTER_PAPERGUBUN_1)) {
-            setPaperEnale(false);
-        } else {
-            setPaperEnale(true);
-        }
+//        if (spp.getPrint_Size().equals(TIPOS.BARCODE_PRINTER_PAPERGUBUN_0) || spp.getPrint_Size().equals(TIPOS.BARCODE_PRINTER_PAPERGUBUN_1)) {
+//            setPaperEnale(false);
+//        } else {
+//            setPaperEnale(true);
+//        }
 
         m_paperheight.setText(String.valueOf(spp.getLavel_Hight()));
         m_paperwidth.setText(String.valueOf(spp.getLavel_Width()));
@@ -883,6 +883,9 @@ public class BarcodePrintLKP30II extends Activity {
     public void setReset(View view) {
         Toast.makeText(this, "설정을 초기화 합니다." + tips.getSELECTPRINT_GUBUN(), Toast.LENGTH_SHORT).show();
         switch (tips.getSELECTPRINT_GUBUN()) {
+            case "사용자정의1":
+            case "사용자정의2":
+            case "사용자정의3":
             case "30*58":
                 spp.setLKP30_3058();
                 break;
@@ -918,10 +921,10 @@ public class BarcodePrintLKP30II extends Activity {
      */
     private void setPaperEnale(boolean enable) {
 
-        m_paperheight.setEnabled(enable);
-        m_paperwidth.setEnabled(enable);
-
-        m_reset.setEnabled(!enable);
+//        m_paperheight.setEnabled(enable);
+//        m_paperwidth.setEnabled(enable);
+//
+//        m_reset.setEnabled(!enable);
 
 
     }
