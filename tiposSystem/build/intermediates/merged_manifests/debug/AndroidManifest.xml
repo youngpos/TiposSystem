@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.co.tipos.tips"
     android:versionCode="56"
-    android:versionName="23.02.27" >
+    android:versionName="23.03.02" >
 
     <uses-sdk
         android:minSdkVersion="16"

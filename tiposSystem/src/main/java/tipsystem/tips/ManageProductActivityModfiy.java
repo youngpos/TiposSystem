@@ -2695,6 +2695,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             M3MoblieBarcodeScanBroadcast.setBarcodeEditText(mContext, m_textBarcode, m_textProductName);
             M3MoblieBarcodeScanBroadcast.setOnResume();
         }
+        tips.setReflash();
     }
 
     //2017-04 m3mobile 추가
@@ -3426,8 +3427,13 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             CPCLPrinter cpclprinter = new CPCLPrinter("EUC-KR");
 
             //인쇄 용지 선택				intToinchPrint(spp.getLavel_Hight())
-            int height = intToinchPrint(spp.getLavel_Hight());
-            cpclprinter.setForm(0, 200, 200, height, count);
+            int height = intToinchPrint(spp.getLavel_Hight());  //라벨용지 높이
+            int width = intToinchPrint(spp.getLavel_Width());   //라벨용지 너비
+            int direction = spp.getPrint_Direction();           //인쇄방향(0:정방향,1:역방향)
+
+            //cpclprinter.setForm(0, 200, 200, height, count);
+            // 2023.03.2.김영목. 역방향 추가
+            cpclprinter.setForm(0, 200, 200, height, width, direction, count);
 
             //용지 구분
             cpclprinter.setMedia(intTopapergubun_s(spp.getPaper_Gubun()));
