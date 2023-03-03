@@ -134,7 +134,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\pos4515\.gradle\cach
 	android:icon
 		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:27:9-45
 	android:allowBackup
-		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:26:9-35
+		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:26:9-36
 	android:theme
 		ADDED from D:\TIPS\poson_app\TiposSystem\tiposSystem\src\main\AndroidManifest.xml:29:9-47
 activity#tipsystem.tips.ShopRebootActivity

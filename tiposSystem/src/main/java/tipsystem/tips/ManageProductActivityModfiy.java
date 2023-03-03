@@ -3624,10 +3624,12 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
             //if (org > pri) {
             //원판매가 출력
             if (spp.getPrint_SellPrice_YN() == 1) {
-                if (pri != org || org != 0){
-                    cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
-                    cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org_2", "0")) + "", 0);
-                    cpclprinter.resetMagnify();
+                if (org > 0) {
+                    if (pri < org) {
+                        cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
+                        cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org_2", "0")) + "", 0);
+                        cpclprinter.resetMagnify();
+                    }
                 }
             }
 

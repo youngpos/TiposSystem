@@ -1381,8 +1381,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 //if (org > pri) {
                 //원판매가 출력
                 if (spp.getPrint_SellPrice_YN() == 1) {
-                    if (pri != org || org != 0) {
-                        if (org > 0) {
+                    if (org > 0) {
+                        if (pri < org) {
                             cpclprinter.setMagnify(stringTointPrint(sellPrice[3]), stringTointPrint(sellPrice[4]));
                             cpclprinter.printCPCLText(stringTointPrint(sellPrice[6]), 7, 0, stringTointPrint(sellPrice[0]), stringTointPrint(sellPrice[1]), StringFormat.convertToNumberFormat(stringToNullCheck(map, "Sell_Org", "0")) + "", 0);
                             cpclprinter.resetMagnify();
