@@ -52,7 +52,7 @@ public class DBAdapter {
         //--------------------//
         // 2021.01.05. 김영목. 바코드프린터 추가필드
         //--------------------//
-        alterTable_BaPrint();
+        alterTable_BaPrintSPPL3000();
         //--------------------//
 
         //--------------------//
@@ -77,7 +77,7 @@ public class DBAdapter {
      * 김현수 2015-02-06
      *
      */
-    public void insert_barPrint(List<HashMap<String, String>> mfillMaps, String active_type) {
+    public void insert_BaPrintHistory(List<HashMap<String, String>> mfillMaps, String active_type) {
         Log.d("DB BarPrint 시작", "BarPrint 저장중... ");
 
         db = tipssql.getWritableDatabase();
@@ -101,7 +101,7 @@ public class DBAdapter {
         int i_t_sellpri = 0;
 
         //전송 전표번호 생성
-        BaPrint_Num += posID + getBarPrintNum(currentDate);
+        BaPrint_Num += posID + getBarPrintHistoryNum(currentDate);
         try {
             for (int i = 0; i < mfillMaps.size(); i++) {
                 HashMap<String, String> map = new HashMap<String, String>();
@@ -162,7 +162,7 @@ public class DBAdapter {
         Log.d("DB BarPrint 완료", "BarPrint 저장완료 ");
     }
 
-    private String getBarPrintNum(String currentDate) {
+    private String getBarPrintHistoryNum(String currentDate) {
 
         db = tipssql.getReadableDatabase();
         String query = "select BaPrint_Num from BaPrint_History where print_date='" + currentDate + "' group by BaPrint_Num;";
@@ -248,7 +248,7 @@ public class DBAdapter {
         return null;
     }
 
-    public Boolean chkBarPrintTemp() {
+    public Boolean chkTempBaPrint() {
 
         boolean result;
         db = tipssql.getReadableDatabase();
@@ -260,11 +260,12 @@ public class DBAdapter {
         if (cursor.getCount() > 0) {
             result = true;
         } else {
-            result=false;
+            result = false;
         }
 
         return result;
     }
+
     // 2022.11.09. 바코드프린터 임시테이블 저장
     public void insert_TempBaPrint(List<HashMap<String, String>> mfillMaps, String active_type) {
         Log.d("DB Temp_BaPrint 임시저장", "Temp_BaPrint 저장중... ");
@@ -351,6 +352,7 @@ public class DBAdapter {
             db.endTransaction();
         }
     }
+
     public void delete_TempBaPrint() {
 
         Log.d("DB Temp_BaPrint 삭제", "Temp_BaPrint 삭제중... ");
@@ -423,6 +425,107 @@ public class DBAdapter {
                     //----------------------------------------//
 
                     map.put("Sale_Rate", String.format("%.0f", f_ratio)); // 할인율
+                    mfillMaps.add(map);
+                }
+                //Log.w(TAG, mfillMaps.toString());
+                return mfillMaps;
+            } else {
+                Toast.makeText(context, "조회 결과가 없습니다.", Toast.LENGTH_LONG).show();
+                return null;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            Toast.makeText(context, "테이블이 존재하지 않습니다. ", Toast.LENGTH_LONG).show();
+        }
+        return null;
+    }
+
+    // 2023.03.10. 김영목. 도매관리 로컬DB 작업 추가
+    public Boolean insert_TempEmdTotal(List<HashMap<String, String>> mfillMaps, String active_type) {
+        Log.d("DB Temp_EmdTotal 임시저장", "Temp_EmdTotal 저장중... ");
+
+        boolean result = false;
+
+        db = tipssql.getWritableDatabase();
+
+        String query = "";
+
+        db.beginTransaction();
+
+        try {
+
+            for (int i = 0; i < mfillMaps.size(); i++) {
+                HashMap<String, String> map = new HashMap<String, String>();
+                map = mfillMaps.get(i);
+
+                query = "insert into Temp_Emd_Total(BarCode, G_Name, Std_Size, Sell_Pri, Pur_Pri, "
+                        + "Tax_YN, Or_Count, Bigo, Vat_Chk, eSEQ, POS_NO, Office_Code) values("
+                        + "'" + map.get("BarCode") + "', "      // 1. 바코드
+                        + "'" + map.get("G_Name") + "', "       // 2. 상품명
+                        + "'" + map.get("Std_Size") + "', "     // 3. 규격
+                        + "'" + map.get("Sell_Pri") + "', "     // 4. 판매가
+                        + "'" + map.get("Pur_Pri") + "', "      // 5. 매입가
+                        + "'" + map.get("Tax_YN") + "', "       // 6. 과세구분
+                        + "'" + map.get("Or_Count") + "', "     // 7. 수량
+                        + "'" + map.get("Bigo") + "', "         // 8. 비고
+                        + "'" + map.get("Vat_Chk") + "', "      // 9. 부가세구분
+                        + "'" + map.get("eSEQ") + "', "         //10. 일련번호
+                        + "'" + map.get("POS_NO") + "', "       //11. 포스번호
+                        + "'" + map.get("Office_Code") + "'"    // 12. 거래처코드
+                        + ");";
+
+                Log.d(query, "db in");
+                db.execSQL(query);
+            }
+
+            db.setTransactionSuccessful();
+            Log.d("DB Temp_Emd_Total 완료", "Temp_Emd_Total 저장완료 ");
+
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+            Log.d("DB Temp_Emd_Total 저장실패", "Temp_Emd_Total 저장실패 ");
+        } finally {
+            db.endTransaction();
+        }
+
+        return result;
+    }
+
+    public void delete_TempEmdTotal() {
+
+        Log.d("DB Temp_Emd_Total 삭제", "Temp_Emd_Total 삭제중... ");
+        String query = "";
+
+        db = tipssql.getWritableDatabase();
+        db.beginTransaction();
+
+        try {
+            // 먼저 혹시 있을 자료 다 지운다
+            query = "Delete From Temp_BaPrint;";
+            db.execSQL(query);
+
+            db.setTransactionSuccessful();
+            Log.d("DB Temp_BaPrint 삭제완료", "Temp_BaPrint 삭제완료 ");
+
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+            Log.d("DB Temp_BaPrint 삭제실패", "Temp_BaPrint 삭제실패 ");
+        } finally {
+            db.endTransaction();
+        }
+    }
+
+    public List<HashMap<String, String>> getTempEmdTotal(String query) {
+
+        db = tipssql.getReadableDatabase();
+
+        try {
+            Cursor cursor = db.rawQuery(query, null);
+            List<HashMap<String, String>> mfillMaps = new ArrayList<HashMap<String, String>>();
+
+            if (cursor.getCount() > 0) {
+                while (cursor.moveToNext()) {
+                    HashMap<String, String> map = new HashMap<String, String>();
                     mfillMaps.add(map);
                 }
                 //Log.w(TAG, mfillMaps.toString());
@@ -552,9 +655,9 @@ public class DBAdapter {
                 spp.setPrint_AddItem_YN(cursor.getInt(25));
                 // 설정
                 spp.setLocation_Setting(cursor.getString(26));
-				spp.setNickName_Setting(cursor.getString(27));
-				spp.setBranchName_Setting(cursor.getString(28));
-				spp.setAddItem_Setting(cursor.getString(29));
+                spp.setNickName_Setting(cursor.getString(27));
+                spp.setBranchName_Setting(cursor.getString(28));
+                spp.setAddItem_Setting(cursor.getString(29));
                 //----------------------------------------//
 
                 //}
@@ -821,9 +924,6 @@ public class DBAdapter {
         db.beginTransaction();
         try {
 
-            //exQuery = readText("tips_DBTableDrop.txt");
-            //db.execSQL(exQuery);
-
             sql = "DROP TABLE IF EXISTS Goods;";
             Log.d(TAG + "드랍테이블", sql);
             db.execSQL(sql);
@@ -951,82 +1051,20 @@ public class DBAdapter {
             db.execSQL(sql);
 
 //			2023.02.15.김영목. 바코드프린터 히스토리 테이블에 필드 추가
-//            sql = "CREATE TABLE BaPrint_History ("
-//                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-//                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
-            sql = "CREATE TABLE BaPrint_History ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT ,"
-                    + "Sale_Rate TEXT, Location TEXT, NickName TEXT, BranchName TEXT, AddItem TEXT );";
-            Log.d(TAG, "Create Table BaPrint_History" + sql);
+            sql = tipssql.SqlBaPrintHistoryCreate;
             db.execSQL(sql);
 
             // 2022.11.09. 바코드프린터 임시테이블 추가
-            sql = "CREATE TABLE Temp_BaPrint ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
-            Log.d(TAG, "Create Table Temp_BaPrint" + sql);
+            sql = tipssql.SqlTempBaPrintCreate;
             db.execSQL(sql);
 
             //----------------------------------------//
             // 2021.01.05. 김영목. 원판매가,할인율,인쇄구분 추가
             //----------------------------------------//
-			/*
-			sql = "CREATE TABLE BaPrint_SPPL3000 ("
-					+"_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-					+"Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-					+"Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-					+"Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT);";
-			db.execSQL(sql);
-
-			sql = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-					+"Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-					+"Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting)"
-					+"values('30*58', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1'),"
-					+"('사용자정의1', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('사용자정의2', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('사용자정의3', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1');";
-			db.execSQL(sql);
-		    */
-            //----------------------------------------//
-//            sql = "CREATE TABLE BaPrint_SPPL3000 ("
-//                    + "_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-//                    + "Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-//                    + "Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-//                    + "Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT,"
-//                    + "Print_SellPrice_YN TEXT, Print_SaleSellRate_YN TEXT, SellPrice_Setting TEXT, SaleSellRate_Setting TEXT," // 원판매가,할인율,인쇄구분 추가
-//                    + "Print_Location_YN TEXT, Print_NickName_YN TEXT,Print_BranchName_YN TEXT, Print_AddItem_YN TEXT," // 위치,품번,분류,추가항목 추가
-//                    + "Location_Setting TEXT, NickName_Setting TEXT,BranchName_Setting TEXT, AddItem_Setting TEXT);"; // 위치,품번,분류,추가항목 추가
             sql = tipssql.SqlBaPrintSPPL3000Create;
             db.execSQL(sql);
 
-//            sql = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//                    + "Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//                    + "Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//                    + "Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting,"
-//                    + "Print_Location_YN, Print_NickName_YN,Print_BranchName_YN, Print_AddItem_YN,"
-//                    + "Location_Setting, NickName_Setting, BranchName_Setting, AddItem_Setting)"
-//                    + "values('30*58', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//                    + "('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//                    + "('사용자정의1', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//                    + "('사용자정의2', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//                    + "('사용자정의3', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0');";
-
-            //			2023.02.20.김영목. 기본값 수정
-//            sql = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//                    + "Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//                    + "Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//                    + "Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting,"
-//                    + "Print_Location_YN, Print_NickName_YN,Print_BranchName_YN, Print_AddItem_YN,"
-//                    + "Location_Setting, NickName_Setting, BranchName_Setting, AddItem_Setting)"
-//                    + "values('30*58', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//                    + "('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//                    + "('사용자정의1', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//                    + "('사용자정의2', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//                    + "('사용자정의3', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0');";
             sql = tipssql.SqlBaPrintSPPL3000Insert;
-
             db.execSQL(sql);
             //----------------------------------------//
 
@@ -1064,19 +1102,19 @@ public class DBAdapter {
 //
 //    }
 
-    private void addTables(String tableName){
+    private void addTables(String tableName) {
 
         String sql = "";
 
         db = getSQLiteDatabase("write");
         db.beginTransaction();
 
-        try{
+        try {
             sql = makeTableCreateSql(tableName);
             db.execSQL(sql);
             db.setTransactionSuccessful();
             Log.i(TAG, tableName + " Table Creat Successful");
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             Log.i(TAG, tableName + " Table Creat Faild");
         } finally {
@@ -1084,11 +1122,11 @@ public class DBAdapter {
         }
     }
 
-    private String makeTableCreateSql(String tableName ){
+    private String makeTableCreateSql(String tableName) {
 
-        String sql="";
+        String sql = "";
 
-        switch (tableName){
+        switch (tableName) {
             case "Temp_BaPrint":
                 // 2022.11.09. 바코드프린터 임시테이블 추가
                 sql += "CREATE TABLE IF NOT EXISTS Temp_BaPrint (";
@@ -1116,7 +1154,7 @@ public class DBAdapter {
     }
 
     // 2021.01.05. 김영목. 테이블 필드 추가 업데이트
-    private void alterTable_BaPrint() {
+    private void alterTable_BaPrintSPPL3000() {
         String sql = "";
         boolean isExists = false;
 
@@ -1133,32 +1171,13 @@ public class DBAdapter {
             //----------------------------------------//
             doColumnAlter("BaPrint_SPPL3000", "Print_SellPrice_YN", "TEXT", "1");
 
-//			sql = "ALTER TABLE BaPrint_SPPL3000 ADD Print_SellPrice_YN TEXT";
-//			db.execSQL(sql);
-//
-//			sql = "UPDATE BaPrint_SPPL3000 SET Print_SellPrice_YN = '1'";
-//			db.execSQL(sql);
-            //----------------------------------------//
-
             //----------------------------------------//
             // 할인율(%) 인쇄유무
-            //----------------------------------------//
-//			sql = "ALTER TABLE BaPrint_SPPL3000 ADD Print_SaleSellRate_YN TEXT";
-//			db.execSQL(sql);
-//
-//			sql = "UPDATE BaPrint_SPPL3000 SET Print_SaleSellRate_YN = '1'";
-//			db.execSQL(sql);
             //----------------------------------------//
             doColumnAlter("BaPrint_SPPL3000", "Print_SaleSellRate_YN", "TEXT", "1");
 
             //----------------------------------------//
             // 원판매가 정보
-            //----------------------------------------//
-//			sql = "ALTER TABLE BaPrint_SPPL3000 ADD SellPrice_Setting TEXT";
-//			db.execSQL(sql);
-//
-//			sql = "UPDATE BaPrint_SPPL3000 SET SellPrice_Setting = '400|160|1|2|2|0|0'";
-//			db.execSQL(sql);
             //----------------------------------------//
             doColumnAlter("BaPrint_SPPL3000", "SellPrice_Setting", "TEXT", "400|160|1|2|2|0|0");
 
@@ -1166,11 +1185,6 @@ public class DBAdapter {
             // 할인율(%) 정보
             //----------------------------------------//
             doColumnAlter("BaPrint_SPPL3000", "SaleSellRate_Setting", "TEXT", "400|160|1|2|2|0|0");
-//			sql = "ALTER TABLE BaPrint_SPPL3000 ADD SaleSellRate_Setting TEXT";
-//			db.execSQL(sql);
-//
-//			sql = "UPDATE BaPrint_SPPL3000 SET SaleSellRate_Setting = '400|160|1|2|2|0|0'";
-//			db.execSQL(sql);
             //----------------------------------------//
 
 

@@ -768,7 +768,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         getBarcodePrinterSet();
 
         // 2022.11.09. 임시저장자료 있으면 불러오기
-        if (dba.chkBarPrintTemp()) {
+        if (dba.chkTempBaPrint()) {
             // 확인 창
             new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_LIGHT)
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -1466,8 +1466,8 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
             }
         }
 
-        //저장하기
-        dba.insert_barPrint(mfillMaps, "1");
+        // BaPrint_History 저장하기
+        dba.insert_BaPrintHistory(mfillMaps, "1");
         mfillMaps.removeAll(mfillMaps);
         m_adapter.notifyDataSetChanged();
 
@@ -1685,7 +1685,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
 
 
         //저장하기
-        dba.insert_barPrint(mfillMaps, "1");
+        dba.insert_BaPrintHistory(mfillMaps, "1");
         mfillMaps.removeAll(mfillMaps);
         m_adapter.notifyDataSetChanged();
 
@@ -2579,7 +2579,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
                 dialog.dismiss();
                 dialog.cancel();
 
-                dba.insert_barPrint(mfillMaps, "1");
+                dba.insert_BaPrintHistory(mfillMaps, "1");
                 mfillMaps.removeAll(mfillMaps);
                 m_adapter.notifyDataSetChanged();
                 Toast.makeText(getApplicationContext(), "전송 성공", Toast.LENGTH_SHORT).show();
@@ -3043,7 +3043,7 @@ public class BarcodePrinterActivity extends Activity implements DatePickerDialog
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
             if (result) {
-                dba.insert_barPrint(mfillMaps, "1");
+                dba.insert_BaPrintHistory(mfillMaps, "1");
                 mfillMaps.removeAll(mfillMaps);
                 m_adapter.notifyDataSetChanged();
                 Toast.makeText(getApplicationContext(), String.valueOf(count_num) + " 개 발행완료", Toast.LENGTH_LONG).show();

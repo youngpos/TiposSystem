@@ -1152,7 +1152,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
                     Toast.makeText(mContext, "저장된 상품이 없습니다.", Toast.LENGTH_SHORT).show();
                 }
 
-                dba.insert_barPrint(mfillMapsBar, "0");
+                dba.insert_BaPrintHistory(mfillMapsBar, "0");
                 mfillMapsBar.removeAll(mfillMapsBar);
                 Toast.makeText(mContext, "전송 완료", Toast.LENGTH_SHORT).show();
             }
@@ -3732,7 +3732,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         }
 
         //저장하기
-        dba.insert_barPrint(mfillMapsBar, "1");
+        dba.insert_BaPrintHistory(mfillMapsBar, "1");
         mfillMapsBar.removeAll(mfillMapsBar);
         //m_adapter.notifyDataSetChanged();
 
@@ -4198,7 +4198,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
 
 
         //저장하기
-        dba.insert_barPrint(mfillMapsBar, "1");
+        dba.insert_BaPrintHistory(mfillMapsBar, "1");
         mfillMapsBar.removeAll(mfillMapsBar);
         //m_adapter.notifyDataSetChanged();
 
@@ -4376,7 +4376,7 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
         protected void onPostExecute(Boolean result) {
             super.onPostExecute(result);
             if (result) {
-                dba.insert_barPrint(mfillMapsBar, "1");
+                dba.insert_BaPrintHistory(mfillMapsBar, "1");
                 mfillMapsBar.removeAll(mfillMapsBar);
                 //m_adapter.notifyDataSetChanged();
                 Toast.makeText(getApplicationContext(), String.valueOf(count_num) + " 개 발행완료", Toast.LENGTH_LONG).show();

@@ -176,7 +176,8 @@ public class TIPSSplashActivity extends Activity {
     	if (phoneNumber == null || phoneNumber.equals("")) {
 			if(aaa=="debug"){
 				Toast.makeText(TIPSSplashActivity.this, "DEBUG 모드입니다.", Toast.LENGTH_SHORT).show();
-				phoneNumber="01090424515";
+				//phoneNumber="01090424515";	// 내 휴대폰
+				phoneNumber="01020497873";	//회사 테스트 갤럭시 J5
 			}else{
 				AlertDialog.Builder builder = new AlertDialog.Builder(ctx,AlertDialog.THEME_HOLO_LIGHT);
 				builder.setTitle("알림");

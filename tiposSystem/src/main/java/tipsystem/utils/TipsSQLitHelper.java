@@ -38,6 +38,19 @@ public class TipsSQLitHelper extends SQLiteOpenHelper {
             + "('사용자정의2', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
             + "('사용자정의3', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0');";
 
+    public String SqlBaPrintHistoryCreate = "CREATE TABLE BaPrint_History ("
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
+            + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT ,"
+            + "Sale_Rate TEXT, Location TEXT, NickName TEXT, BranchName TEXT, AddItem TEXT );";
+
+    public String SqlTempBaPrintCreate = "CREATE TABLE Temp_BaPrint ("
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
+            + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
+
+    // 2023.03.08.김영목. 도매출고 상세 테이블 생성
+    public String SqlTempEmDTotalCreate = "CREATE TABLE Temp_EmD_Total ("
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT, In_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT,"
+            + "Sell_Pri TEXT, Pur_Pri TEXT, Tax_YN TEXT, Or_Count TEXT, Bigo TEXT, Vat_Chk TEXT, eSEQ TEXT, Pos_No TEXT, Office_Code TEXT);";
 
     //context, db_name, factory, version
     public TipsSQLitHelper(Context context, String name, CursorFactory factory, int version) {
@@ -135,95 +148,19 @@ public class TipsSQLitHelper extends SQLiteOpenHelper {
             db.execSQL(exQuery);
 
 //			2023.02.15.김영목. 바코드프린터 히스토리 테이블에 필드 추가
-//			exQuery = "CREATE TABLE BaPrint_History ("
-//					+"_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-//					+"Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT );";
-            exQuery = "CREATE TABLE BaPrint_History ("
-                    + "_id INTEGER PRIMARY KEY AUTOINCREMENT, BaPrint_Num TEXT, BarCode TEXT, G_Name TEXT, Std_Size TEXT, Count TEXT, Sell_Pri TEXT, Bus_Name TEXT,"
-                    + "Con_Rate TEXT, Unit TEXT, Std_Rate TEXT, OrgSell_Pri TEXT, Print_Date TEXT, Print_DateTime TEXT, Office_Code TEXT, "
-                    + "Sale_Rate TEXT, Location TEXT, NickName TEXT, BranchName TEXT, AddItem TEXT );";
+            exQuery = SqlBaPrintHistoryCreate;
+            db.execSQL(exQuery);
 
-            Log.d(TAG, "Create Table BaPrint_History" + exQuery);
+            exQuery = SqlTempBaPrintCreate;
             db.execSQL(exQuery);
 
             //----------------------------------------//
             // 2021.01.05. 김영목. 원판매가,할인율,인쇄구분 추가
             //----------------------------------------//
-			/*
-			exQuery = "CREATE TABLE BaPrint_SPPL3000 ("
-					+"_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-					+"Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-					+"Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-					+"Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT);";
-			db.execSQL(exQuery);
-
-			exQuery = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-					+"Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-					+"Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting)"
-					+"values('30*58', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1'),"
-					+"('사용자정의1', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('사용자정의2', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1'),"
-					+"('사용자정의3', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1');";
-			db.execSQL(exQuery);
-		    */
-            //----------------------------------------//
-//			exQuery = "CREATE TABLE BaPrint_SPPL3000 ("
-//					+"_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-//					+"Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-//					+"Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-//					+"Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT,"
-//					+"Print_SellPrice_YN TEXT, Print_SaleSellRate_YN TEXT, SellPrice_Setting TEXT, SaleSellRate_Setting TEXT);"; // 원판매가,할인율,인쇄구분 추가
-//			db.execSQL(exQuery);
-//			exQuery = "CREATE TABLE BaPrint_SPPL3000 ("
-//					+ "_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-//					+ "Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-//					+ "Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-//					+ "Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT,"
-//					+ "Print_SellPrice_YN TEXT, Print_SaleSellRate_YN TEXT, SellPrice_Setting TEXT, SaleSellRate_Setting TEXT," // 원판매가,할인율,인쇄구분 추가
-//					+ "Print_Location_YN TEXT, Print_NickName_YN TEXT,Print_BranchName_YN TEXT, Print_AddItem_YN TEXT," // 위치,품번,분류,추가항목 추가
-//					+ "Location_Setting TEXT, NickName_Setting TEXT,BranchName_Setting TEXT, AddItem_Setting TEXT);"; // 위치,품번,분류,추가항목 추가
-//			db.execSQL(exQuery);
             exQuery = SqlBaPrintSPPL3000Create;
-
             db.execSQL(exQuery);
 
-//			exQuery = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//					+"Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//					+"Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//					+"Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting)"
-//					+"values('30*58', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+"('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+"('사용자정의1', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+"('사용자정의2', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+"('사용자정의3', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0');";
-            //			2023.02.20.김영목. 기본값 수정
-//			exQuery = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//					+ "Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//					+ "Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//					+ "Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting,"
-//					+ "Print_Location_YN, Print_NickName_YN,Print_BranchName_YN, Print_AddItem_YN,"
-//					+ "Location_Setting, NickName_Setting, BranchName_Setting, AddItem_Setting)"
-//					+ "values('30*58', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//					+ "('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+ "('사용자정의1', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+ "('사용자정의2', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+ "('사용자정의3', '30', '58', '0', '0', '3', '1', '1', '1', '1', '30', '100|20|1|0|1|0|0', '350|80|1|0|0|1|0', '400|160|1|2|2|0|0', '320|130|1|0|0|0|0', '350|105|1|0|0|1|0', '120|80|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0');";
-            //			2023.02.20.김영목. 기본값 수정
-
-//			exQuery = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//					+ "Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//					+ "Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//					+ "Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting,"
-//					+ "Print_Location_YN, Print_NickName_YN,Print_BranchName_YN, Print_AddItem_YN,"
-//					+ "Location_Setting, NickName_Setting, BranchName_Setting, AddItem_Setting)"
-//					+ "values('30*58', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//					+ "('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//					+ "('사용자정의1', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//					+ "('사용자정의2', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//					+ "('사용자정의3', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0');";
             exQuery = SqlBaPrintSPPL3000Insert;
-
             db.execSQL(exQuery);
             //----------------------------------------//
 
@@ -253,36 +190,8 @@ public class TipsSQLitHelper extends SQLiteOpenHelper {
                     exQuery = "ALTER TABLE BaPrint_History ADD Office_Code TEXT;";
                     db.execSQL(exQuery);
 
-//					exQuery = "CREATE TABLE BaPrint_SPPL3000 ("
-//							+"_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-//							+"Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-//							+"Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-//							+"Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT);";
-//					exQuery = "CREATE TABLE BaPrint_SPPL3000 ("
-//							+ "_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, Print_Size TEXT, Lavel_Hight INTEGER, Lavel_Width INTEGER, Print_Direction INTEGER, Paper_Gubun INTEGER,"
-//							+ "Gap_Width INTEGER, Print_StdSize_YN INTEGER, Print_Price_YN INTEGER, Print_Office_YN INTEGER, Print_Danga_YN INTEGER, Word_Length INTEGER,"
-//							+ "Goods_Setting TEXT, Stdsize_Setting TEXT, Price_Setting TEXT,"
-//							+ "Office_Setting TEXT , Danga_Setting TEXT, Barcode_Setting TEXT,"
-//							+ "Print_SellPrice_YN TEXT, Print_SaleSellRate_YN TEXT, SellPrice_Setting TEXT, SaleSellRate_Setting TEXT," // 원판매가,할인율,인쇄구분 추가
-//							+ "Print_Location_YN TEXT, Print_NickName_YN TEXT,Print_BranchName_YN TEXT, Print_AddItem_YN TEXT," // 위치,품번,분류,추가항목 추가
-//							+ "Location_Setting TEXT, NickName_Setting TEXT,BranchName_Setting TEXT, AddItem_Setting TEXT);"; // 위치,품번,분류,추가항목 추가
                     exQuery = SqlBaPrintSPPL3000Create;
-
                     db.execSQL(exQuery);
-
-//					//			2023.02.27.김영목. 30*58,사용자정의1,2,3 기본값 수정
-//					exQuery = "insert into BaPrint_SPPL3000(Print_Size, Lavel_Hight, Lavel_Width, Print_Direction, Paper_Gubun, Gap_Width, Print_StdSize_YN,"
-//							+ "Print_Price_YN, Print_Office_YN, Print_Danga_YN, Word_Length, Goods_Setting, Stdsize_Setting,"
-//							+ "Price_Setting, Office_Setting, Danga_Setting, Barcode_Setting,"
-//							+ "Print_SellPrice_YN, Print_SaleSellRate_YN, SellPrice_Setting, SaleSellRate_Setting,"
-//							+ "Print_Location_YN, Print_NickName_YN,Print_BranchName_YN, Print_AddItem_YN,"
-//							+ "Location_Setting, NickName_Setting, BranchName_Setting, AddItem_Setting)"
-//							+ "values('30*58', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//							+ "('23*40', '23', '40', '0', '0', '3', '1', '1', '1', '1', '30', '150|10|0|0|1|0|0', '350|60|0|0|0|1|0', '350|130|0|1|1|0|0', '320|110|0|0|0|0|0', '350|80|0|0|0|1|0', '155|50|7|2|6|40|0|1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','1','1','1','1','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0','400|160|1|2|2|0|0'),"
-//							+ "('사용자정의1', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//							+ "('사용자정의2', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0'),"
-//							+ "('사용자정의3', '30', '58', '0', '2', '3', '1', '1', '1', '1', '30', '10|0|0|1|2|0|0', '185|70|0|1|1|1|0', '225|130|0|2|2|0|0', '10|110|0|1|1|0|0', '240|100|0|1|1|1|0', '100|190|7|2|6|30|0|1','1','1','10|60|1|2|2|0|0','185|100|1|1|1|0|0','1','1','1','1','310|70|1|1|1|0|0','300|50|1|1|1|0|0','10|132|1|1|1|0|0','10|155|1|1|1|0|0');";
-//					db.execSQL(exQuery);
 
                     db.setTransactionSuccessful();
                     Log.i("DB Update 완료", "UPdate 완료");

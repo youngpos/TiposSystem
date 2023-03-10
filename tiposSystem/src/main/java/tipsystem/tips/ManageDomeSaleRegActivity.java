@@ -44,6 +44,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import kr.co.tipos.tips.R;
+import tipsystem.utils.DBAdapter;
 import tipsystem.utils.JsonHelper;
 import tipsystem.utils.LocalStorage;
 import tipsystem.utils.M3MoblieBarcodeScanBroadcast;
@@ -97,7 +98,11 @@ String TAG = "출고 등록관리";
 	//----------------------------------------//
 
 	Context mContext;
-	
+
+	// 2023.03.10. LocalDB 사용하기 위하여 추가
+	String m_OfficeCode = "";
+	DBAdapter dba;
+
 	private ProgressDialog dialog;
 	
 	List<HashMap<String, String>> mfillMaps = new ArrayList<HashMap<String, String>>(); // 배달상품목록 리스트
@@ -163,6 +168,7 @@ String TAG = "출고 등록관리";
 			//----------------------------------------//
 
 			String OFFICE_CODE = m_shop.getString("OFFICE_CODE");
+			m_OfficeCode=OFFICE_CODE;
 			posID = LocalStorage.getString(this, "currentPosID:" + OFFICE_CODE);
 			userID = m_userProfile.getString("User_ID");
 
@@ -176,8 +182,11 @@ String TAG = "출고 등록관리";
 		// 환경설정 관련 옵션 아이템 불러오기
 		pref = PreferenceManager.getDefaultSharedPreferences(this);		
 		m3Mobile = pref.getBoolean("m3mobile", false);
-		
-		
+
+		//첫번째 context, 두번째 데이터베이스명(String)
+		Log.i(TAG, m_OfficeCode + ".tips");
+		dba = new DBAdapter(getApplicationContext(), m_OfficeCode + ".tips");
+
 		//시작점
 		init();
 		
@@ -507,7 +516,7 @@ String TAG = "출고 등록관리";
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
 				
 	}
-	
+
 	//저장
 	public void doSend(){
 				
@@ -537,7 +546,7 @@ String TAG = "출고 등록관리";
 				+ "isnull(Max(bigo)+1, 1), '"+vat_chk+"', isnull(Max(eSEQ)+1, 1) From EmD_Total Where Order_Num='"+office_code+"' ";
 */
 
-		String query = "Insert Into EmD_Total(Order_Num, Barcode, G_Name, Std_Size, Pur_Pri, Sell_Pri, Tax_YN, Or_Count, Bigo, Vat_Chk, eSEQ, pos_no) "
+		String query = "Insert Into Temp_EmD_Total(Order_Num, Barcode, G_Name, Std_Size, Pur_Pri, Sell_Pri, Tax_YN, Or_Count, Bigo, Vat_Chk, eSEQ, pos_no) "
 				+ "Select '"+office_code+"', '"+barcode+"', '"+g_name+"', "
 				+ "'"+std_size+"', "+pur_pri+", "+sell_pri.replace(",", "")+", '"+tax_yn+"', "+amount+", "
 				+ "isnull(Max(bigo)+1, 1), '"+vat_chk+"', isnull(Max(eSEQ)+1, 1), '" + posID + "' "
@@ -588,12 +597,55 @@ String TAG = "출고 등록관리";
 				Toast.makeText(getApplicationContext(), "전송실패(" + String.valueOf(code) + "):" + msg, Toast.LENGTH_SHORT)
 						.show();
 			}
-
 		}).execute(m_ip + ":" + m_port, m_uudb, m_uuid, m_uupw, query);
-		
-		
-		
 	}
+
+	// 2023.03.10. 김영목. LocalDB에 추가
+	public void doSendLocalDB(){
+		//상품정보를 추출합니다.
+		String barcode = temp_goods.get("Barcode");						// 1. 바코드
+		String g_name = temp_goods.get("G_Name");						// 2. 상품명
+		String std_size = temp_goods.get("Std_Size");					// 3. 규격
+		String sell_pri = edittext_SellPri.getText().toString();		// 4. 판매가
+		String pur_pri = temp_goods.get("Pur_Pri");						// 5. 매입가
+		String tax_yn = temp_goods.get("Tax_YN");						// 6. 과세구분(0:면세,1:과세)
+		String or_count = edittext_Amount.getText().toString();			// 7. 수량
+		//																// 8. 비고
+		String vat_chk = temp_goods.get("Vat_Chk");						// 9. 부가세(0:별도,1:포함)
+		// 																//10. 일련번호
+		String posno = posID;											//11. 포스번호
+		String office_code = edittext_OfficeCode.getText().toString();	//12. 거래처코드
+
+		HashMap<String, String> temp = new HashMap<String, String>();
+
+		temp.put("BarCode",  barcode);
+		temp.put("G_Name", g_name);
+		temp.put("Std_Size", std_size);
+		temp.put("Sell_Pri", sell_pri );
+		temp.put("Pur_Pri", pur_pri);
+		temp.put("Tax_YN", tax_yn);
+		temp.put("Or_Count", or_count);
+		//
+		temp.put("Vat_Chk", vat_chk);
+		//
+		temp.put("POS_NO", posno);
+		temp.put("Office_Code", office_code);
+
+		List<HashMap<String, String>> tempMaps = new ArrayList<HashMap<String, String>>(); // 배달상품목록 리스트
+		tempMaps.add(temp);
+
+		Boolean rtn = dba.insert_TempEmdTotal(tempMaps, "1");
+
+		if(rtn==true){
+
+		}else{
+
+		}
+
+		// 2023.03.10.PM 3:55 여기서 작업 중지
+		// 이전버전에서 AS처리 후 다시 이어서 하자
+	}
+
 	
 	//상품 검색 하기 SQL QUERY 실행
 	public void doQueryWithBarcode() {
