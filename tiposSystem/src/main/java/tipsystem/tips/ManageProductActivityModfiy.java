@@ -2677,8 +2677,12 @@ public class ManageProductActivityModfiy extends Activity implements DatePickerD
 
         // 상품명으로 포커스 이동하자
         ///???
-        m_textProductName.setInputType(145); //
-        //m_textProductName.setPrivateImeOptions("defaultInputmode=korean;");
+        //m_textProductName.setInputType(145); //
+        m_textProductName.setPrivateImeOptions("defaultInputmode=korean;");
+        /* 2023.02.01. 한글이 안된다고 AS
+         * 기존 주석처리 해제
+         * 왜 주석했는지 이유 알 수 없음
+         *  추후 검토 */
         m_textProductName.requestFocus();
 
         upu.hideSoftKeyboard(false);
